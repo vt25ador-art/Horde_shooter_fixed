@@ -8,13 +8,25 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private float _maximumSpawnTime;
 
-    private float _TimeUntilSpawn;
+    [SerializeField, Min(0)] private int _maxEnemies = 50;
 
+    [SerializeField, Min(0)] private float _disableAfterSeconds = 10f;
+
+    [SerializeField, Min(0)] private float _disableDurationSeconds = 5f;
+
+    private float _TimeUntilSpawn;
 
     private void Awake()
     {
         SetTimeUntilSpawn();
     }
+
+    private void Start()
+    {
+        
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -22,7 +34,12 @@ public class EnemySpawner : MonoBehaviour
 
         if (_TimeUntilSpawn <= 0f)
         {
-            Instantiate(_enemyPrefab, transform.position, Quaternion.identity);
+            int currentEnemies = FindObjectsOfType<EnemyMovement>().Length;
+
+            if (currentEnemies < _maxEnemies)
+            {
+                Instantiate(_enemyPrefab, transform.position, Quaternion.identity);
+            }
             SetTimeUntilSpawn();
         }
     }
@@ -31,6 +48,4 @@ public class EnemySpawner : MonoBehaviour
     {
         _TimeUntilSpawn = Random.Range(_miniumSpawnInterval, _maximumSpawnTime);
     }
-
-
 }
