@@ -1,0 +1,86 @@
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.VFX;
+
+public class EnemyHealth : MonoBehaviour
+{
+    [SerializeField] private float _maxHealth = 50f;
+    [SerializeField] private bool _destroyOnDeath = true;
+
+    [SerializeField] private GameObject HitVFX;
+
+    private float _currentHealth;
+    private bool _isDead;
+
+
+    private void Start()
+    {
+       _currentHealth = _maxHealth;
+        _isDead = false;
+    }
+
+
+    public void TakeDamage(float amount)
+    {
+        if (_isDead || amount <= 0f) return;
+        
+        _currentHealth -= amount;
+        _currentHealth = Mathf.Max(0f, _currentHealth);
+
+        SpawnHitVFX();
+
+        if (_currentHealth <= 0f)
+            Die();
+
+    }
+
+    public void AddHealth(float amount)
+    {
+        if (_isDead || amount <= 0f) return;
+        _currentHealth = Mathf.Min(_maxHealth, _currentHealth + amount);
+    }   
+
+    public float ReimainingHealthPercentage =>  (_maxHealth <= 0f) ? 0f : (_currentHealth / _maxHealth) * 100f;
+
+
+    private void SpawnHitVFX()
+    {
+        if (HitVFX == null)
+            return;
+        {
+            {
+                Debug.LogWarning("HitVFX is not assigned on " + gameObject.name);
+            }
+
+            var fx = Instantiate(HitVFX, transform.position, Quaternion.identity);
+
+            var ps = fx.GetComponent<ParticleSystem>();
+            if (ps != null)
+            {
+                var main = ps.main;
+                float life = main.duration + main.startLifetime.constantMax;
+                Destroy(fx, life + 0.1f);
+                return;
+            }
+
+            var vfx = fx.GetComponent<VisualEffect>();
+            if (vfx != null)
+            {
+                Destroy(fx, 2f);
+                return;
+            }
+
+            Destroy(fx, 2f);
+        }
+    }
+
+    private void Die()
+    {
+        if (_isDead) return;
+        _isDead = true;
+
+        if (_destroyOnDeath)
+            Destroy(gameObject);
+    }
+}
+
