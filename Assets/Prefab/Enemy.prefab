@@ -65,9 +65,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 4
   _rotationSpeed: 100
+  _boostStartDistance: 7
+  _stopDistance: 0.9
+  _maxBoost: 1.5
+  _steerNoiseStrength: 0.25
+  _steerNoiseSpeed: 1.2
   _neighborRange: 1.5
-  _seperationstrength: 1
+  _seperationStrength: 1
   _maxNeighbors: 4
+  _enemyMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &2351128797370113760
 Rigidbody2D:
   serializedVersion: 5
@@ -133,7 +141,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.57, y: 1.21}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -213,8 +221,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 133b84533435baf46bbeb30dd598e4bd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 7492316105521242133, guid: 6e7370453e0c1e148a05e0ccb9e43d68, type: 3}
+  m_Color: {r: 0.9811321, g: 0.9795257, b: 0.9765041, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
