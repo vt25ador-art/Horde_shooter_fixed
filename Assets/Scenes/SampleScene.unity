@@ -1099,7 +1099,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 9.5
+  orthographic size: 9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1679,23 +1679,23 @@ MonoBehaviour:
   _weapon: 1
   _pistol:
     bulletSpeed: 16
-    timeBetweenShots: 0.28
+    timeBetweenShots: 0.27
     spawnOffset: 0.2
     bulletLifetime: 3
     magazineSize: 12
-    reserveAmmo: 1200
+    reserveAmmo: 60
     reloadTime: 1.2
-    infiniteAmmo: 0
+    infiniteAmmo: 1
     autoReloadOnEmpty: 1
     pellets: 1
     spreadDegrees: 0
   _rifle:
     bulletSpeed: 18
-    timeBetweenShots: 0.11
+    timeBetweenShots: 0.14
     spawnOffset: 0.2
     bulletLifetime: 3
     magazineSize: 40
-    reserveAmmo: 350
+    reserveAmmo: 440
     reloadTime: 1.6
     infiniteAmmo: 0
     autoReloadOnEmpty: 1
@@ -2251,8 +2251,8 @@ MonoBehaviour:
   player: {fileID: 935556620}
   cam: {fileID: 0}
   maxEnemies: 50
-  relaxSeconds: 8
-  peakSeconds: 10
+  relaxSeconds: 20
+  peakSeconds: 18
   budgetPerTickRelax: 0
   budgetPerTickPeak: 6
   tickInterval: 1

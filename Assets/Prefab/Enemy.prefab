@@ -63,11 +63,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3253fe53fd86a164c801a959d952b838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 4
+  _speed: 3.7
   _rotationSpeed: 100
+  _boostStartDistance: 6
+  _stopDistance: 0.9
+  _maxBoost: 1.5
+  _steerNoiseStrength: 0.25
+  _steerNoiseSpeed: 1.2
   _neighborRange: 1.5
-  _seperationstrength: 1
+  _seperationStrength: 1
   _maxNeighbors: 4
+  _enemyMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &2351128797370113760
 Rigidbody2D:
   serializedVersion: 5
@@ -153,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c630bd778a9d144e9dd0222926fa72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageAmount: 2
+  _damageAmount: 0.5
 --- !u!114 &5709585611378326944
 MonoBehaviour:
   m_ObjectHideFlags: 0
