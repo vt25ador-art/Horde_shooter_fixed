@@ -65,17 +65,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 4
   _rotationSpeed: 100
-  _boostStartDistance: 7
-  _stopDistance: 0.9
-  _maxBoost: 1.5
-  _steerNoiseStrength: 0.25
-  _steerNoiseSpeed: 1.2
   _neighborRange: 1.5
-  _seperationStrength: 1
+  _seperationstrength: 1
   _maxNeighbors: 4
-  _enemyMask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!50 &2351128797370113760
 Rigidbody2D:
   serializedVersion: 5

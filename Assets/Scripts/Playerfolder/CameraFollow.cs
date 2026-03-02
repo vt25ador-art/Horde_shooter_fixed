@@ -2,39 +2,50 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    public Transform player;
+    public float smoothTime = 0.15f;
 
-    public Transform Player;
-    public float smoothspeed = 0.125f;
+    // Valfritt: lås Y eller lås axlar
+    public bool lockY = true;
 
-    float camOffsetZ;
+    // Valfritt: world bounds (om du VILL ha gränser)
+    public bool useBounds = false;
+    public Vector2 minXZ;
+    public Vector2 maxXZ;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Vector3 velocity;
+    private float offsetZ;
+
     void Start()
     {
-        if (Player == null)
-        {
-            Player = GameObject.FindWithTag("Player")?.transform;
-        }
+        if (player == null)
+            player = GameObject.FindWithTag("Player")?.transform;
 
-        if (Player == null)
+        if (player == null)
         {
-            Debug.LogWarning("CameraFollow: Player not found. Please assign the Player transform in the inspector or tag the player object with 'Player'.");
-            camOffsetZ = transform.position.z;
+            Debug.LogWarning("CameraFollow: Player not found.");
             return;
         }
 
-        camOffsetZ = transform.position.z - Player.position.z;
-
+        offsetZ = transform.position.z - player.position.z;
     }
 
-    private void LateUpdate()
+    void LateUpdate()
     {
-        if (Player == null) return;
+        if (player == null) return;
 
+        Vector3 target = new Vector3(
+            player.position.x,
+            lockY ? transform.position.y : player.position.y,
+            player.position.z + offsetZ
+        );
 
-        Vector3 targetpos = new Vector3(Player.position.x, transform.position.y, Player.position.z + camOffsetZ);
-        Vector3 smoothedPos = Vector3.Lerp(transform.position, targetpos, smoothspeed);
-        transform.position = smoothedPos;
+        if (useBounds)
+        {
+            target.x = Mathf.Clamp(target.x, minXZ.x, maxXZ.x);
+            target.z = Mathf.Clamp(target.z, minXZ.y, maxXZ.y);
+        }
 
+        transform.position = Vector3.SmoothDamp(transform.position, target, ref velocity, smoothTime);
     }
 }

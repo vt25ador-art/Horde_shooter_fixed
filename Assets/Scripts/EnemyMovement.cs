@@ -1,157 +1,156 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField]
-
-    private float _speed;
-
-    [SerializeField]
-    private float _rotationSpeed;
-
-
-    [SerializeField]
-    private float _neighborRange = 1.5f;
-
-    [SerializeField]
-    private float _seperationstrength = 1.0f;
-
-    [SerializeField, Min (4)] private int _maxNeighbors = 4;
-
-
-    private Rigidbody2D _rigidbody;
-    private PlayerAwarness _playerAwarness;
-    private Vector2 _targetDirection;
-    private Transform _transform;
-
-    private Collider2D[] _overlapresults;
-
-    private float _neighborRangeSqr;
-
-    // Add this static property to track alive enemies
     public static int AliveCount { get; private set; }
 
+    [Header("Base movement")]
+    [SerializeField] private float _speed = 3f;
+    [SerializeField] private float _rotationSpeed = 540f;
+
+    [Header("Pressure (L4D-ish)")]
+    [SerializeField] private float _boostStartDistance = 7f;
+    [SerializeField] private float _stopDistance = 0.9f;
+    [SerializeField] private float _maxBoost = 1.5f; // nära => speed * _maxBoost
+
+    [Header("Steering noise")]
+    [SerializeField] private float _steerNoiseStrength = 0.25f; // lite “drift”
+    [SerializeField] private float _steerNoiseSpeed = 1.2f;
+
+    [Header("Separation")]
+    [SerializeField] private float _neighborRange = 1.5f;
+    [SerializeField] private float _seperationStrength = 1.0f;
+    [SerializeField, Min(4)] private int _maxNeighbors = 8;
+    [SerializeField] private LayerMask _enemyMask;
+
+    private Rigidbody2D _rb;
+    private PlayerAwarness _aw;
+    private Vector2 _targetDir;
+
+    private Collider2D[] _hits;
+    private float _neighborRangeSqr;
+    private float _seed;
+
+    private void OnEnable() => AliveCount++;
+    private void OnDisable() => AliveCount--;
+    private void OnDestroy() => AliveCount--;
 
     private void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
-        _playerAwarness = GetComponent<PlayerAwarness>();
-        _transform = transform;
-
+        _rb = GetComponent<Rigidbody2D>();
+        _aw = GetComponent<PlayerAwarness>();
 
         _maxNeighbors = Mathf.Max(4, _maxNeighbors);
-        _overlapresults = new Collider2D[_maxNeighbors];
+        _hits = new Collider2D[_maxNeighbors];
         _neighborRangeSqr = _neighborRange * _neighborRange;
 
-        AliveCount++;
+        _seed = Random.value * 1000f;
     }
-
 
     private void OnValidate()
     {
         _neighborRange = Mathf.Max(0f, _neighborRange);
         _neighborRangeSqr = _neighborRange * _neighborRange;
         _maxNeighbors = Mathf.Max(4, _maxNeighbors);
-    }
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _stopDistance = Mathf.Max(0f, _stopDistance);
+        _boostStartDistance = Mathf.Max(_stopDistance + 0.01f, _boostStartDistance);
     }
 
     private void FixedUpdate()
     {
         UpdateTargetDirection();
         RotateTowardsTarget();
-        SetVelocity();
+        ApplyVelocity();
     }
-
-
 
     private void UpdateTargetDirection()
     {
-        Vector2 baseDirection = Vector2.zero;
+        Vector2 desire = Vector2.zero;
 
+        if (_aw != null && _aw.AwarePlayer)
+        {
+            if (_aw.DistanceToPlayer > _stopDistance)
+                desire = _aw.DirectionToPlayer;
+        }
 
-        if (_playerAwarness != null && _playerAwarness.AwarePlayer)
-            baseDirection = _playerAwarness.DirectionToPlayer;
+        Vector2 sep = ComputeSeparation();
+        Vector2 noise = ComputeSteerNoise();
 
+        Vector2 combined = desire + sep * _seperationStrength + noise * _steerNoiseStrength;
 
-        Vector2 seperation = ComputeSeparation();
-
-        Vector2 combined = baseDirection + seperation * _seperationstrength;
-
-        _targetDirection = (combined.sqrMagnitude <= 1e-6f) ? Vector2.zero : combined.normalized;
+        _targetDir = combined.sqrMagnitude > 1e-6f ? combined.normalized : Vector2.zero;
     }
 
     private Vector2 ComputeSeparation()
     {
-        int hitCount = Physics2D.OverlapCircleNonAlloc(transform.position, _neighborRange, _overlapresults);
-        Vector2 seperation = Vector2.zero;
-        int considred = 0;
+        int count = Physics2D.OverlapCircleNonAlloc(_rb.position, _neighborRange, _hits, _enemyMask);
+        Vector2 sep = Vector2.zero;
+        int considered = 0;
 
-        for (int i = 0; i < hitCount; i++)
+        for (int i = 0; i < count; i++)
         {
-            var c = _overlapresults[i];
-            if (c == null) continue;
-            var attached = c.attachedRigidbody;
-            if (attached == null || attached.gameObject == gameObject) continue;
+            var c = _hits[i];
+            if (!c) continue;
+            if (c.attachedRigidbody == _rb) continue;
 
-           if(!c.TryGetComponent<EnemyMovement>(out var other)) continue;
+            if (!c.TryGetComponent<EnemyMovement>(out var other)) continue;
 
+            Vector2 diff = _rb.position - (Vector2)other.transform.position;
+            float sq = diff.sqrMagnitude;
+            if (sq <= Mathf.Epsilon || sq > _neighborRangeSqr) continue;
 
-            Vector2 diff = (Vector2)transform.position - (Vector2)other.transform.position;
-            float sqrdist = diff.sqrMagnitude;
-            if (sqrdist <= Mathf.Epsilon) continue;
-
-
-            seperation += diff / sqrdist;
-            considred ++;
+            sep += diff / sq;
+            considered++;
         }
 
-        if (considred > 0)
+        if (considered > 0)
         {
-            seperation /= considred;
-            seperation = Vector2.ClampMagnitude(seperation, 1f);
+            sep /= considered;
+            sep = Vector2.ClampMagnitude(sep, 1f);
         }
 
-        return seperation;
-    
+        return sep;
     }
 
-
+    private Vector2 ComputeSteerNoise()
+    {
+        // enkel “perlin” drift: ger lite variation och orbit-känsla
+        float t = Time.time * _steerNoiseSpeed;
+        float nx = Mathf.PerlinNoise(_seed, t) - 0.5f;
+        float ny = Mathf.PerlinNoise(_seed + 19.1f, t) - 0.5f;
+        return new Vector2(nx, ny);
+    }
 
     private void RotateTowardsTarget()
     {
-        if (_targetDirection.sqrMagnitude <= 1e-6f) return;
+        if (_targetDir.sqrMagnitude <= 1e-6f) return;
 
-        float targetAngle = Mathf.Atan2(_targetDirection.y, _targetDirection.x) * Mathf.Rad2Deg - 90f;
-        float Newangle = Mathf.MoveTowardsAngle(_rigidbody.rotation, targetAngle, _rotationSpeed * Time.fixedDeltaTime);
-        _rigidbody.MoveRotation(Newangle);
+        float targetAngle = Mathf.Atan2(_targetDir.y, _targetDir.x) * Mathf.Rad2Deg - 90f;
+        float newAngle = Mathf.MoveTowardsAngle(_rb.rotation, targetAngle, _rotationSpeed * Time.fixedDeltaTime);
+        _rb.MoveRotation(newAngle);
     }
 
-
-    private void SetVelocity()
+    private void ApplyVelocity()
     {
-        if (_targetDirection.sqrMagnitude <= 1e-6f)
+        if (_targetDir.sqrMagnitude <= 1e-6f)
         {
-            _rigidbody.linearVelocity = Vector2.zero;
+            _rb.linearVelocity = Vector2.zero;
             return;
         }
-        _rigidbody.linearVelocity = _targetDirection * _speed;
-    }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, _neighborRange);
+        float speed = _speed;
+
+        if (_aw != null && _aw.AwarePlayer)
+        {
+            float dist = _aw.DistanceToPlayer;
+            if (dist < _boostStartDistance)
+            {
+                float t = Mathf.InverseLerp(_boostStartDistance, _stopDistance, dist);
+                speed *= Mathf.Lerp(1f, _maxBoost, t);
+            }
+        }
+
+        _rb.linearVelocity = _targetDir * speed;
     }
 }
