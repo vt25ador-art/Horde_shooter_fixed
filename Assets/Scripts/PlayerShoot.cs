@@ -37,6 +37,15 @@ public class PlayerShoot : MonoBehaviour
 
     private bool _prevMousePressed;
 
+    public bool IsReloading { get; set; }
+    public bool WeaponName { get; set; }
+
+    public bool AmmoInMag { get; set; }
+
+    public bool ReserveAmmo { get; set; }
+
+
+
 
     private void Awake()
     {

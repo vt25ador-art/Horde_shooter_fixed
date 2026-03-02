@@ -28,6 +28,9 @@ public class EnemyMovement : MonoBehaviour
 
     private float _neighborRangeSqr;
 
+    // Add this static property to track alive enemies
+    public static int AliveCount { get; private set; }
+
 
     private void Awake()
     {
@@ -40,6 +43,7 @@ public class EnemyMovement : MonoBehaviour
         _overlapresults = new Collider2D[_maxNeighbors];
         _neighborRangeSqr = _neighborRange * _neighborRange;
 
+        AliveCount++;
     }
 
 
@@ -150,4 +154,4 @@ public class EnemyMovement : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, _neighborRange);
     }
-} 
+}
