@@ -1,9 +1,14 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.WSA;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyMovement : MonoBehaviour
 {
     public static int AliveCount { get; private set; }
+
+    [SerializeField] private LayerMask Wall;
+
 
     [Header("Base movement")]
     [SerializeField] private float _speed = 3f;
@@ -32,6 +37,11 @@ public class EnemyMovement : MonoBehaviour
     private float _neighborRangeSqr;
     private float _seed;
 
+
+    //Shover 
+    private float _StunTimer;
+    float KnockbackTimer;
+
     private void OnEnable() => AliveCount++;
     private void OnDisable() => AliveCount--;
     private void OnDestroy() => AliveCount--;
@@ -59,9 +69,21 @@ public class EnemyMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (KnockbackTimer > 0f)
+        {
+            KnockbackTimer -= Time.fixedDeltaTime;
+            return;
+        }
+
         UpdateTargetDirection();
         RotateTowardsTarget();
         ApplyVelocity();
+
+        if (_StunTimer > 0f)
+        {
+            _StunTimer -= Time.fixedDeltaTime;
+            return;
+        }
     }
 
     private void UpdateTargetDirection()
@@ -152,5 +174,26 @@ public class EnemyMovement : MonoBehaviour
         }
 
         _rb.linearVelocity = _targetDir * speed;
+    }
+
+    public void Shove(Vector2 force, float stunTime)
+    {
+        _rb.AddForce(force, ForceMode2D.Impulse);
+        _StunTimer = stunTime;
+    }
+
+    public void ApplyShove(Vector2 force, float stunTime)
+    {
+        _rb.linearVelocity = Vector2.zero;
+        _rb.AddForce(force, ForceMode2D.Impulse);
+
+        KnockbackTimer = stunTime;
+    }
+
+    IEnumerator StunRoutine(float time)
+    {
+        enabled = false;
+        yield return new WaitForSeconds(2);
+        enabled = true;
     }
 }

@@ -399,6 +399,19 @@ public class PlayerShoot : MonoBehaviour
         _pool.Release(b);
     }
 
+
+    public void AddAmmo(int amount)
+    {
+       var w = Current;
+        if (w.infiniteAmmo) return;
+
+        int maxreserve = w.reserveAmmo;
+
+        if (_reserveAmmo >= maxreserve) return;
+
+        _reserveAmmo = Mathf.Min(_reserveAmmo + amount, maxreserve);
+    }
+
 #if UNITY_EDITOR
     private void OnValidate()
     {

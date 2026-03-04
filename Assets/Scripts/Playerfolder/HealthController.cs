@@ -7,6 +7,10 @@ public class HealthController : MonoBehaviour
 
     [SerializeField] private float _maxiumHealth;
 
+    public bool isDowned {  get; private set; }
+
+    [SerializeField] private float downTime = 20f;
+    private float downTimer;
 
     public float ReimainingHealthPercentage
     {
@@ -21,11 +25,40 @@ public class HealthController : MonoBehaviour
     public UnityEvent OnHealthChanged;
 
 
+    void Update()
+    {
+        if (!isDowned) return;
+
+        downTimer -= Time.deltaTime;
+
+        if (downTimer <= 0)
+        {
+            Die();
+        }
+    }
+    void Die()
+    {
+        Debug.Log("Player died");
+
+        OnDied.Invoke();
+    }
+
+
     public void TakeDamage(float damageAmount)
     {
-        if (_currentHealth == 0)
+        if (_currentHealth < 0)
         {
-            return;
+            EnterDownState();
+        }
+
+        void EnterDownState()
+        {
+            if (isDowned) return;
+
+            isDowned = true;
+            downTimer = downTime;
+
+            Debug.Log("Player is DOWN!");
         }
 
         _currentHealth -= damageAmount;
@@ -59,5 +92,14 @@ public class HealthController : MonoBehaviour
         {
             _currentHealth = _maxiumHealth;
         }
+    }
+
+    public void Revive(float revivehealth)
+    {
+        if (!isDowned) return;
+
+        _currentHealth = revivehealth;
+
+        Debug.Log("Player revived");
     }
 }

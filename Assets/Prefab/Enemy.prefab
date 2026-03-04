@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1757200733556474355}
   - component: {fileID: 5709585611378326944}
   - component: {fileID: -3757702196325920249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerAwarenessDistance: 100
+  Player: {fileID: 0}
 --- !u!114 &4412646975309433662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +64,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3253fe53fd86a164c801a959d952b838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Wall:
+    serializedVersion: 2
+    m_Bits: 8
   _speed: 3.7
   _rotationSpeed: 100
   _boostStartDistance: 6
