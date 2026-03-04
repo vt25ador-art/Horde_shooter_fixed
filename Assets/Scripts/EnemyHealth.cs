@@ -62,7 +62,12 @@ public class EnemyHealth : MonoBehaviour
     {
         if (_isDead || amount <= 0f) return;
         _currentHealth = Mathf.Min(_maxHealth, _currentHealth + amount);
-    }   
+
+        if (KillScore.Instance != null)
+        {
+            KillScore.Instance.AddKill();
+        }
+    }
 
     public float ReimainingHealthPercentage =>  (_maxHealth <= 0f) ? 0f : (_currentHealth / _maxHealth) * 100f;
 
@@ -118,6 +123,10 @@ public class EnemyHealth : MonoBehaviour
         if (_destroyOnDeath)
             Destroy(gameObject, 5f);
 
+        KillScore.Instance.AddKill();
+        Destroy(gameObject);
+    
+
 
         //var mbs = GetComponents<MonoBehaviour>();
         //foreach (var mb in mbs)
@@ -128,7 +137,7 @@ public class EnemyHealth : MonoBehaviour
 
         //var rb2d = GetComponent<Rigidbody2D>();
         //if (rb2d != null) rb2d.simulated = false;
-        
+
         //var cold2d = GetComponent<Collider2D>();
         //if (cold2d != null) cold2d.enabled = false;
 
@@ -141,8 +150,8 @@ public class EnemyHealth : MonoBehaviour
 
     //private IEnumerator DespawnAfterDelay(float delay)
     //{
-        //yield return new WaitForSeconds(delay);
-        //Destroy(gameObject);
+    //yield return new WaitForSeconds(delay);
+    //Destroy(gameObject);
     //}
 }
 
