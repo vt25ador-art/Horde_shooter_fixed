@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 5508561945774084566}
   - component: {fileID: 7833247952065782442}
   - component: {fileID: 394311502352960841}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f8b8e156a5713408a1a1ab868f71ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 1000
+  _maxHealth: 4000
   _destroyOnDeath: 1
   HitVFX: {fileID: 7972977234735750764, guid: d4efc0e6da5342b4da240face6838057, type: 3}
 --- !u!50 &2698115314538609014
@@ -147,6 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3253fe53fd86a164c801a959d952b838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Wall:
+    serializedVersion: 2
+    m_Bits: 8
   _speed: 2
   _rotationSpeed: 100
   _boostStartDistance: 7
@@ -172,7 +175,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32acd85d8a814f43a861ee082fa839b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAwarenessDistance: 100
+  awarenessDistance: 12
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  player: {fileID: 0}
 --- !u!114 &7833247952065782442
 MonoBehaviour:
   m_ObjectHideFlags: 0

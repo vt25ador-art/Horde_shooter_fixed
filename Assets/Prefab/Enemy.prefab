@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32acd85d8a814f43a861ee082fa839b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  awarenessDistance: 200
+  awarenessDistance: 100
   wallLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -70,7 +70,7 @@ MonoBehaviour:
   Wall:
     serializedVersion: 2
     m_Bits: 8
-  _speed: 3.7
+  _speed: 4
   _rotationSpeed: 100
   _boostStartDistance: 6
   _stopDistance: 0.9

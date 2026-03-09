@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BotShoot))]
@@ -19,6 +20,11 @@ public class BotAI : MonoBehaviour
 
     [Header("Rotation")]
     [SerializeField] private float rotationSpeed = 540f;
+
+    [Header("Wall Avoidance")]
+    [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private float wallcheckDistance = 0.8f;
+    [SerializeField] private float avoidStrenght = 1.2f;
 
     private Rigidbody2D rb;
     private BotShoot shoot;
@@ -105,6 +111,35 @@ public class BotAI : MonoBehaviour
             shoot.BotFireAt(toEnemy);
     }
 
+    void MoveWithAvoidance(Vector2  desiredVelocity)
+    {
+        Vector2 dir = desiredVelocity.normalized;
+        Vector2 move = desiredVelocity;
+
+        RaycastHit2D frontHit = Physics2D.Raycast(rb.position, dir, wallcheckDistance, wallLayer);
+
+        if (frontHit.collider == null)
+        {
+            Vector2 left = new Vector2(-dir.y, -dir.x);
+            Vector2 right = new Vector2(dir.y, dir.x);
+
+            bool leftBlocked = Physics2D.Raycast(rb.position, left, wallcheckDistance, wallLayer);
+            bool rightBlocked = Physics2D.Raycast(rb.position, right, wallcheckDistance, wallLayer);
+
+            if (!leftBlocked)
+                move = (dir + left * avoidStrenght).normalized * desiredVelocity.magnitude;
+            else if (!rightBlocked)
+                move = (dir + right * avoidStrenght).normalized * desiredVelocity.magnitude;
+            else 
+                move = Vector2.zero;
+
+        }
+
+        rb.linearVelocity = move;
+
+    }
+
+
     void RotateTowards(Vector2 dir)
     {
         if (dir.sqrMagnitude < 0.001f) return;
@@ -121,5 +156,8 @@ public class BotAI : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, fireRange);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, wallcheckDistance);
     }
 }
