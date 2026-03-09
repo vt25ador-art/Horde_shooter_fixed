@@ -50,8 +50,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32acd85d8a814f43a861ee082fa839b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerAwarenessDistance: 100
-  Player: {fileID: 0}
+  awarenessDistance: 200
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  player: {fileID: 0}
 --- !u!114 &4412646975309433662
 MonoBehaviour:
   m_ObjectHideFlags: 0

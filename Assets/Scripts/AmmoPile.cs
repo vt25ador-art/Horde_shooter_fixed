@@ -1,26 +1,32 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class AmmoPile : MonoBehaviour
 {
-    [SerializeField] private int _ammoAmount = 60;
+    [SerializeField] private int ammoAmount = 60;
     [SerializeField] private float cooldown = 5f;
+
     private bool available = true;
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-      if (!available) return;
+        Debug.Log("Something entered ammo pile: " + other.name);
+
+        if (!available) return;
+
         PlayerShoot player = other.GetComponent<PlayerShoot>();
-        if (player != null)
+        if (player == null)
         {
-            player.AddAmmo(_ammoAmount);
-            StartCoroutine(refill());
+            Debug.Log("No PlayerShoot found on: " + other.name);
+            return;
         }
+
+        Debug.Log("Ammo given to player");
+        player.AddAmmo(ammoAmount);
+        StartCoroutine(Refill());
     }
 
-
-    IEnumerator refill()
+    private IEnumerator Refill()
     {
         available = false;
         yield return new WaitForSeconds(cooldown);
