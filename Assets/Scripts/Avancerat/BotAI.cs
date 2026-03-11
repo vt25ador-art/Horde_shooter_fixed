@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 [RequireComponent(typeof(BotShoot))]
 public class BotAI : MonoBehaviour
 {
+    enum BotState { Follow, Combat, Regroup, Revive}
+
     [Header("Target")]
     [SerializeField] private Transform player;
 

@@ -21,6 +21,13 @@ public class AmmoPile : MonoBehaviour
             return;
         }
 
+        BotShoot botAI = other.GetComponent<BotShoot>();
+        if (botAI == null)
+        {
+            Debug.Log("No BotShoot found on: " + other.name);
+            return;
+        }
+
         Debug.Log("Ammo given to player");
         player.AddAmmo(ammoAmount);
         StartCoroutine(Refill());
