@@ -70,7 +70,7 @@ MonoBehaviour:
   Wall:
     serializedVersion: 2
     m_Bits: 264
-  _speed: 4
+  _speed: 5
   _rotationSpeed: 100
   _boostStartDistance: 6
   _stopDistance: 0.9
