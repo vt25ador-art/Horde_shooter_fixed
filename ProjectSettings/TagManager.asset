@@ -15,8 +15,8 @@ TagManager:
   - enemyLayer
   - Allies
   - Tree
-  - 
-  - 
+  - WallLayer
+  - GroundLayer
   - 
   - 
   - 
