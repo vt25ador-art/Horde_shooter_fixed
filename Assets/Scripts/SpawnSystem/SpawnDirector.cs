@@ -3,69 +3,87 @@ using UnityEngine;
 
 public class SpawnDirector : MonoBehaviour
 {
-    [SerializeField] private Transform player;
-    [SerializeField] private Camera cam;
+    [SerializeField] Transform player;
+    [SerializeField] Camera cam;
 
-    [Header("Global cap")]
-    [SerializeField] private int maxEnemies = 50;
+    [Header("Limits")]
+    [SerializeField] int maxEnemies = 50;
 
-    [Header("Pacing")]
-    [SerializeField] private float relaxSeconds = 8f;
-    [SerializeField] private float peakSeconds = 14f;
+    [Header("Timing")]
+    [SerializeField] float relaxTime = 8f;
+    [SerializeField] float peakTime = 14f;
+    [SerializeField] float tickInterval = 1f;
 
     [Header("Budget")]
-    [SerializeField] private int budgetPerTickRelax = 0;
-    [SerializeField] private int budgetPerTickPeak = 6;
-    [SerializeField] private float tickInterval = 1.0f;
+    [SerializeField] int relaxBudget = 0;
+    [SerializeField] int peakBudget = 6;
 
-    [Header("Nodes")]
-    [SerializeField] private List<SpawnNode> nodes = new();
+    [SerializeField] List<SpawnNode> nodes = new();
 
-    private enum Mode { Relax, Peak }
-    private Mode _mode = Mode.Relax;
-    private float _modeTimer;
+    enum Mode { Relax, Peak }
 
-    private float _tick;
+    Mode mode;
+    float modeTimer;
+    float tick;
 
-    private void Awake()
+    readonly List<SpawnNode> shuffled = new();
+
+    void Awake()
     {
-        if (player == null) player = GameObject.FindWithTag("Player")?.transform;
-        if (cam == null) cam = Camera.main;
+        player ??= GameObject.FindWithTag("Player")?.transform;
+        cam ??= Camera.main;
 
         if (nodes.Count == 0)
-            nodes.AddRange(FindObjectsOfType<SpawnNode>());
+            // Replace this line:
+            // nodes.AddRange(FindObjectsByType<SpawnNode>());
 
-        _modeTimer = relaxSeconds;
+            // With the following line:
+            nodes.AddRange(FindObjectsByType<SpawnNode>(FindObjectsSortMode.None));
+
+        shuffled.AddRange(nodes);
+        modeTimer = relaxTime;
+        tick = tickInterval;
     }
 
-    private void Update()
+    void Update()
     {
-        if (player == null || nodes.Count == 0) return;
+        if (!player || nodes.Count == 0) return;
 
-        // mode timer
-        _modeTimer -= Time.deltaTime;
-        if (_modeTimer <= 0f)
+        if ((modeTimer -= Time.deltaTime) <= 0f)
         {
-            _mode = _mode == Mode.Relax ? Mode.Peak : Mode.Relax;
-            _modeTimer = _mode == Mode.Relax ? relaxSeconds : peakSeconds;
+            mode = mode == Mode.Relax ? Mode.Peak : Mode.Relax;
+            modeTimer = mode == Mode.Relax ? relaxTime : peakTime;
         }
 
-        // tick
-        _tick -= Time.deltaTime;
-        if (_tick > 0f) return;
-        _tick = tickInterval;
+        if ((tick -= Time.deltaTime) > 0f) return;
+        tick = tickInterval;
 
         if (EnemyMovement.AliveCount >= maxEnemies) return;
 
-        int budget = _mode == Mode.Peak ? budgetPerTickPeak : budgetPerTickRelax;
+        int budget = mode == Mode.Peak ? peakBudget : relaxBudget;
         if (budget <= 0) return;
 
-        // försök spawna från några noder per tick
-        // (random ordning)
-        for (int i = 0; i < nodes.Count && budget > 0; i++)
+        // uppdatera node-cykler bara vid tick
+        for (int i = 0; i < nodes.Count; i++)
+            nodes[i].TickNode(tickInterval);
+
+        ShuffleNodes();
+
+        // testa varje node max en gång per tick
+        for (int i = 0; i < shuffled.Count && budget > 0; i++)
         {
-            var node = nodes[Random.Range(0, nodes.Count)];
-            budget -= node.TrySpawn(player, cam, budget);
+            int spent = shuffled[i].TrySpawn(player, cam, budget);
+            if (spent > 0)
+                budget -= spent;
+        }
+    }
+
+    void ShuffleNodes()
+    {
+        for (int i = shuffled.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            (shuffled[i], shuffled[j]) = (shuffled[j], shuffled[i]);
         }
     }
 }
