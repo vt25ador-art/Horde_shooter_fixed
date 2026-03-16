@@ -9,6 +9,7 @@ public class DoorUnlockByKills : MonoBehaviour
     [SerializeField] private bool destroyDoorOnUnlock = false;
 
     private bool unlocked;
+    public bool IsUnlocked => unlocked;
 
     private void Awake()
     {
