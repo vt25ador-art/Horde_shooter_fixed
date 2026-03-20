@@ -28,6 +28,8 @@ public class SpawnDirector : MonoBehaviour
 
     readonly List<SpawnNode> shuffled = new();
 
+    private float activationDistanceSqr;
+
     void Awake()
     {
         player ??= GameObject.FindWithTag("Player")?.transform;
