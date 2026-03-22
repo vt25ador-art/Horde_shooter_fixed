@@ -86,6 +86,17 @@ public class SpawnNode : MonoBehaviour
         return count;
     }
 
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, minDist);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, maxDist);
+    }
+
+
     bool IsVisible(Camera cam)
     {
         Vector3 v = cam.WorldToViewportPoint(transform.position);

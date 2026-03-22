@@ -3,32 +3,34 @@ using UnityEngine;
 
 public class SpawnDirector : MonoBehaviour
 {
-    [SerializeField] Transform player;
-    [SerializeField] Camera cam;
+    [SerializeField] private Transform player;
+    [SerializeField] private Camera cam;
 
     [Header("Limits")]
-    [SerializeField] int maxEnemies = 50;
+    [SerializeField] private int maxEnemies = 50;
 
     [Header("Timing")]
-    [SerializeField] float relaxTime = 8f;
-    [SerializeField] float peakTime = 14f;
-    [SerializeField] float tickInterval = 1f;
+    [SerializeField] private float relaxTime = 8f;
+    [SerializeField] private float peakTime = 14f;
+    [SerializeField] private float tickInterval = 1f;
 
     [Header("Budget")]
-    [SerializeField] int relaxBudget = 0;
-    [SerializeField] int peakBudget = 6;
+    [SerializeField] private int relaxBudget = 0;
+    [SerializeField] private int peakBudget = 6;
 
-    [SerializeField] List<SpawnNode> nodes = new();
+    [Header("Global Spawn Distance")]
+    [SerializeField] private float maxNodeCheckDistance = 30f;
 
-    enum Mode { Relax, Peak }
+    [SerializeField] private List<SpawnNode> nodes = new();
 
-    Mode mode;
-    float modeTimer;
-    float tick;
+    private enum Mode { Relax, Peak }
 
-    readonly List<SpawnNode> shuffled = new();
+    private Mode mode;
+    private float modeTimer;
+    private float tick;
 
-    private float activationDistanceSqr;
+    private readonly List<SpawnNode> shuffled = new();
+    private float maxNodeCheckDistanceSqr;
 
     void Awake()
     {
@@ -36,15 +38,14 @@ public class SpawnDirector : MonoBehaviour
         cam ??= Camera.main;
 
         if (nodes.Count == 0)
-            // Replace this line:
-            // nodes.AddRange(FindObjectsByType<SpawnNode>());
-
-            // With the following line:
             nodes.AddRange(FindObjectsByType<SpawnNode>(FindObjectsSortMode.None));
 
         shuffled.AddRange(nodes);
+
         modeTimer = relaxTime;
         tick = tickInterval;
+
+        maxNodeCheckDistanceSqr = maxNodeCheckDistance * maxNodeCheckDistance;
     }
 
     void Update()
@@ -65,15 +66,19 @@ public class SpawnDirector : MonoBehaviour
         int budget = mode == Mode.Peak ? peakBudget : relaxBudget;
         if (budget <= 0) return;
 
-        // uppdatera node-cykler bara vid tick
         for (int i = 0; i < nodes.Count; i++)
             nodes[i].TickNode(tickInterval);
 
         ShuffleNodes();
 
-        // testa varje node max en gång per tick
         for (int i = 0; i < shuffled.Count && budget > 0; i++)
         {
+            if (shuffled[i] == null) continue;
+
+            Vector2 diff = shuffled[i].transform.position - player.position;
+            if (diff.sqrMagnitude > maxNodeCheckDistanceSqr)
+                continue;
+
             int spent = shuffled[i].TrySpawn(player, cam, budget);
             if (spent > 0)
                 budget -= spent;
