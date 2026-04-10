@@ -23,6 +23,7 @@ public class SpawnDirector : MonoBehaviour
 
     [SerializeField] private List<SpawnNode> nodes = new();
 
+    //ett läge som växlar mellan "relax" och "peak", där relax är lugnare med mindre budget och peak är intensivare med mer budget
     private enum Mode { Relax, Peak }
 
     private Mode mode;
@@ -50,8 +51,10 @@ public class SpawnDirector : MonoBehaviour
 
     void Update()
     {
+        //om player är null eller inga noder finns så gör inget
         if (!player || nodes.Count == 0) return;
 
+        //om mode timer är mindre eller lika med 0 så byt mode och sätt timer till rätt tid
         if ((modeTimer -= Time.deltaTime) <= 0f)
         {
             mode = mode == Mode.Relax ? Mode.Peak : Mode.Relax;
@@ -63,6 +66,7 @@ public class SpawnDirector : MonoBehaviour
 
         if (EnemyMovement.AliveCount >= maxEnemies) return;
 
+        //budget är hur mycket "kostnad" vi har för att spawna fiender i det här ticket, det bestäms av vilket mode vi är i
         int budget = mode == Mode.Peak ? peakBudget : relaxBudget;
         if (budget <= 0) return;
 

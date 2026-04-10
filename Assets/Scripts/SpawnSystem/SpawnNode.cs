@@ -89,6 +89,7 @@ public class SpawnNode : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        //debug i editor som visar spawnområdet med två sfärer, en gul för minDist och en röd för maxDist
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, minDist);
 
@@ -99,6 +100,7 @@ public class SpawnNode : MonoBehaviour
 
     bool IsVisible(Camera cam)
     {
+        //är den synlig i kameran? Vi kollar det genom att konvertera spawn nodens position till viewport coordinates, där x och y mellan 0 och 1 betyder att den är inom skärmen, och z > 0 betyder att den är framför kameran.
         Vector3 v = cam.WorldToViewportPoint(transform.position);
         return v.z > 0f && v.x > 0f && v.x < 1f && v.y > 0f && v.y < 1f;
     }

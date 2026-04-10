@@ -88,6 +88,8 @@ public class EnemyMovement : MonoBehaviour
 
     private void UpdateTargetDirection()
     {
+
+        //denna kan laggar lite, så vi gör den i FixedUpdate och inte varje frame i Update. Den räknar ut en önskad riktning baserat på om fienden är medveten om spelaren, separation från andra fiender och lite noise för att göra rörelsen mindre förutsägbar.
         Vector2 desire = Vector2.zero;
 
         if (_aw != null && _aw.AwarePlayer)
@@ -106,10 +108,13 @@ public class EnemyMovement : MonoBehaviour
 
     private Vector2 ComputeSeparation()
     {
+        //om compute separation är aktiverat, kolla efter närliggande fiender och räkna ut en riktning bort från dem
         int count = Physics2D.OverlapCircleNonAlloc(_rb.position, _neighborRange, _hits, _enemyMask);
         Vector2 sep = Vector2.zero;
         int considered = 0;
 
+
+        //för varje träff, kolla om det är en annan fiende (inte sig själv) och räkna ut en riktning bort från den baserat på avståndet
         for (int i = 0; i < count; i++)
         {
             var c = _hits[i];
@@ -125,6 +130,8 @@ public class EnemyMovement : MonoBehaviour
             sep += diff / sq;
             considered++;
         }
+
+        //om considered > 0, ta medelvärdet av separationen och klampa den till max 1 för att inte överdriva
 
         if (considered > 0)
         {
@@ -148,6 +155,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (_targetDir.sqrMagnitude <= 1e-6f) return;
 
+        //float nära 0 => ingen riktning, så hoppa över rotationen för att undvika jitter
         float targetAngle = Mathf.Atan2(_targetDir.y, _targetDir.x) * Mathf.Rad2Deg - 90f;
         float newAngle = Mathf.MoveTowardsAngle(_rb.rotation, targetAngle, _rotationSpeed * Time.fixedDeltaTime);
         _rb.MoveRotation(newAngle);
@@ -155,6 +163,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void ApplyVelocity()
     {
+        //ska vi ha velocity? Om targetDir är nästan 0, sätt velocity till 0 för att undvika att glida runt
         if (_targetDir.sqrMagnitude <= 1e-6f)
         {
             _rb.linearVelocity = Vector2.zero;
@@ -178,6 +187,8 @@ public class EnemyMovement : MonoBehaviour
 
     public void Shove(Vector2 force, float stunTime)
     {
+
+        //publik shove variant som kan kallas av andra skript för att applicera en kraft på fienden och stunna den i en viss tid
         _rb.AddForce(force, ForceMode2D.Impulse);
         _StunTimer = stunTime;
     }
@@ -192,6 +203,7 @@ public class EnemyMovement : MonoBehaviour
 
     IEnumerator StunRoutine(float time)
     {
+        //stun fienden i en viss tid genom att inaktivera movement-komponenten
         enabled = false;
         yield return new WaitForSeconds(2);
         enabled = true;
