@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 17869104}
   - component: {fileID: 17869105}
   m_Layer: 0
-  m_Name: EnemySpawner (23)
+  m_Name: WanderSpawner08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 17869103}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 126.8, y: 28.5, z: -0.45}
+  m_LocalPosition: {x: 127.61, y: 28.5, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 110117388}
   - component: {fileID: 110117389}
   m_Layer: 0
-  m_Name: EnemySpawner (28)
+  m_Name: WanderSpawner01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,8 +320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 8727671323915685619, guid: 34681049df75d4143a0d86e9a0d0af6e, type: 3}
   requiredDoor: {fileID: 0}
-  activeFor: 12
-  disabledFor: 10
+  activeFor: 10
+  disabledFor: 200
   minDist: 10
   maxDist: 10
   requireNotVisible: 1
@@ -775,7 +775,7 @@ Transform:
   m_GameObject: {fileID: 203403858}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.9, y: 60.89, z: -0.45}
+  m_LocalPosition: {x: 31.4, y: 66.1, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1371,7 +1371,7 @@ Transform:
   m_GameObject: {fileID: 279545348}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.7, y: 33.9, z: -0.45}
+  m_LocalPosition: {x: 35.7, y: 33.9, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1713,6 +1713,59 @@ MonoBehaviour:
     spreadDegrees: 0
   poolDefaultCapacity: 32
   poolMaxSize: 256
+--- !u!1 &358195480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 358195481}
+  - component: {fileID: 358195482}
+  m_Layer: 0
+  m_Name: WanderSpawner01 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &358195481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358195480}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.33, y: -44.35, z: -0.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 627902953}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &358195482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358195480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249c2bcef199f74498c377f087432e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 8727671323915685619, guid: 34681049df75d4143a0d86e9a0d0af6e, type: 3}
+  requiredDoor: {fileID: 0}
+  activeFor: 10
+  disabledFor: 200
+  minDist: 10
+  maxDist: 10
+  requireNotVisible: 1
+  burstMin: 1
+  burstMax: 2
 --- !u!1 &391963496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,7 +1894,7 @@ Transform:
   m_GameObject: {fileID: 428714753}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 101.83, y: 10.1, z: -0.45}
+  m_LocalPosition: {x: 143.3, y: 18.5, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2192,6 +2245,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &542368955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542368956}
+  - component: {fileID: 542368957}
+  m_Layer: 0
+  m_Name: EnemySpawner (30)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &542368956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542368955}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.5, y: -44.35, z: -0.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 627902953}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &542368957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542368955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249c2bcef199f74498c377f087432e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 2469920286554820205, guid: 1526cb2c1c6c1744a997df3b311d0e85, type: 3}
+  requiredDoor: {fileID: 0}
+  activeFor: 12
+  disabledFor: 10
+  minDist: 20
+  maxDist: 20
+  requireNotVisible: 1
+  burstMin: 1
+  burstMax: 2
 --- !u!1 &545729391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,7 +2802,6 @@ Transform:
   - {fileID: 1552618219}
   - {fileID: 203403860}
   - {fileID: 641106857}
-  - {fileID: 1175049282}
   - {fileID: 1826554173}
   - {fileID: 1872238482}
   - {fileID: 1561778332}
@@ -2705,10 +2810,12 @@ Transform:
   - {fileID: 428714754}
   - {fileID: 17869104}
   - {fileID: 1932228143}
-  - {fileID: 1720541430}
   - {fileID: 887810077}
   - {fileID: 1175269761}
+  - {fileID: 1645338978}
   - {fileID: 110117388}
+  - {fileID: 358195481}
+  - {fileID: 542368956}
   - {fileID: 2130238832}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2813,7 +2920,7 @@ Transform:
   m_GameObject: {fileID: 641106856}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.2, y: 63.1, z: -0.45}
+  m_LocalPosition: {x: 2.7, y: 63.1, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3586,7 +3693,7 @@ GameObject:
   - component: {fileID: 887810077}
   - component: {fileID: 887810078}
   m_Layer: 0
-  m_Name: EnemySpawner (26)
+  m_Name: HordeSpawner03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4395,7 +4502,7 @@ Transform:
   m_GameObject: {fileID: 1042746879}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.8, y: -0.9, z: -0.45}
+  m_LocalPosition: {x: 22, y: -2.2, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4448,7 +4555,7 @@ Transform:
   m_GameObject: {fileID: 1121265244}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 148.2, y: 38.37, z: -0.45}
+  m_LocalPosition: {x: 112.4, y: 29.5, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4601,59 +4708,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1175049281
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1175049282}
-  - component: {fileID: 1175049283}
-  m_Layer: 0
-  m_Name: EnemySpawner (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1175049282
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175049281}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.01, y: 39.2, z: -0.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 627902953}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1175049283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1175049281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 249c2bcef199f74498c377f087432e3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8727671323915685619, guid: 34681049df75d4143a0d86e9a0d0af6e, type: 3}
-  requiredDoor: {fileID: 547608189}
-  activeFor: 12
-  disabledFor: 10
-  minDist: 15
-  maxDist: 20
-  requireNotVisible: 1
-  burstMin: 1
-  burstMax: 2
 --- !u!1 &1175269760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4665,7 +4719,7 @@ GameObject:
   - component: {fileID: 1175269761}
   - component: {fileID: 1175269762}
   m_Layer: 0
-  m_Name: EnemySpawner (27)
+  m_Name: HordeSpawner01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5619,7 +5673,7 @@ Transform:
   m_GameObject: {fileID: 1552618216}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.1, y: 32.9, z: -0.45}
+  m_LocalPosition: {x: 0.1, y: 52.5, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5651,7 +5705,7 @@ Transform:
   m_GameObject: {fileID: 1561778331}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 147.1, y: 90.4, z: -0.45}
+  m_LocalPosition: {x: 106.7, y: 53.4, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5709,6 +5763,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 353292390}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1645338977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645338978}
+  - component: {fileID: 1645338979}
+  m_Layer: 0
+  m_Name: HordeSpawner02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1645338978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645338977}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.7, y: -55.5, z: -0.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 627902953}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645338979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645338977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249c2bcef199f74498c377f087432e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 2469920286554820205, guid: 760655e599c3a0f41a96387973601810, type: 3}
+  requiredDoor: {fileID: 0}
+  activeFor: 12
+  disabledFor: 10
+  minDist: 20
+  maxDist: 25
+  requireNotVisible: 1
+  burstMin: 1
+  burstMax: 2
 --- !u!1 &1705569806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5843,59 +5950,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1720541429
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1720541430}
-  - component: {fileID: 1720541431}
-  m_Layer: 0
-  m_Name: EnemySpawner (25)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1720541430
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720541429}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -41.02, y: -54.9, z: -0.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 627902953}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1720541431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720541429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 249c2bcef199f74498c377f087432e3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8727671323915685619, guid: 34681049df75d4143a0d86e9a0d0af6e, type: 3}
-  requiredDoor: {fileID: 0}
-  activeFor: 12
-  disabledFor: 10
-  minDist: 20
-  maxDist: 25
-  requireNotVisible: 1
-  burstMin: 1
-  burstMax: 2
 --- !u!1 &1720879313
 GameObject:
   m_ObjectHideFlags: 0
@@ -272497,7 +272551,7 @@ Transform:
   m_GameObject: {fileID: 1755734413}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 142.8, y: 48.4, z: -0.45}
+  m_LocalPosition: {x: 134.3, y: 61.8, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -272637,7 +272691,7 @@ Transform:
   m_GameObject: {fileID: 1872238481}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 107.1, y: 60.5, z: -0.45}
+  m_LocalPosition: {x: 67.3, y: 56, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -336358,7 +336412,7 @@ GameObject:
   - component: {fileID: 1932228143}
   - component: {fileID: 1932228144}
   m_Layer: 0
-  m_Name: EnemySpawner (24)
+  m_Name: HordeSpawner04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -336426,7 +336480,7 @@ Transform:
   m_GameObject: {fileID: 1932490400}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.93, y: -1.6, z: -0.45}
+  m_LocalPosition: {x: 42, y: 10.3, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
