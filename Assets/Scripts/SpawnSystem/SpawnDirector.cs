@@ -30,12 +30,15 @@ public class SpawnDirector : MonoBehaviour
     private float modeTimer;
     private float tick;
 
+    //spawnnoderna shufflas varje tick för att få en mer dynamisk och oförutsägbar spawnning, istället för att alltid kolla noderna i samma ordning
     private readonly List<SpawnNode> shuffled = new();
     private float maxNodeCheckDistanceSqr;
 
     void Awake()
     {
         player ??= GameObject.FindWithTag("Player")?.transform;
+
+        //kameran sätts till main camera om den inte är satt i editorn
         cam ??= Camera.main;
 
         if (nodes.Count == 0)
@@ -43,6 +46,7 @@ public class SpawnDirector : MonoBehaviour
 
         shuffled.AddRange(nodes);
 
+        //mode timer startar i relax mode
         modeTimer = relaxTime;
         tick = tickInterval;
 
@@ -77,8 +81,10 @@ public class SpawnDirector : MonoBehaviour
 
         for (int i = 0; i < shuffled.Count && budget > 0; i++)
         {
+            //om noden är null så hoppa över den
             if (shuffled[i] == null) continue;
 
+            //vector2 diff är skillnaden i position mellan noden och player, om den är större än maxNodeCheckDistance så hoppa över noden
             Vector2 diff = shuffled[i].transform.position - player.position;
             if (diff.sqrMagnitude > maxNodeCheckDistanceSqr)
                 continue;
@@ -91,6 +97,8 @@ public class SpawnDirector : MonoBehaviour
 
     void ShuffleNodes()
     {
+        //shufflenoden i listan "shuffled" med Fisher-Yates algoritmen för att få en slumpmässig ordning varje tick,
+        //fisher yates är en effektiv algoritm för att slumpa ordningen på en lista utan bias
         for (int i = shuffled.Count - 1; i > 0; i--)
         {
             int j = Random.Range(0, i + 1);

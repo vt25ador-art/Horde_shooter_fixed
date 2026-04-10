@@ -44,6 +44,7 @@ public class SpawnNode : MonoBehaviour
 
     void CacheDistances()
     {
+        //validera att minDist och maxDist är inte negativa och att maxDist är inte mindre än minDist, och cachea deras kvadrater för att optimera avståndsberäkningarna i TrySpawn
         minDist = Mathf.Max(0f, minDist);
         maxDist = Mathf.Max(minDist, maxDist);
         minDistSqr = minDist * minDist;
@@ -52,6 +53,7 @@ public class SpawnNode : MonoBehaviour
 
     public void TickNode(float dt)
     {
+        //publik tick som kallas av SpawnDirector varje frame för att uppdatera nodens timer och växla mellan active och inactive när timer når 0
         timer -= dt;
         if (timer > 0f) return;
 
@@ -61,6 +63,7 @@ public class SpawnNode : MonoBehaviour
 
     public int TrySpawn(Transform player, Camera cam, int budgetLeft)
     {
+        //testa spawnlogiken och returnera antalet fiender som spawnades, eller 0 om inga spawnades. Vi kollar först om noden är aktiv, sen om prefab, player och budget är giltiga, sen om dörren krävs och inte är upplåst, sen avståndet till spelaren, och slutligen om den inte får vara synlig i kameran.
         if (!active) return 0;
         if (enemyPrefab == null || player == null || budgetLeft <= 0) return 0;
 
@@ -74,9 +77,11 @@ public class SpawnNode : MonoBehaviour
         if (distSqr < minDistSqr || distSqr > maxDistSqr)
             return 0;
 
+        //denna är valfri eftersom det kan vara frustrerande att spawnas på
         if (requireNotVisible && cam != null && IsVisible(cam))
             return 0;
 
+        //int count är ett slumpmässigt tal mellan burstMin och burstMax
         int count = Mathf.Min(Random.Range(burstMin, burstMax + 1), budgetLeft);
         Vector3 pos = transform.position;
 
