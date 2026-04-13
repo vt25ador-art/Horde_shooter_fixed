@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32acd85d8a814f43a861ee082fa839b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  awarenessDistance: 50
+  awarenessDistance: 100
   wallLayer:
     serializedVersion: 2
     m_Bits: 264
