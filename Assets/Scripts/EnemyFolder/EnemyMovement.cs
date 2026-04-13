@@ -89,7 +89,7 @@ public class EnemyMovement : MonoBehaviour
     private void UpdateTargetDirection()
     {
 
-        //denna kan laggar lite, så vi gör den i FixedUpdate och inte varje frame i Update. Den räknar ut en önskad riktning baserat på om fienden är medveten om spelaren, separation från andra fiender och lite noise för att göra rörelsen mindre förutsägbar.
+        //denna kan lagga lite, så vi gör den i FixedUpdate och inte varje frame i Update. Den räknar ut en önskad riktning baserat på om fienden är medveten om spelaren, separation från andra fiender och lite noise för att göra rörelsen mindre förutsägbar.
         Vector2 desire = Vector2.zero;
 
         if (_aw != null && _aw.AwarePlayer)
