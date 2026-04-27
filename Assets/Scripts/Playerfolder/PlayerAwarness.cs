@@ -1,51 +1,94 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerAwarness : MonoBehaviour
 {
-    [SerializeField] float awarenessDistance = 12f;
+    public enum AwarenessMode
+    {
+        DistanceAndLineOfSight,
+        AlwaysAware
+    }
 
-    //lager för att specificera vilka lager som räknas som väggar i raycasten
-    [SerializeField] LayerMask wallLayer;
-    [SerializeField] Transform player;
+    [Header("Mode")]
+    [SerializeField] private AwarenessMode awarenessMode = AwarenessMode.DistanceAndLineOfSight;
+
+    [Header("Detection")]
+    [SerializeField] private float awarenessDistance = 12f;
+    [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private Transform player;
 
     public bool AwarePlayer { get; private set; }
     public Vector2 DirectionToPlayer { get; private set; }
     public float DistanceToPlayer { get; private set; }
 
-    float distSqr;
+    private float awarenessDistanceSqr;
 
-    void Awake()
+    private void Awake()
     {
-        //om player inte är satt i inspektorn, försök hitta den via taggen "Player"
-        if (!player)
-            player = GameObject.FindWithTag("Player")?.transform;
-
-        // beräkna kvadraten av medvetandeavståndet för att undvika att behöva använda Mathf.Sqrt i Update
-        distSqr = awarenessDistance * awarenessDistance;
+        CacheValues();
+        FindPlayerIfNeeded();
     }
 
-    void Update()
+    private void OnValidate()
     {
-        if (!player) return;
+        CacheValues();
+    }
 
-        //vector från fienden till spelaren
+    private void Update()
+    {
+        if (player == null)
+        {
+            FindPlayerIfNeeded();
+
+            if (player == null)
+            {
+                AwarePlayer = false;
+                DirectionToPlayer = Vector2.zero;
+                DistanceToPlayer = 0f;
+                return;
+            }
+        }
+
         Vector2 toPlayer = player.position - transform.position;
-        float sqr = toPlayer.sqrMagnitude;
+        float sqrDistance = toPlayer.sqrMagnitude;
 
-        //direktion och avstånd till spelaren
-        DirectionToPlayer = toPlayer.normalized;
-        DistanceToPlayer = Mathf.Sqrt(sqr);
+        DistanceToPlayer = Mathf.Sqrt(sqrDistance);
+        DirectionToPlayer = sqrDistance > 0.0001f ? toPlayer / DistanceToPlayer : Vector2.zero;
 
-        //aware om spelaren är inom medvetandeavståndet och det inte finns några väggar i vägen
-        AwarePlayer = sqr <= distSqr &&
-                      !Physics2D.Raycast(transform.position, DirectionToPlayer, DistanceToPlayer, wallLayer);
+        if (awarenessMode == AwarenessMode.AlwaysAware)
+        {
+            AwarePlayer = true;
+            return;
+        }
+
+        if (sqrDistance > awarenessDistanceSqr)
+        {
+            AwarePlayer = false;
+            return;
+        }
+
+        bool blockedByWall = Physics2D.Raycast(
+            transform.position,
+            DirectionToPlayer,
+            DistanceToPlayer,
+            wallLayer
+        );
+
+        AwarePlayer = !blockedByWall;
     }
 
-    void OnValidate()
+    private void FindPlayerIfNeeded()
     {
-        //validera att medvetandeavståndet är inte negativt och uppdatera den kvadrerade distansen
+        if (player != null) return;
+
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+
+        if (playerObject != null)
+            player = playerObject.transform;
+    }
+
+    private void CacheValues()
+    {
         awarenessDistance = Mathf.Max(0f, awarenessDistance);
-        distSqr = awarenessDistance * awarenessDistance;
+        awarenessDistanceSqr = awarenessDistance * awarenessDistance;
     }
 }

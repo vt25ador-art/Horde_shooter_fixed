@@ -7,7 +7,7 @@ public class HordeEventController : MonoBehaviour
     [SerializeField] private SpawnNode[] hordeNodes;
 
     [Header("Gate")]
-    [SerializeField] private DoorCheckpoint(4) gateToOpen;
+    [SerializeField] private DoorOpen gateToOpen;
 
     [Header("Rules")]
     [SerializeField] private float eventDuration = 20f;
