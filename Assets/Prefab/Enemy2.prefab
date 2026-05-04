@@ -105,7 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32acd85d8a814f43a861ee082fa839b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  awarenessDistance: 100
+  awarenessMode: 0
+  awarenessDistance: 10
   wallLayer:
     serializedVersion: 2
     m_Bits: 264
@@ -152,19 +153,19 @@ MonoBehaviour:
   Wall:
     serializedVersion: 2
     m_Bits: 2320
-  _speed: 6
+  _speed: 5
   _rotationSpeed: 540
   _boostStartDistance: 7
   _stopDistance: 0.9
   _maxBoost: 1.5
   _steerNoiseStrength: 0.25
-  _steerNoiseSpeed: 1.2
+  _steerNoiseSpeed: 1
   _neighborRange: 1.5
   _seperationStrength: 1
   _maxNeighbors: 8
   _enemyMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!61 &6605076571057035400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -223,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c630bd778a9d144e9dd0222926fa72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damageAmount: 0.5
+  _damageAmount: 2
 --- !u!114 &3904418198404714943
 MonoBehaviour:
   m_ObjectHideFlags: 0
