@@ -30,7 +30,18 @@ public class SpawnNode : MonoBehaviour
     private float minDistSqr;
     private float maxDistSqr;
 
-    public bool IsActive => forcedActive || active;
+    //public bool IsActive => forcedActive || active;
+
+    public bool isActive
+    {
+        get
+        {
+            if (isHordeNode)
+                return forcedActive;
+            return active;
+        }
+    }
+
     public bool IsHordeNode => isHordeNode;
     public bool ForcedActive => forcedActive;
 
@@ -90,7 +101,7 @@ public class SpawnNode : MonoBehaviour
 
     public int TrySpawn(Transform player, Camera cam, int budgetLeft)
     {
-        if (!IsActive)
+        if (!isActive)
             return 0;
 
         if (enemyPrefabs == null || enemyPrefabs.Length == 0)

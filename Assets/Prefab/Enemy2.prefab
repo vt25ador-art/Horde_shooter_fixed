@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   awarenessMode: 0
-  awarenessDistance: 10
+  awarenessDistance: 15
   wallLayer:
     serializedVersion: 2
     m_Bits: 264
