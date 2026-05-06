@@ -27,6 +27,8 @@ public class SpawnNode : MonoBehaviour
     private bool active = true;
     private bool forcedActive;
 
+    private bool spawnDisabled;
+
     private float minDistSqr;
     private float maxDistSqr;
 
@@ -36,8 +38,10 @@ public class SpawnNode : MonoBehaviour
     {
         get
         {
+            if (spawnDisabled)
+                return false;
             if (isHordeNode)
-                return forcedActive;
+            return forcedActive;
             return active;
         }
     }
@@ -155,6 +159,23 @@ public class SpawnNode : MonoBehaviour
                viewportPoint.y > 0f &&
                viewportPoint.y < 1f;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+            return;
+
+        DisableSpawnIfNormalNode(); 
+    }
+
+    private void DisableSpawnIfNormalNode()
+    {
+        if (isHordeNode)
+            return;
+        spawnDisabled = true;
+        active = false;
+    }
+
 
     private void OnDrawGizmosSelected()
     {

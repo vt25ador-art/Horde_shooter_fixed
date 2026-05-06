@@ -18,6 +18,7 @@ public class HordeEventController : MonoBehaviour
     [SerializeField] private bool useMaxDurationEvenWithKillTarget = true;
     [SerializeField] private float maxDurationWithKillTarget = 60f;
 
+
     private bool eventRunning;
     private int currentKills;
     private Coroutine eventRoutine;
