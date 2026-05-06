@@ -18,6 +18,9 @@ public class HordeEventController : MonoBehaviour
     [SerializeField] private bool useMaxDurationEvenWithKillTarget = true;
     [SerializeField] private float maxDurationWithKillTarget = 60f;
 
+    [Header("After Event")]
+    [SerializeField] private SpawnNode[] normalNodesToEnableAfterEvent;
+
 
     private bool eventRunning;
     private int currentKills;
@@ -75,6 +78,8 @@ public class HordeEventController : MonoBehaviour
     {
         SetHordeNodesActive(false);
 
+        EnableNormalNodeAfterEvent();
+
         if (gateToOpen != null)
             gateToOpen.OpenDoor();
 
@@ -91,6 +96,18 @@ public class HordeEventController : MonoBehaviour
         {
             if (hordeNodes[i] != null)
                 hordeNodes[i].SetForcedActive(state);
+        }
+    }
+
+    private void EnableNormalNodeAfterEvent()
+    {
+        if (normalNodesToEnableAfterEvent == null)
+            return;
+        for (int i = 0; i < normalNodesToEnableAfterEvent.Length; i++)
+        {
+            if (normalNodesToEnableAfterEvent[i] != null && !normalNodesToEnableAfterEvent[i].IsHordeNode)
+                normalNodesToEnableAfterEvent[i].EnableSpawn();
+
         }
     }
 

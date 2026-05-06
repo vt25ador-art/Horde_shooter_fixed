@@ -176,6 +176,16 @@ public class SpawnNode : MonoBehaviour
         active = false;
     }
 
+    public void EnableSpawn()
+    {
+        if (isHordeNode)
+            return;
+
+        spawnDisabled = false;
+        active = true;
+        timer = activeFor;
+    }
+
 
     private void OnDrawGizmosSelected()
     {
