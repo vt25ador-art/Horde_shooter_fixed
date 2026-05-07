@@ -18,6 +18,8 @@ public class HordeEventController : MonoBehaviour
     [SerializeField] private bool useMaxDurationEvenWithKillTarget = true;
     [SerializeField] private float maxDurationWithKillTarget = 60f;
 
+
+    //normal node to enable after event.
     [Header("After Event")]
     [SerializeField] private SpawnNode[] normalNodesToEnableAfterEvent;
 
