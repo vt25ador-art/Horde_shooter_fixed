@@ -152,9 +152,9 @@ MonoBehaviour:
   gateToOpen: {fileID: 19732816}
   eventDuration: 2
   useKillTarget: 0
-  killsRequired: 50
+  killsRequired: 20
   useMaxDurationEvenWithKillTarget: 1
-  maxDurationWithKillTarget: 60
+  maxDurationWithKillTarget: 30
   normalNodesToEnableAfterEvent: []
 --- !u!4 &2514939
 Transform:
