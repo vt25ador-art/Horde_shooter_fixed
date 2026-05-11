@@ -109,7 +109,7 @@ MonoBehaviour:
   awarenessDistance: 100
   wallLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   player: {fileID: 0}
 --- !u!50 &8932013995898944443
 Rigidbody2D:
