@@ -28048,7 +28048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -505.7, y: -513.03}
+  m_AnchoredPosition: {x: -505.7, y: -502.7}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &898283460
@@ -28411,7 +28411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bb1a540302cbb4282c430486ca5618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 8
+  _speed: 4.2
   _rotationSpeed: 720
 --- !u!114 &935556622
 MonoBehaviour:
