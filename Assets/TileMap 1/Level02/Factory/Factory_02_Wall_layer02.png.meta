@@ -1,0 +1,7045 @@
+fileFormatVersion: 2
+guid: a00e272643a04e9458312f955850b7f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3933422471700788634
+    second: Factory_02_Wall_layer02_0
+  - first:
+      213: -8912764082580193004
+    second: Factory_02_Wall_layer02_1
+  - first:
+      213: -2184466424744987362
+    second: Factory_02_Wall_layer02_2
+  - first:
+      213: -1244566767145396812
+    second: Factory_02_Wall_layer02_3
+  - first:
+      213: 2965225724415238576
+    second: Factory_02_Wall_layer02_4
+  - first:
+      213: -4953261544763246323
+    second: Factory_02_Wall_layer02_5
+  - first:
+      213: -5948021350693061427
+    second: Factory_02_Wall_layer02_6
+  - first:
+      213: -665260083284615476
+    second: Factory_02_Wall_layer02_7
+  - first:
+      213: -3750933501250497734
+    second: Factory_02_Wall_layer02_8
+  - first:
+      213: 5111890836697725260
+    second: Factory_02_Wall_layer02_9
+  - first:
+      213: -198254764104532880
+    second: Factory_02_Wall_layer02_10
+  - first:
+      213: -8790712132950180762
+    second: Factory_02_Wall_layer02_11
+  - first:
+      213: -8522538347651461353
+    second: Factory_02_Wall_layer02_12
+  - first:
+      213: 518825887794913371
+    second: Factory_02_Wall_layer02_13
+  - first:
+      213: 482401376998804310
+    second: Factory_02_Wall_layer02_14
+  - first:
+      213: 3868321204456027661
+    second: Factory_02_Wall_layer02_15
+  - first:
+      213: -2879195682453152961
+    second: Factory_02_Wall_layer02_16
+  - first:
+      213: 5370885736201804500
+    second: Factory_02_Wall_layer02_17
+  - first:
+      213: 781649302766161769
+    second: Factory_02_Wall_layer02_18
+  - first:
+      213: 833992199846463750
+    second: Factory_02_Wall_layer02_19
+  - first:
+      213: 6081796152330771044
+    second: Factory_02_Wall_layer02_20
+  - first:
+      213: -5958263877923325893
+    second: Factory_02_Wall_layer02_21
+  - first:
+      213: 4603083837304233376
+    second: Factory_02_Wall_layer02_22
+  - first:
+      213: -6767915723724715223
+    second: Factory_02_Wall_layer02_23
+  - first:
+      213: 4860299274105570185
+    second: Factory_02_Wall_layer02_24
+  - first:
+      213: 4634631883804634958
+    second: Factory_02_Wall_layer02_25
+  - first:
+      213: 818540199214016868
+    second: Factory_02_Wall_layer02_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a4cb62a1da969c0800000000000000
+      internalID: -3933422471700788634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41182fae9408f4480800000000000000
+      internalID: -8912764082580193004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15be494c573fa1e0800000000000000
+      internalID: -2184466424744987362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5da098e196abee0800000000000000
+      internalID: -1244566767145396812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1ee9ef519962920800000000000000
+      internalID: 2965225724415238576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09b8c85eda724bb0800000000000000
+      internalID: -4953261544763246323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc30837812647da0800000000000000
+      internalID: -5948021350693061427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cced29c9a7584c6f0800000000000000
+      internalID: -665260083284615476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_8
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a331ad99ad102fbc0800000000000000
+      internalID: -3750933501250497734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4931fbc1a511f640800000000000000
+      internalID: 5111890836697725260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c358aa758af3df0800000000000000
+      internalID: -198254764104532880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cb9c8e3ed110680800000000000000
+      internalID: -8790712132950180762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_12
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f0793f68cd9b980800000000000000
+      internalID: -8522538347651461353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_13
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50ea46656d333700800000000000000
+      internalID: 518825887794913371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_14
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b4c2b1f75d1b600800000000000000
+      internalID: 482401376998804310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_15
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0676b4e3a90fa530800000000000000
+      internalID: 3868321204456027661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_16
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b9a8c08ca0b08d0800000000000000
+      internalID: -2879195682453152961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_17
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da5583fe18398a40800000000000000
+      internalID: 5370885736201804500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_18
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f0f4646e9f8da00800000000000000
+      internalID: 781649302766161769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_19
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6098b41bc7fe29b00800000000000000
+      internalID: 833992199846463750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_20
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a5308b061e66450800000000000000
+      internalID: 6081796152330771044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38b65e329eff4da0800000000000000
+      internalID: -5958263877923325893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_22
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad5cd1ac5071ef30800000000000000
+      internalID: 4603083837304233376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_23
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1026
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b8b99d1888312a0800000000000000
+      internalID: -6767915723724715223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983c6275070437340800000000000000
+      internalID: 4860299274105570185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_25
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fefda9425815040800000000000000
+      internalID: 4634631883804634958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469678079f90c5b00800000000000000
+      internalID: 818540199214016868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_27
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8dd98fef1647c4c8d7709953a899d4
+      internalID: 1974046241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8ea36a6383d094b95f74c84e74f692
+      internalID: 1240460383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_29
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f041fa6d5968574fa41bec92abaa04d
+      internalID: -1888987956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_30
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e8f3970a9203e49888f0bb9669cd19
+      internalID: -1226317259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_31
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c744e906efd6ec49817ab85d6883723
+      internalID: 870831229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f978e7e7c9906841845b4a56411a443
+      internalID: 1289585785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_33
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957afc93b62bb684296c90990ba0398b
+      internalID: 1621694340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_34
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ddeec9ed87b6e409fb7ae0af4e3cc1
+      internalID: -325843675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_35
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811ea6fe93ab2714baab9a0de2b82b12
+      internalID: 1366416064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_36
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a09a5f9b3c35f4bad27d41cd8ce043
+      internalID: -1927302682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_37
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b96707bd3ee4fb4e86fc25d1b9c1e7f
+      internalID: 558229330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_38
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cabd217e7b6751449dd08a2d67818dd
+      internalID: -1450272071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_39
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c58e4a9fea1c24ea09de81fbd231e4
+      internalID: 2053575414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_40
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e1e9cde0e98ad44a6c64c9d23ca142
+      internalID: -1842394404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_41
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8956a44eac73e6b4e85ef6aca097adbc
+      internalID: 2130268798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_42
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4b13e98d2dfac4ba8b9b10f4e212e1
+      internalID: -1303539280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_43
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e63dbc002d16ff4791ec57bbc157798
+      internalID: -145826202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04dc05536cb6f0489339475df0e93c3
+      internalID: -1822535022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_45
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607c39186837cd4458ddb19b380b4274
+      internalID: 88074442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_46
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3d835f407173f46a13ef91ca1199ea
+      internalID: 1665311521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_47
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59b2f9ca48393d4fb90724c70de1b05
+      internalID: -428119151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_48
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66b2bb57c88ea640bae6f226896ec4b
+      internalID: -1877511544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_49
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c9d366b80db784fb9b65457b147360
+      internalID: 1044510797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_50
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79f7d9f0664db142831690bd1f0656a
+      internalID: 1133807980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_51
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b659ef7dd97dcfe4f87fd2127dd82931
+      internalID: -1849507626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_52
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874ca299552592945862aa500ed7f156
+      internalID: -528125156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_53
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4763b763cff904e488ea3a0673177747
+      internalID: -1996468025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_54
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f2846bf2252fa479a31b78b7848625
+      internalID: -1092172318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_55
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63f4f6113e58224ead2e781a4bbe199
+      internalID: 351876414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_56
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddefb1f1da51ac64fbdcb4a08989ae24
+      internalID: 858414695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_57
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a620db66203644abfed39cafb94670
+      internalID: -1175660843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_58
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db0c6f7d3382d54b8d1d45410b20ce5
+      internalID: -743351779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_59
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4690f89d76132094b9b83916951c7bf6
+      internalID: -181157627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_60
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b75d6f0844cee44693014c9304ae010
+      internalID: 1478521808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_61
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e32d6584829f724eb7e48b98ce14764
+      internalID: 1128518285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_62
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0f0445be0979744a316f68fcf2434a
+      internalID: 1073560276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_63
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326213efa3d632549abe23da8df566a8
+      internalID: 1514273128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_64
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2b86cccc028604aae5ab3a73b32bac
+      internalID: -395085275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_65
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a0cbb3628fdf741a7820edfa03706c
+      internalID: -570935507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_66
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9831073fc1a7c4ebf7d0ebb50158d7
+      internalID: -384707390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_67
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eed16c137d3a1b418d1a8afee25cb52
+      internalID: 1036936202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_68
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc43b91621e6f7a4581453b3ece81681
+      internalID: -1608803396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_69
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45e17ae10c6bc947a32b27bbd959a0c
+      internalID: -383176638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_70
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 996
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a65bbb2bf7addf4791c0ad4d822022c
+      internalID: -1833879240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff321a1131804d74ca456da439364494
+      internalID: -750789553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_72
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489ff8fe84fa9d04d9a0b026e199c0c3
+      internalID: -1235381629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_73
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0ea143bb273694fbcf1488e91a7d04
+      internalID: 56368241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_74
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b3ba54eb9a84b48a2f3afe165f0b0c
+      internalID: 503513777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_75
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa6307bed6ebea46a1eee6c703976d4
+      internalID: -444046674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_76
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378816761a0e5c74ab1a3020ea8e0c80
+      internalID: -1222505126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_77
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2966c11296d5e439fd67e09e14d966
+      internalID: 333656760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_78
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afef2fde629bb4541b1ca019d8eb1cde
+      internalID: 1245694140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_79
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc870e08442548488723a87702f5b92
+      internalID: -938334710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_80
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7daf060a7887dec40bf68fd01dcd97af
+      internalID: -783307763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_81
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa384d0c188500b428a830d979059f29
+      internalID: 1202042383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_82
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba4221a538acfd4e93738c685454bbe
+      internalID: 615401160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_83
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2a4a0ae4f4a094e8dbad375fd0127e
+      internalID: -1689184347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_84
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc55440109947542accb6c4fda64488
+      internalID: -1682582228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_85
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f4d558e24dd064694347175be5733d
+      internalID: -1203822967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_86
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f7da986e948ff48a0dd4c5657b4ec3
+      internalID: 1654912367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_87
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ed94a59ea3e734d99e50e143d93f37
+      internalID: -261314976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_88
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08d0e0d6aac3254489cd15137bd26e8
+      internalID: -1086459032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_89
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b28f6d1a8a5514cb61810576fbc53e
+      internalID: -248444305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_90
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550b777660799244aadd6608ec68444d
+      internalID: -477384317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_91
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74480acbcf1c9984e873fd429a404526
+      internalID: 1107996184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_92
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db39ac3612d61ef47b3b61d7c1fb4368
+      internalID: -1957301441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_93
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1639ab008a726459606f10cd1083d4
+      internalID: -151675669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_94
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c4929ebef25304d94bfd4dbe4c5d81
+      internalID: -1681121133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_95
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb2f73295df94c48931428f6b6c41ee
+      internalID: 411318074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_96
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734341590ada4284caf6ced19dd3617b
+      internalID: 1295531198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_97
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae4f226136bb9c45a4745d0e0ce21dd
+      internalID: 1029323725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_98
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583189914c9f4c543a2b46f81a705694
+      internalID: -72474149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_99
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbdb6cb04bc321344972bcfe43e72214
+      internalID: -296613205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_100
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2712aa3aed4be2c40836856d5128226d
+      internalID: 49116577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_101
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fb7e5057ad2274ab3d03913dd5d346
+      internalID: 174478161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_102
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7691e4a0569411340b4a1d89f26d2ddd
+      internalID: 1166764113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_103
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bac8d70661cd342b97c7d4f10f9051
+      internalID: 1237427979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_104
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fd3df8159bc90409dfd020ca0d08fd
+      internalID: 605805638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_105
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01b483a0bf74344299fb40a75c11533
+      internalID: 1034677590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_106
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54d3c3e7f6ba9c468d6829c5b642cb7
+      internalID: 1537048197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_107
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b726e5ec1a67ae24c8cf8b391094244e
+      internalID: 1835388547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_108
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bac956f373e0804080aab909762f647
+      internalID: 768211098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_109
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3ae7374f5ec3a4c94a1ffc71821200
+      internalID: 847497120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_110
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d43a4b0fb270d34d82a91323993a3ab
+      internalID: 105470668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_111
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02fda25104d8cb4d920d542521f0456
+      internalID: 1259156670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_112
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04b0607eae105945bb02775b9a6cfd4
+      internalID: -638098638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_113
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645dbfcf775da1f44af7e0849ac47088
+      internalID: 1950561700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_114
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc63c7b8a849d7499f4a7a24025db13
+      internalID: 1792908063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_115
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdad06d71065cba46a4d85155ac218e8
+      internalID: -1823119738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_116
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56694b8a57c228748af30d4414d0f7c7
+      internalID: 2084020541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_117
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 966
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b335fe961f0fc438550f0426566914
+      internalID: -151879045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eefb146f8bd29b4b80c8bac71202a98
+      internalID: 736768293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_119
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3b9644edb52f84cbd8ddf90c88bdcd
+      internalID: -1753461436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_120
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c61d1cc0c7de541b1c377e5cc69024
+      internalID: 2008069971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_121
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d1eb1cc3a58b045ad430e7c8a32972
+      internalID: -364802626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_122
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0945d5403f18e894090daad4cc3a1f07
+      internalID: -951019737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_123
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82661c88a0ee3a4ea5b79a94824db98
+      internalID: 1094561304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_124
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd706d456f8c4f94ca2232325e575939
+      internalID: -1354689530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_125
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91afde10f32d92479a22aae3c832869
+      internalID: -146663661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_126
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3664cd8c8c5a9694ab53899e0541fc83
+      internalID: 1843564853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_127
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751d6cc188e9a1642a43e33920e0187a
+      internalID: -1494251165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_128
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d21fce67c14a74dac6af4d0fbdfbf2
+      internalID: 327939315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_129
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab887b4a107b744d98b06f4c48440d6
+      internalID: -1893059933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_130
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73e150dce170c3499350ab9536ccaf3
+      internalID: -287075229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_131
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2f122b8b948904b9470bcd01a5a025
+      internalID: 15087196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_132
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37afc50770130d742b9ca292ef42f74c
+      internalID: -1757639740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_133
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cccc579f55a3842a7256a3472a0619
+      internalID: -797629803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_134
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932c10e87632578408bbc7f7447bc893
+      internalID: -196265322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_135
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a77694cbac70f74ab66d74a374881ed
+      internalID: -1813116350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_136
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54264250b5b731143949508043dbc73a
+      internalID: 1832255417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_137
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1809dd5c205de4d97bc1a7278e2919
+      internalID: 1472993208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_138
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bb7d296cce8bc4da628497941bc51a
+      internalID: -289172512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_139
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2465b9f0f9b5dde4e9fd2bee46d947bd
+      internalID: 1177850487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_140
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864b31e2743d89142aa8e9e9fa788d53
+      internalID: 2008483906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_141
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855bf8576a838274596863619b3f1550
+      internalID: -436519538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_142
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fee54a9f2ee5643b1921a858c9e8cf
+      internalID: 1237688560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_143
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba9b96c0a31a2a4c83da5bd1fce9597
+      internalID: -1734197475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_144
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3e29671a4e06240839d9360c343f4b
+      internalID: -1629511670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_145
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d23d0a59fba07f4dbb0cc71ba86082f
+      internalID: -171260224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_146
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50dc3a3e90d2985489488555b1d137bf
+      internalID: 1164829419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_147
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dadef60ba973024db3fd2e193535715
+      internalID: 423462998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_148
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9005467b89df7bf478a996d2da97f636
+      internalID: -102389093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_149
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42ffc7938a7bf54e85f67297b79d243
+      internalID: 1841222670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_150
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0ac2be59cc8a844af898309d640eab
+      internalID: -1653520992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_151
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169bdbab18da2014dbd3dc49f53b97c2
+      internalID: 1886966162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_152
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f5056d41e839f4eb84594304356924
+      internalID: 1947008657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_153
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d27326c4e21a9d4b9af1dac71ecc30c
+      internalID: 403628853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_154
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ffe0b824578c947a66e713bc061df6
+      internalID: 1179833607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_155
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 936
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6b5ecb5baf59e48bb6a899bd36b191
+      internalID: -2009713116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_156
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 636
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14555ecf208a3ab44a71197a209ebafe
+      internalID: -1024482567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_157
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf58e7e0f35e9744936c82047cbf32f
+      internalID: 372224892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_158
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab6ad7fba4b8c942b32be323f7e3099
+      internalID: -1280585917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_159
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f44c7b531662e4e97d88b0ee1fa88c
+      internalID: -63830242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_160
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96235d97959c8954e9a850aeb2b3de3b
+      internalID: 1673544369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_161
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31930365b647084096b10f11696f281
+      internalID: -1598453744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_162
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f867f6472607774b8fc8a41865f74f5
+      internalID: -1379285579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_163
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81cfc67d54d03a4483d93c4aa59a2bb
+      internalID: 1028923644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_164
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb8d0d7bb17b694bb7eb0c0a0e3cd8a
+      internalID: 1657983675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_165
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2debfe1f5b392d442a7f41bcb42da588
+      internalID: -1215457482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_166
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43308b960fb65404893417ed93057286
+      internalID: -1099805163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_167
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75ce76c6b29298489b24224ec05cba1
+      internalID: -1774433370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_168
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9658bf32840b97a49a5b592702c850d0
+      internalID: 1080351152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_169
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962cfd9d5672656429302c96ad8fc370
+      internalID: 514206496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_170
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4391ee1869c11a249add9ddfb8261cfb
+      internalID: -1996706868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_171
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc72f7fcbec64341be7ac13d8fbea09
+      internalID: -1869206829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_172
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50974be16d7aaa846b1509e787360a11
+      internalID: 623104129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_173
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a0a149e5643194584ca8f8e6084f43
+      internalID: 853535307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_174
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4f17edb8f4e4f4790f77468594fced
+      internalID: -350026269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_175
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed0e6aef16490a4e8ee28ceea28a427
+      internalID: 1600731513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_176
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa95861f0168054bbfc6255ad62f556
+      internalID: -277662493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_177
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac434dcf97c5466458d2919bb37719b7
+      internalID: 172618633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_178
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f8caa6587f2bc4dbe04db171b7d9aa
+      internalID: -991669873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_179
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8a86603f0e48047bf088c47d4fef6a
+      internalID: -1777154290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_180
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c291bcd24820404418480b34d6b0273d
+      internalID: 1601426408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_181
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe50405832474a4eb060a1ffc04abf5
+      internalID: 952827665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_182
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fff22f727fe614488685208a6271db
+      internalID: -711881013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_183
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d940063a5fe76840adc8714aaecc9b4
+      internalID: -198082819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_184
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a86bb9c70fa26a41a8ac57d20c97a84
+      internalID: -1760098227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_185
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500442281aefd0145ad64fb03d42c57f
+      internalID: -1625535534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_186
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c3721ed71625c4f8ecdf20a141c731
+      internalID: -124464029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_187
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c811af129a02e5499261f5f6f960f9d
+      internalID: 1562318560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_188
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6671aaf57fe3a469247a506f15dc82
+      internalID: -1266103543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_189
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a06c6b103b25ce4ab8db237f575503f
+      internalID: -1873829595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_190
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db75a5fc740e1347bdb4dc183262ace
+      internalID: 1585201901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_191
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859de08be7708d44c8178579f8b61b01
+      internalID: -1538804395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_192
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8790c382ba1a6304fa019d7f4e925698
+      internalID: -1954030532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_193
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d661aee93eda56c4383f65606bf0b8aa
+      internalID: -1923266853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_194
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eafd43e088a2604082327f4ad7d1d5f
+      internalID: -781176301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_195
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b757daea3fd2c8f45964e5e9acc41630
+      internalID: -1425184001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_196
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b194e60dd8f12439a6a34bbc8561c4
+      internalID: 1760254812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_197
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a0d56752ae58f42bc40a1b16386fb5
+      internalID: -1374220004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_198
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc5519606313c6428df84e36c750d09
+      internalID: 1253356483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_199
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7e388865835404296d58373765825f
+      internalID: -434073342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_200
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34782bede27998489b3988a8f43aca6
+      internalID: -1401613390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_201
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 546
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d5f173776b3514682f1a3586912baa
+      internalID: -710488269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_202
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814076cceeb95114684e9d5c2d317cb7
+      internalID: -769800534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_203
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb06ece5e0ec1534e98b250f06a73eb3
+      internalID: 22907943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_204
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afdec2352556dd4aa2d010ecf6b4a5f
+      internalID: -1501113897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_205
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84ef1edb5ef5df468d939c23a63eb9c
+      internalID: -1321991840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_206
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b74c788911381248ab2502423309ca7
+      internalID: 1496687311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_207
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70dc50e8b0e78f488311d86996c5231
+      internalID: 1797694904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_208
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7eaf62964b3ed429737e0fe374601b
+      internalID: -771455825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_209
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222e23d80fddf3a41a470e69979fde4d
+      internalID: -1835840514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_210
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3191912331d0fd046b646c1807910870
+      internalID: -329774518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_211
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c969a4ac3e6a734bbe0544dfdc38c85
+      internalID: -1001077847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_212
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05510f9179ef3e44b9c3e77576325281
+      internalID: 1981451943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_213
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fde9e64762ea0744ae6b9ccecc1c865
+      internalID: 1251972406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_214
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828fbcba4f472bd4f98d38122da38f12
+      internalID: -1946451355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_215
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de4d77e05a57734ea1cde894c3ad8b5
+      internalID: -1513179721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_216
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd96e152509e3e49b71cb134d43cdf7
+      internalID: -1368815911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_217
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07c2c99eb6b8174a947f7c3f5f35d39
+      internalID: -1634496990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_218
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12be4a66489c055498e4257870013797
+      internalID: 1711661291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_219
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1dfbfd0d3b4c1f4386070e3293021fd
+      internalID: -1991476002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_220
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b642b3a290a0cf34c8c621df875a05fd
+      internalID: -1756546366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_221
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5c12d838a0ae844ac6bda8362998ff
+      internalID: 1876568442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_222
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa7d752f269a4f48974ed8424396b15
+      internalID: 922687159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_223
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a361d806fe9f49a4d8a81ad8c377a862
+      internalID: 873729240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_224
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960401919afbf034892d76cb102c3c5d
+      internalID: 843134405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_225
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e3f7b20ae37444994200955806f88b
+      internalID: -1057169356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_226
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f28889745d139e4a9c1cc660b5d13e1
+      internalID: 925948585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_227
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e2aa2af6492394292328dace746f1a
+      internalID: -364039150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_228
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c351b0ff1b1414b825618b17dbab63
+      internalID: -44776921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_229
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f9dbd92cf52734a8c8a07da328f4b0
+      internalID: 1443515325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_230
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39761372b3e88cf45bb88a9bf93d1ec9
+      internalID: -1906829366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_231
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d96de4748aeed4698e01e550219212
+      internalID: -146709378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_232
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770d5d4850862684fb3550e43727485c
+      internalID: -1551973114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_233
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23407dfdedf607047877195adbb89dcf
+      internalID: 877615834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_234
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7218f824f56444b8847d0e18bfe79f
+      internalID: 38994199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_235
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1035267037d9984fa79d7a7715de1aa
+      internalID: -1813120570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_236
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443e25deb022120499975942ed441be2
+      internalID: -2133292100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_237
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6499f9bd85685c14a9f8418108ad2d4e
+      internalID: 987559156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_238
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96e96995c2d313479fdc97d1c86dc3c
+      internalID: -758782245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_239
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6d88d6e6f6d5f4bbc7fbaa43f2ee69
+      internalID: 1485091870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_240
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adca831d3ca2d4642b91d1edcfdcf8a4
+      internalID: 1010192799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_241
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159f827f7f2d19047b0dbbcac5696285
+      internalID: 212690957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_242
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50c2b83239e17840a54b064f101b1b3
+      internalID: 1947645686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_243
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce369b3e77a79449a01b2bb6f7db201
+      internalID: -1530045114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_244
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1af023e7ce95643866b7cc500f4f34
+      internalID: -940843844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_245
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71e8e8cc77b8d44994f777715f9391c
+      internalID: 936231363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_246
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 516
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32e28a9c9ff11747adada9c6ed5a5a8
+      internalID: -169297006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_247
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3023734b84a9a764c969d0b62ab8d642
+      internalID: 971721233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_248
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dfed5f6fe972a439cc584b7c8b2c61
+      internalID: -588536107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_249
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1e77418998b2b4690c2addfb353f63
+      internalID: 720478242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_250
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b962a8980bade5e458649fbda2d40f5c
+      internalID: 51828676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_251
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9345cff58d3a0a47893776be488e71b
+      internalID: -905725596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_252
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a0206465bb5dd489d692c44d02200d
+      internalID: 472846617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_253
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1b6d529757ff74e9c80f9d1470c696
+      internalID: -2078556469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_254
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f604b7df938aadb47a3e1924b3df00bc
+      internalID: -652831798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_255
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d8b394c779f674e866668f8d3ad318
+      internalID: 623638578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_256
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c6a7f97955b5144a312f678fc92a47
+      internalID: -1898641128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_257
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05f53b1312b7bd438aec8a2c66a79e3
+      internalID: 376780714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_258
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9511eb5602977a24ebcd0c13d3ab4584
+      internalID: 2001066734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_259
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82a558115f57c840b4551392c2a242f
+      internalID: 993815996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_260
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6c46d772d64bc47b75a0a2163fcdfb
+      internalID: 539211383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_261
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c378d179a8d88824680650e923fd73f5
+      internalID: -1406496614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_262
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8337a04a3845d4bae2954f54f1ac4b
+      internalID: 1253682465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_263
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f6088cfbdeacc4badb4c2523421556
+      internalID: 1654343518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_264
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a74ece85de131459e31f73b559c5bf
+      internalID: 958555396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_265
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68542260a636dac498d7f6cfad8cdc2d
+      internalID: -695478685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_266
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33646c4093082dc4e9effd449602062f
+      internalID: -1757430719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_267
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31adc4b0b4976ef48b560b332bbca1d5
+      internalID: 2068354710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_268
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2463e769c293324fbe83e68558f5a66
+      internalID: -1944953495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_269
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a4bdedeb6157942975f007b450180a
+      internalID: 165091714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_270
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392b05a300ecec54fa02d4ef8c40f5ae
+      internalID: 821471388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_271
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c87101d76d12624ebf85aced94c790f
+      internalID: 1593160251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_272
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097d2a8e537f4be47846df1875181a5f
+      internalID: -553527623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_273
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70737f6cc573c7048997849604acb2c1
+      internalID: -556076505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_274
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805406cb4ff6eff4383c24c00ab1c4bb
+      internalID: 1661054851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_275
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c7c11a9ff591b40bc6c5faf237fef9
+      internalID: -570003728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_276
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d6ef4124d32cd4d93264688ef87dd0
+      internalID: -1951796215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_277
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a03c13661054f44ea64d1c86ea74015
+      internalID: -1570289797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_278
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2983f99ab795ae43903e273777a1fd2
+      internalID: -675025448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_279
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f9e260f205b374c9fca2938f35e1ff
+      internalID: -167995617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_280
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7405559fd4baff24dae98b05218d8374
+      internalID: 1968568517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_281
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc57611e71eba3043bfcebcc55525ffd
+      internalID: 1793721476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_282
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c91ee1b61e4db438a2260f847dd834
+      internalID: 2036224083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_283
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4cab9af84e55a4c8dca18e60dc1e1d
+      internalID: 265661229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_284
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f119a3beb57c348adc75bf6a66df7c
+      internalID: 674764227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_285
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d3f46b3f2e0a24fba95c5666c53e84
+      internalID: 94352710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_286
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e2464498f74b546a618b26f94063f6
+      internalID: 1102736900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_287
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5e314316c7339468fba7d1a607c528
+      internalID: -1286448893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_288
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba62d3e79c6d804090e4cac3b08c41f
+      internalID: -1266831139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_289
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b485cb9f02f296246acc1d40318a9b0a
+      internalID: -1889138350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_290
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c216a6454048a5d4ca5b25f38fddd06c
+      internalID: -1717968868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_291
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 486
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c6227399afc5d4c95025cfc8c07b51
+      internalID: -220639941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_292
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 426
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac734f1abd6cb084fb377d64c8c6402c
+      internalID: 1684884286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_293
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 426
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cc7cd38a94e4641a830f199097d01e
+      internalID: -1939151468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_294
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 426
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07300ab5a231d064e995a9cf0cf3c784
+      internalID: -1552303588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Factory_02_Wall_layer02_295
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 156
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1abf5b0ba48fa49963349763e725c8
+      internalID: -1466410087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e83aa14dec194a244895a6de462ca0de
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Factory_02_Wall_layer02_0: -3933422471700788634
+      Factory_02_Wall_layer02_1: -8912764082580193004
+      Factory_02_Wall_layer02_10: -198254764104532880
+      Factory_02_Wall_layer02_100: 49116577
+      Factory_02_Wall_layer02_101: 174478161
+      Factory_02_Wall_layer02_102: 1166764113
+      Factory_02_Wall_layer02_103: 1237427979
+      Factory_02_Wall_layer02_104: 605805638
+      Factory_02_Wall_layer02_105: 1034677590
+      Factory_02_Wall_layer02_106: 1537048197
+      Factory_02_Wall_layer02_107: 1835388547
+      Factory_02_Wall_layer02_108: 768211098
+      Factory_02_Wall_layer02_109: 847497120
+      Factory_02_Wall_layer02_11: -8790712132950180762
+      Factory_02_Wall_layer02_110: 105470668
+      Factory_02_Wall_layer02_111: 1259156670
+      Factory_02_Wall_layer02_112: -638098638
+      Factory_02_Wall_layer02_113: 1950561700
+      Factory_02_Wall_layer02_114: 1792908063
+      Factory_02_Wall_layer02_115: -1823119738
+      Factory_02_Wall_layer02_116: 2084020541
+      Factory_02_Wall_layer02_117: -151879045
+      Factory_02_Wall_layer02_118: 736768293
+      Factory_02_Wall_layer02_119: -1753461436
+      Factory_02_Wall_layer02_12: -8522538347651461353
+      Factory_02_Wall_layer02_120: 2008069971
+      Factory_02_Wall_layer02_121: -364802626
+      Factory_02_Wall_layer02_122: -951019737
+      Factory_02_Wall_layer02_123: 1094561304
+      Factory_02_Wall_layer02_124: -1354689530
+      Factory_02_Wall_layer02_125: -146663661
+      Factory_02_Wall_layer02_126: 1843564853
+      Factory_02_Wall_layer02_127: -1494251165
+      Factory_02_Wall_layer02_128: 327939315
+      Factory_02_Wall_layer02_129: -1893059933
+      Factory_02_Wall_layer02_13: 518825887794913371
+      Factory_02_Wall_layer02_130: -287075229
+      Factory_02_Wall_layer02_131: 15087196
+      Factory_02_Wall_layer02_132: -1757639740
+      Factory_02_Wall_layer02_133: -797629803
+      Factory_02_Wall_layer02_134: -196265322
+      Factory_02_Wall_layer02_135: -1813116350
+      Factory_02_Wall_layer02_136: 1832255417
+      Factory_02_Wall_layer02_137: 1472993208
+      Factory_02_Wall_layer02_138: -289172512
+      Factory_02_Wall_layer02_139: 1177850487
+      Factory_02_Wall_layer02_14: 482401376998804310
+      Factory_02_Wall_layer02_140: 2008483906
+      Factory_02_Wall_layer02_141: -436519538
+      Factory_02_Wall_layer02_142: 1237688560
+      Factory_02_Wall_layer02_143: -1734197475
+      Factory_02_Wall_layer02_144: -1629511670
+      Factory_02_Wall_layer02_145: -171260224
+      Factory_02_Wall_layer02_146: 1164829419
+      Factory_02_Wall_layer02_147: 423462998
+      Factory_02_Wall_layer02_148: -102389093
+      Factory_02_Wall_layer02_149: 1841222670
+      Factory_02_Wall_layer02_15: 3868321204456027661
+      Factory_02_Wall_layer02_150: -1653520992
+      Factory_02_Wall_layer02_151: 1886966162
+      Factory_02_Wall_layer02_152: 1947008657
+      Factory_02_Wall_layer02_153: 403628853
+      Factory_02_Wall_layer02_154: 1179833607
+      Factory_02_Wall_layer02_155: -2009713116
+      Factory_02_Wall_layer02_156: -1024482567
+      Factory_02_Wall_layer02_157: 372224892
+      Factory_02_Wall_layer02_158: -1280585917
+      Factory_02_Wall_layer02_159: -63830242
+      Factory_02_Wall_layer02_16: -2879195682453152961
+      Factory_02_Wall_layer02_160: 1673544369
+      Factory_02_Wall_layer02_161: -1598453744
+      Factory_02_Wall_layer02_162: -1379285579
+      Factory_02_Wall_layer02_163: 1028923644
+      Factory_02_Wall_layer02_164: 1657983675
+      Factory_02_Wall_layer02_165: -1215457482
+      Factory_02_Wall_layer02_166: -1099805163
+      Factory_02_Wall_layer02_167: -1774433370
+      Factory_02_Wall_layer02_168: 1080351152
+      Factory_02_Wall_layer02_169: 514206496
+      Factory_02_Wall_layer02_17: 5370885736201804500
+      Factory_02_Wall_layer02_170: -1996706868
+      Factory_02_Wall_layer02_171: -1869206829
+      Factory_02_Wall_layer02_172: 623104129
+      Factory_02_Wall_layer02_173: 853535307
+      Factory_02_Wall_layer02_174: -350026269
+      Factory_02_Wall_layer02_175: 1600731513
+      Factory_02_Wall_layer02_176: -277662493
+      Factory_02_Wall_layer02_177: 172618633
+      Factory_02_Wall_layer02_178: -991669873
+      Factory_02_Wall_layer02_179: -1777154290
+      Factory_02_Wall_layer02_18: 781649302766161769
+      Factory_02_Wall_layer02_180: 1601426408
+      Factory_02_Wall_layer02_181: 952827665
+      Factory_02_Wall_layer02_182: -711881013
+      Factory_02_Wall_layer02_183: -198082819
+      Factory_02_Wall_layer02_184: -1760098227
+      Factory_02_Wall_layer02_185: -1625535534
+      Factory_02_Wall_layer02_186: -124464029
+      Factory_02_Wall_layer02_187: 1562318560
+      Factory_02_Wall_layer02_188: -1266103543
+      Factory_02_Wall_layer02_189: -1873829595
+      Factory_02_Wall_layer02_19: 833992199846463750
+      Factory_02_Wall_layer02_190: 1585201901
+      Factory_02_Wall_layer02_191: -1538804395
+      Factory_02_Wall_layer02_192: -1954030532
+      Factory_02_Wall_layer02_193: -1923266853
+      Factory_02_Wall_layer02_194: -781176301
+      Factory_02_Wall_layer02_195: -1425184001
+      Factory_02_Wall_layer02_196: 1760254812
+      Factory_02_Wall_layer02_197: -1374220004
+      Factory_02_Wall_layer02_198: 1253356483
+      Factory_02_Wall_layer02_199: -434073342
+      Factory_02_Wall_layer02_2: -2184466424744987362
+      Factory_02_Wall_layer02_20: 6081796152330771044
+      Factory_02_Wall_layer02_200: -1401613390
+      Factory_02_Wall_layer02_201: -710488269
+      Factory_02_Wall_layer02_202: -769800534
+      Factory_02_Wall_layer02_203: 22907943
+      Factory_02_Wall_layer02_204: -1501113897
+      Factory_02_Wall_layer02_205: -1321991840
+      Factory_02_Wall_layer02_206: 1496687311
+      Factory_02_Wall_layer02_207: 1797694904
+      Factory_02_Wall_layer02_208: -771455825
+      Factory_02_Wall_layer02_209: -1835840514
+      Factory_02_Wall_layer02_21: -5958263877923325893
+      Factory_02_Wall_layer02_210: -329774518
+      Factory_02_Wall_layer02_211: -1001077847
+      Factory_02_Wall_layer02_212: 1981451943
+      Factory_02_Wall_layer02_213: 1251972406
+      Factory_02_Wall_layer02_214: -1946451355
+      Factory_02_Wall_layer02_215: -1513179721
+      Factory_02_Wall_layer02_216: -1368815911
+      Factory_02_Wall_layer02_217: -1634496990
+      Factory_02_Wall_layer02_218: 1711661291
+      Factory_02_Wall_layer02_219: -1991476002
+      Factory_02_Wall_layer02_22: 4603083837304233376
+      Factory_02_Wall_layer02_220: -1756546366
+      Factory_02_Wall_layer02_221: 1876568442
+      Factory_02_Wall_layer02_222: 922687159
+      Factory_02_Wall_layer02_223: 873729240
+      Factory_02_Wall_layer02_224: 843134405
+      Factory_02_Wall_layer02_225: -1057169356
+      Factory_02_Wall_layer02_226: 925948585
+      Factory_02_Wall_layer02_227: -364039150
+      Factory_02_Wall_layer02_228: -44776921
+      Factory_02_Wall_layer02_229: 1443515325
+      Factory_02_Wall_layer02_23: -6767915723724715223
+      Factory_02_Wall_layer02_230: -1906829366
+      Factory_02_Wall_layer02_231: -146709378
+      Factory_02_Wall_layer02_232: -1551973114
+      Factory_02_Wall_layer02_233: 877615834
+      Factory_02_Wall_layer02_234: 38994199
+      Factory_02_Wall_layer02_235: -1813120570
+      Factory_02_Wall_layer02_236: -2133292100
+      Factory_02_Wall_layer02_237: 987559156
+      Factory_02_Wall_layer02_238: -758782245
+      Factory_02_Wall_layer02_239: 1485091870
+      Factory_02_Wall_layer02_24: 4860299274105570185
+      Factory_02_Wall_layer02_240: 1010192799
+      Factory_02_Wall_layer02_241: 212690957
+      Factory_02_Wall_layer02_242: 1947645686
+      Factory_02_Wall_layer02_243: -1530045114
+      Factory_02_Wall_layer02_244: -940843844
+      Factory_02_Wall_layer02_245: 936231363
+      Factory_02_Wall_layer02_246: -169297006
+      Factory_02_Wall_layer02_247: 971721233
+      Factory_02_Wall_layer02_248: -588536107
+      Factory_02_Wall_layer02_249: 720478242
+      Factory_02_Wall_layer02_25: 4634631883804634958
+      Factory_02_Wall_layer02_250: 51828676
+      Factory_02_Wall_layer02_251: -905725596
+      Factory_02_Wall_layer02_252: 472846617
+      Factory_02_Wall_layer02_253: -2078556469
+      Factory_02_Wall_layer02_254: -652831798
+      Factory_02_Wall_layer02_255: 623638578
+      Factory_02_Wall_layer02_256: -1898641128
+      Factory_02_Wall_layer02_257: 376780714
+      Factory_02_Wall_layer02_258: 2001066734
+      Factory_02_Wall_layer02_259: 993815996
+      Factory_02_Wall_layer02_26: 818540199214016868
+      Factory_02_Wall_layer02_260: 539211383
+      Factory_02_Wall_layer02_261: -1406496614
+      Factory_02_Wall_layer02_262: 1253682465
+      Factory_02_Wall_layer02_263: 1654343518
+      Factory_02_Wall_layer02_264: 958555396
+      Factory_02_Wall_layer02_265: -695478685
+      Factory_02_Wall_layer02_266: -1757430719
+      Factory_02_Wall_layer02_267: 2068354710
+      Factory_02_Wall_layer02_268: -1944953495
+      Factory_02_Wall_layer02_269: 165091714
+      Factory_02_Wall_layer02_27: 1974046241
+      Factory_02_Wall_layer02_270: 821471388
+      Factory_02_Wall_layer02_271: 1593160251
+      Factory_02_Wall_layer02_272: -553527623
+      Factory_02_Wall_layer02_273: -556076505
+      Factory_02_Wall_layer02_274: 1661054851
+      Factory_02_Wall_layer02_275: -570003728
+      Factory_02_Wall_layer02_276: -1951796215
+      Factory_02_Wall_layer02_277: -1570289797
+      Factory_02_Wall_layer02_278: -675025448
+      Factory_02_Wall_layer02_279: -167995617
+      Factory_02_Wall_layer02_28: 1240460383
+      Factory_02_Wall_layer02_280: 1968568517
+      Factory_02_Wall_layer02_281: 1793721476
+      Factory_02_Wall_layer02_282: 2036224083
+      Factory_02_Wall_layer02_283: 265661229
+      Factory_02_Wall_layer02_284: 674764227
+      Factory_02_Wall_layer02_285: 94352710
+      Factory_02_Wall_layer02_286: 1102736900
+      Factory_02_Wall_layer02_287: -1286448893
+      Factory_02_Wall_layer02_288: -1266831139
+      Factory_02_Wall_layer02_289: -1889138350
+      Factory_02_Wall_layer02_29: -1888987956
+      Factory_02_Wall_layer02_290: -1717968868
+      Factory_02_Wall_layer02_291: -220639941
+      Factory_02_Wall_layer02_292: 1684884286
+      Factory_02_Wall_layer02_293: -1939151468
+      Factory_02_Wall_layer02_294: -1552303588
+      Factory_02_Wall_layer02_295: -1466410087
+      Factory_02_Wall_layer02_3: -1244566767145396812
+      Factory_02_Wall_layer02_30: -1226317259
+      Factory_02_Wall_layer02_31: 870831229
+      Factory_02_Wall_layer02_32: 1289585785
+      Factory_02_Wall_layer02_33: 1621694340
+      Factory_02_Wall_layer02_34: -325843675
+      Factory_02_Wall_layer02_35: 1366416064
+      Factory_02_Wall_layer02_36: -1927302682
+      Factory_02_Wall_layer02_37: 558229330
+      Factory_02_Wall_layer02_38: -1450272071
+      Factory_02_Wall_layer02_39: 2053575414
+      Factory_02_Wall_layer02_4: 2965225724415238576
+      Factory_02_Wall_layer02_40: -1842394404
+      Factory_02_Wall_layer02_41: 2130268798
+      Factory_02_Wall_layer02_42: -1303539280
+      Factory_02_Wall_layer02_43: -145826202
+      Factory_02_Wall_layer02_44: -1822535022
+      Factory_02_Wall_layer02_45: 88074442
+      Factory_02_Wall_layer02_46: 1665311521
+      Factory_02_Wall_layer02_47: -428119151
+      Factory_02_Wall_layer02_48: -1877511544
+      Factory_02_Wall_layer02_49: 1044510797
+      Factory_02_Wall_layer02_5: -4953261544763246323
+      Factory_02_Wall_layer02_50: 1133807980
+      Factory_02_Wall_layer02_51: -1849507626
+      Factory_02_Wall_layer02_52: -528125156
+      Factory_02_Wall_layer02_53: -1996468025
+      Factory_02_Wall_layer02_54: -1092172318
+      Factory_02_Wall_layer02_55: 351876414
+      Factory_02_Wall_layer02_56: 858414695
+      Factory_02_Wall_layer02_57: -1175660843
+      Factory_02_Wall_layer02_58: -743351779
+      Factory_02_Wall_layer02_59: -181157627
+      Factory_02_Wall_layer02_6: -5948021350693061427
+      Factory_02_Wall_layer02_60: 1478521808
+      Factory_02_Wall_layer02_61: 1128518285
+      Factory_02_Wall_layer02_62: 1073560276
+      Factory_02_Wall_layer02_63: 1514273128
+      Factory_02_Wall_layer02_64: -395085275
+      Factory_02_Wall_layer02_65: -570935507
+      Factory_02_Wall_layer02_66: -384707390
+      Factory_02_Wall_layer02_67: 1036936202
+      Factory_02_Wall_layer02_68: -1608803396
+      Factory_02_Wall_layer02_69: -383176638
+      Factory_02_Wall_layer02_7: -665260083284615476
+      Factory_02_Wall_layer02_70: -1833879240
+      Factory_02_Wall_layer02_71: -750789553
+      Factory_02_Wall_layer02_72: -1235381629
+      Factory_02_Wall_layer02_73: 56368241
+      Factory_02_Wall_layer02_74: 503513777
+      Factory_02_Wall_layer02_75: -444046674
+      Factory_02_Wall_layer02_76: -1222505126
+      Factory_02_Wall_layer02_77: 333656760
+      Factory_02_Wall_layer02_78: 1245694140
+      Factory_02_Wall_layer02_79: -938334710
+      Factory_02_Wall_layer02_8: -3750933501250497734
+      Factory_02_Wall_layer02_80: -783307763
+      Factory_02_Wall_layer02_81: 1202042383
+      Factory_02_Wall_layer02_82: 615401160
+      Factory_02_Wall_layer02_83: -1689184347
+      Factory_02_Wall_layer02_84: -1682582228
+      Factory_02_Wall_layer02_85: -1203822967
+      Factory_02_Wall_layer02_86: 1654912367
+      Factory_02_Wall_layer02_87: -261314976
+      Factory_02_Wall_layer02_88: -1086459032
+      Factory_02_Wall_layer02_89: -248444305
+      Factory_02_Wall_layer02_9: 5111890836697725260
+      Factory_02_Wall_layer02_90: -477384317
+      Factory_02_Wall_layer02_91: 1107996184
+      Factory_02_Wall_layer02_92: -1957301441
+      Factory_02_Wall_layer02_93: -151675669
+      Factory_02_Wall_layer02_94: -1681121133
+      Factory_02_Wall_layer02_95: 411318074
+      Factory_02_Wall_layer02_96: 1295531198
+      Factory_02_Wall_layer02_97: 1029323725
+      Factory_02_Wall_layer02_98: -72474149
+      Factory_02_Wall_layer02_99: -296613205
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
