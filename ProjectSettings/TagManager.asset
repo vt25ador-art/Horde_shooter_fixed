@@ -45,5 +45,8 @@ TagManager:
   - name: Secondary
     uniqueID: 3543391119
     locked: 0
+  - name: OverlayGuide
+    uniqueID: 315310715
+    locked: 0
   m_RenderingLayers:
   - Default
