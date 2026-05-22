@@ -238,5 +238,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 50
-  _destroyOnDeath: 0
+  _destroyOnDeath: 1
   HitVFX: {fileID: 7972977234735750764, guid: d4efc0e6da5342b4da240face6838057, type: 3}
