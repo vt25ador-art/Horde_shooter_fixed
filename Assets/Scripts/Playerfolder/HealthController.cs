@@ -3,103 +3,130 @@ using UnityEngine.Events;
 
 public class HealthController : MonoBehaviour
 {
-    [SerializeField] private float _currentHealth;
+    [Header("Health")]
+    [SerializeField] private float _currentHealth = 100f;
+    [SerializeField] private float _maxiumHealth = 100f;
 
-    [SerializeField] private float _maxiumHealth;
-
-    public bool isDowned {  get; private set; }
+    [Header("Downed")]
+    public bool isDowned { get; private set; }
 
     [SerializeField] private float downTime = 20f;
     private float downTimer;
+
+    private bool isDead;
+
+    public float RemainingDownTime => downTimer;
+    public bool IsDead => isDead;
 
     public float ReimainingHealthPercentage
     {
         get
         {
+            if (_maxiumHealth <= 0f)
+                return 0f;
+
             return _currentHealth / _maxiumHealth;
         }
     }
 
+    public UnityEvent OnDowned;
+    public UnityEvent OnRevived;
     public UnityEvent OnDied;
-
     public UnityEvent OnHealthChanged;
 
-
-    void Update()
+    private void Awake()
     {
-        if (!isDowned) return;
+        _currentHealth = Mathf.Clamp(_currentHealth, 0f, _maxiumHealth);
+    }
+
+    private void Update()
+    {
+        if (!isDowned || isDead)
+            return;
 
         downTimer -= Time.deltaTime;
 
-        if (downTimer <= 0)
+        if (downTimer <= 0f)
         {
             Die();
         }
     }
-    void Die()
+
+    public void TakeDamage(float damageAmount)
     {
-        Debug.Log("Player died");
+        if (isDead)
+            return;
+
+        if (isDowned)
+            return;
+
+        _currentHealth -= damageAmount;
+        _currentHealth = Mathf.Clamp(_currentHealth, 0f, _maxiumHealth);
+
+        OnHealthChanged.Invoke();
+
+        if (_currentHealth <= 0f)
+        {
+            EnterDownState();
+        }
+    }
+
+    private void EnterDownState()
+    {
+        if (isDowned || isDead)
+            return;
+
+        isDowned = true;
+        downTimer = downTime;
+
+        Debug.Log(gameObject.name + " is DOWN!");
+
+        OnDowned.Invoke();
+    }
+
+    private void Die()
+    {
+        if (isDead)
+            return;
+
+        isDead = true;
+        isDowned = false;
+
+        Debug.Log(gameObject.name + " died");
 
         OnDied.Invoke();
     }
 
-
-    public void TakeDamage(float damageAmount)
-    {
-        if (_currentHealth < 0)
-        {
-            EnterDownState();
-        }
-
-        void EnterDownState()
-        {
-            if (isDowned) return;
-
-            isDowned = true;
-            downTimer = downTime;
-
-            Debug.Log("Player is DOWN!");
-        }
-
-        _currentHealth -= damageAmount;
-
-        OnHealthChanged.Invoke();
-
-        if (_currentHealth < 0)
-        {
-            _currentHealth = 0;
-        }
-
-        if(_currentHealth == 0)
-        {
-            OnDied.Invoke();
-        }
-
-    }
-
     public void AddHealth(float amountToAdd)
     {
-        if (_currentHealth == _maxiumHealth)
-        {
+        if (isDead)
             return;
-        }
+
+        if (isDowned)
+            return;
 
         _currentHealth += amountToAdd;
+        _currentHealth = Mathf.Clamp(_currentHealth, 0f, _maxiumHealth);
 
         OnHealthChanged.Invoke();
-
-        if (_currentHealth > _maxiumHealth)
-        {
-            _currentHealth = _maxiumHealth;
-        }
     }
 
-    public void Revive(float revivehealth)
+    public void Revive(float reviveHealth)
     {
-        if (!isDowned) return;
+        if (isDead)
+            return;
 
-        _currentHealth = revivehealth;
+        if (!isDowned)
+            return;
 
-        Debug.Log("Player revived");
+        isDowned = false;
+        downTimer = 0f;
+
+        _currentHealth = Mathf.Clamp(reviveHealth, 1f, _maxiumHealth);
+
+        Debug.Log(gameObject.name + " revived");
+
+        OnHealthChanged.Invoke();
+        OnRevived.Invoke();
     }
 }

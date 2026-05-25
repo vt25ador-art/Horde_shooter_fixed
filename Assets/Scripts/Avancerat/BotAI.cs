@@ -28,6 +28,11 @@ public class BotAI : MonoBehaviour
     [SerializeField] private float wallcheckDistance = 0.8f;
     [SerializeField] private float avoidStrenght = 1.2f;
 
+
+    [Header("Revive")]
+    [SerializeField] private BotRevivePlayer botRevivePlayer;
+
+
     private Rigidbody2D rb;
     private BotShoot shoot;
     private Transform currentTarget;
@@ -54,11 +59,20 @@ public class BotAI : MonoBehaviour
             return;
         }
 
+        // PRIORITERA REVIVE FÖRST
+        if (botRevivePlayer != null && botRevivePlayer.ShouldRevivePlayer)
+        {
+            ReviveBehaviour();
+            return;
+        }
+
         if (currentTarget)
             AttackBehaviour();
         else
             FollowBehaviour();
     }
+
+
 
     Transform FindClosestEnemy()
     {
@@ -89,21 +103,41 @@ public class BotAI : MonoBehaviour
         float dist = toPlayer.magnitude;
 
         if (dist > followDistance)
-            rb.linearVelocity = toPlayer.normalized * followSpeed;
+            MoveWithAvoidance(toPlayer.normalized * followSpeed);
         else if (dist < stopDistance)
             rb.linearVelocity = Vector2.zero;
 
         RotateTowards(toPlayer);
     }
 
+
+
+    void ReviveBehaviour()
+    {
+        Vector2 toPlayer = (Vector2)botRevivePlayer.ReviveTargetPosition - rb.position;
+        float dist = toPlayer.magnitude;
+
+        if (dist > 1.2f)
+        {
+            Vector2 desiredVelocity = toPlayer.normalized * followSpeed;
+            MoveWithAvoidance(desiredVelocity);
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        RotateTowards(toPlayer);
+    }
+
+
     void AttackBehaviour()
     {
         Vector2 toEnemy = (Vector2)currentTarget.position - rb.position;
         float dist = toEnemy.magnitude;
 
-        // stå kvar och skjut om nära nog, annars gå närmare
         if (dist > fireRange)
-            rb.linearVelocity = toEnemy.normalized * followSpeed;
+            MoveWithAvoidance(toEnemy.normalized * followSpeed);
         else
             rb.linearVelocity = Vector2.zero;
 
@@ -113,17 +147,26 @@ public class BotAI : MonoBehaviour
             shoot.BotFireAt(toEnemy);
     }
 
-    void MoveWithAvoidance(Vector2  desiredVelocity)
+
+
+    void MoveWithAvoidance(Vector2 desiredVelocity)
     {
+        if (desiredVelocity.sqrMagnitude < 0.001f)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         Vector2 dir = desiredVelocity.normalized;
         Vector2 move = desiredVelocity;
 
         RaycastHit2D frontHit = Physics2D.Raycast(rb.position, dir, wallcheckDistance, wallLayer);
 
-        if (frontHit.collider == null)
+        // Bara undvik om det faktiskt finns en vägg framför botten
+        if (frontHit.collider != null)
         {
-            Vector2 left = new Vector2(-dir.y, -dir.x);
-            Vector2 right = new Vector2(dir.y, dir.x);
+            Vector2 left = new Vector2(-dir.y, dir.x);
+            Vector2 right = new Vector2(dir.y, -dir.x);
 
             bool leftBlocked = Physics2D.Raycast(rb.position, left, wallcheckDistance, wallLayer);
             bool rightBlocked = Physics2D.Raycast(rb.position, right, wallcheckDistance, wallLayer);
@@ -132,17 +175,16 @@ public class BotAI : MonoBehaviour
                 move = (dir + left * avoidStrenght).normalized * desiredVelocity.magnitude;
             else if (!rightBlocked)
                 move = (dir + right * avoidStrenght).normalized * desiredVelocity.magnitude;
-            else 
+            else
                 move = Vector2.zero;
-
         }
 
         rb.linearVelocity = move;
 
-    }
+}
 
 
-    void RotateTowards(Vector2 dir)
+void RotateTowards(Vector2 dir)
     {
         if (dir.sqrMagnitude < 0.001f) return;
 
