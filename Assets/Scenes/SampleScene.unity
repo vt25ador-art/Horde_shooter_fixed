@@ -23969,7 +23969,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -24026,7 +24026,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -24607,7 +24607,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -25385,7 +25385,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -25776,7 +25776,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -26749,7 +26749,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -27632,7 +27632,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -29749,7 +29749,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -30407,7 +30407,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -31169,7 +31169,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -31327,7 +31327,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -427043,7 +427043,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -517661,7 +517661,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -607501,7 +607501,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -607808,7 +607808,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 35
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
