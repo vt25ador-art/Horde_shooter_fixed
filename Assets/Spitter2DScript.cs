@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class SpitterEnemy2D : MonoBehaviour
 {
     [Header("Target")]
@@ -17,7 +18,21 @@ public class SpitterEnemy2D : MonoBehaviour
     [SerializeField] private float attackRange = 9f;
     [SerializeField] private float attackCooldown = 3f;
 
+    [Header("Rotation")]
+    [SerializeField] private float rotationSpeed = 540f;
+
+    private Rigidbody2D rb;
     private float attackTimer;
+    private Vector2 moveDirection;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+
+        rb.gravityScale = 0f;
+        rb.angularVelocity = 0f;
+        rb.freezeRotation = true;
+    }
 
     private void Start()
     {
@@ -35,23 +50,36 @@ public class SpitterEnemy2D : MonoBehaviour
         if (target == null)
             return;
 
-        float distance = Vector2.Distance(transform.position, target.position);
+        float distance = Vector2.Distance(rb.position, target.position);
 
-        HandleMovement(distance);
+        CalculateMovement(distance);
         HandleAttack(distance);
     }
 
-    private void HandleMovement(float distance)
+    private void FixedUpdate()
     {
-        Vector2 direction = (target.position - transform.position).normalized;
+        rb.linearVelocity = moveDirection * moveSpeed;
+
+        if (target != null)
+        {
+            Vector2 toTarget = (Vector2)target.position - rb.position;
+            RotateTowards(toTarget);
+        }
+    }
+
+    private void CalculateMovement(float distance)
+    {
+        Vector2 direction = ((Vector2)target.position - rb.position).normalized;
+
+        moveDirection = Vector2.zero;
 
         if (distance > stopDistance)
         {
-            transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
+            moveDirection = direction;
         }
         else if (distance < retreatDistance)
         {
-            transform.position -= (Vector3)(direction * moveSpeed * Time.deltaTime);
+            moveDirection = -direction;
         }
     }
 
@@ -84,7 +112,15 @@ public class SpitterEnemy2D : MonoBehaviour
         if (projectile != null)
             projectile.SetTargetPosition(target.position);
     }
+
+    private void RotateTowards(Vector2 dir)
+    {
+        if (dir.sqrMagnitude < 0.001f)
+            return;
+
+        float targetAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
+        float angle = Mathf.MoveTowardsAngle(rb.rotation, targetAngle, rotationSpeed * Time.fixedDeltaTime);
+
+        rb.MoveRotation(angle);
+    }
 }
-
-
-
