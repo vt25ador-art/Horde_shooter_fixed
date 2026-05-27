@@ -10,6 +10,11 @@ public class HealthController : MonoBehaviour
     [Header("Downed")]
     public bool isDowned { get; private set; }
 
+    public float CurrentHealth => _currentHealth;
+    public float MaxHealth => _maxiumHealth;
+    public float DownTimeRemaining => downTimer;
+
+
     [SerializeField] private float downTime = 20f;
     private float downTimer;
 
@@ -113,9 +118,6 @@ public class HealthController : MonoBehaviour
 
     public void Revive(float reviveHealth)
     {
-        if (isDead)
-            return;
-
         if (!isDowned)
             return;
 

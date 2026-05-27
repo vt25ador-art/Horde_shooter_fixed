@@ -24092,6 +24092,8 @@ GameObject:
   - component: {fileID: 353292394}
   - component: {fileID: 353292395}
   - component: {fileID: 353292396}
+  - component: {fileID: 353292398}
+  - component: {fileID: 353292397}
   m_Layer: 0
   m_Name: BotAi
   m_TagString: Untagged
@@ -24340,6 +24342,52 @@ MonoBehaviour:
   reviveDistance: 1.5
   reviveTime: 5
   reviveHealth: 35
+--- !u!114 &353292397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353292388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6462d62c600ee59418f64121cdee8d31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 353292398}
+  scriptsToDisable: []
+  rb: {fileID: 353292392}
+  freezeWhenDowned: 1
+  spriteRenderer: {fileID: 0}
+  downedSprite: {fileID: 0}
+  normalSprite: {fileID: 0}
+--- !u!114 &353292398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353292388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2466ce1b663e141933379dd75de8f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentHealth: 100
+  _maxiumHealth: 100
+  downTime: 20
+  OnDowned:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRevived:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDied:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &356601797
 GameObject:
   m_ObjectHideFlags: 0
@@ -27621,6 +27669,7 @@ GameObject:
   - component: {fileID: 935556623}
   - component: {fileID: 935556624}
   - component: {fileID: 935556625}
+  - component: {fileID: 935556629}
   - component: {fileID: 935556626}
   - component: {fileID: 935556627}
   - component: {fileID: 935556628}
@@ -28007,6 +28056,25 @@ MonoBehaviour:
   scriptsToDisable: []
   rb: {fileID: 935556618}
   freezeRigidbodyWhenDowned: 1
+--- !u!114 &935556629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935556617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca053b42ef448e49bbd71e141befa8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reviveDistance: 1.5
+  reviveTime: 5
+  reviveHealth: 35
+  reviveKey: 101
+  botLayer:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!1 &939264541
 GameObject:
   m_ObjectHideFlags: 0
