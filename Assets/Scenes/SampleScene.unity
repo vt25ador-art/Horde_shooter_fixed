@@ -517634,7 +517634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetCamera: {fileID: 519420031}
-  insideZoom: 4
+  insideZoom: 5
   outsideZoom: 8
   zoomSpeed: 3
 --- !u!61 &1889918412
