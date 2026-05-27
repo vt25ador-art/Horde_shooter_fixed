@@ -48,5 +48,8 @@ TagManager:
   - name: OverlayGuide
     uniqueID: 315310715
     locked: 0
+  - name: Fog
+    uniqueID: 4203353995
+    locked: 0
   m_RenderingLayers:
   - Default
