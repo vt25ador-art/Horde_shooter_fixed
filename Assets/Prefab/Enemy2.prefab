@@ -239,4 +239,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 50
   _destroyOnDeath: 1
+  destroyDelay: 5
+  spriteRenderer: {fileID: 0}
+  deadSprite: {fileID: 2077853431380194384, guid: 4a6a3512ae5efa14892d01a9d4bcbe70, type: 3}
+  randomDeadSprites:
+  - {fileID: 2077853431380194384, guid: 4a6a3512ae5efa14892d01a9d4bcbe70, type: 3}
+  - {fileID: 1296741087603402539, guid: deb21c7ba3760ef478b2ce7145ab3bfb, type: 3}
+  useRandomCorpseRotation: 1
+  randomRotationMin: -25
+  randomRotationMax: 25
+  changeSortingOnDeath: 1
+  corpseOrderInLayer: 0
   HitVFX: {fileID: 7972977234735750764, guid: d4efc0e6da5342b4da240face6838057, type: 3}
