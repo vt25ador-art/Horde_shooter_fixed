@@ -172237,6 +172237,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &86864334
 Transform:
   m_ObjectHideFlags: 0
@@ -172305,6 +172311,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  spawnDirector: {fileID: 0}
+  relaxAfterHordeTime: 12
 --- !u!4 &169604087
 Transform:
   m_ObjectHideFlags: 0
@@ -172457,8 +172465,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 12.76875, y: -16.53715, z: 0}
-    m_Extent: {x: 17.74435, y: 23.72595, z: 0}
+    m_Center: {x: 7.5149503, y: -16.3948, z: 0}
+    m_Extent: {x: 22.997551, y: 23.8692, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -172471,7 +172479,9 @@ MonoBehaviour:
   m_ShapePath:
   - {x: -0.26687622, y: -0.30402088, z: 0}
   - {x: 0.44682312, y: -1.3110988, z: 0}
-  - {x: 3.637169, y: -6.176759, z: 0}
+  - {x: 2.3697662, y: -4.301055, z: 0}
+  - {x: 2.7584457, y: -5.13605, z: 0}
+  - {x: 3.291832, y: -6.2918696, z: 0}
   - {x: 6.0076447, y: -10.492811, z: 0}
   - {x: 7.676773, y: -13.713399, z: 0}
   - {x: 19.047554, y: -39.738842, z: 0}
@@ -172481,7 +172491,13 @@ MonoBehaviour:
   - {x: 30.013496, y: -31.549004, z: 0}
   - {x: 30.003296, y: -26.200191, z: 0}
   - {x: 3.453514, y: 6.688689, z: 0}
-  - {x: -4.4746094, y: 6.6033077, z: 0}
+  - {x: -4.503433, y: 6.920369, z: 0}
+  - {x: -14.982803, y: 6.9742355, z: 0}
+  - {x: -7.903969, y: -3.829261, z: 0}
+  - {x: -5.6260147, y: -7.0528536, z: 0}
+  - {x: 0.054351807, y: -6.964443, z: 0}
+  - {x: 2.5580902, y: -6.947393, z: 0}
+  - {x: 3.4584503, y: -6.8213425, z: 0}
 --- !u!4 &199816073
 Transform:
   m_ObjectHideFlags: 0
@@ -172938,6 +172954,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &356120991
 GameObject:
   m_ObjectHideFlags: 0
@@ -173066,8 +173088,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.3695498, y: -5.8387003, z: 0}
-    m_Extent: {x: 24.82985, y: 22.063301, z: 0}
+    m_Center: {x: -1.3694496, y: -5.6956005, z: 0}
+    m_Extent: {x: 24.82975, y: 22.2064, z: 0}
   m_PointLightInnerAngle: 251.8772
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -173098,7 +173120,15 @@ MonoBehaviour:
   - {x: 7.347023, y: -10.102076, z: 0}
   - {x: 6.544903, y: -5.9809923, z: 0}
   - {x: 5.4568977, y: -3.8484936, z: 0}
-  - {x: -7.241169, y: 15.725239, z: 0}
+  - {x: 2.7325516, y: 1.3317652, z: 0}
+  - {x: 4.2305565, y: -0.018894196, z: 0}
+  - {x: 7.9387283, y: 0.15300846, z: 0}
+  - {x: 7.9387283, y: 1.3808794, z: 0}
+  - {x: 7.831604, y: 9.720485, z: 0}
+  - {x: 7.7818336, y: 11.057109, z: 0}
+  - {x: 8.703529, y: 11.20013, z: 0}
+  - {x: 5.7954254, y: 15.967512, z: 0}
+  - {x: -7.1140404, y: 16.011282, z: 0}
   - {x: -25.699753, y: 15.568949, z: 0}
   - {x: -7.2226105, y: -0.32709408, z: 0}
   - {x: -5.6993103, y: -3.4103308, z: 0}
@@ -173118,63 +173148,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 517175169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &371796025
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1252222191515269955, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_Name
-      value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 77.847824
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -22.098194
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
 --- !u!1 &379543530
 GameObject:
   m_ObjectHideFlags: 0
@@ -173690,6 +173663,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 1
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &450855801
 GameObject:
   m_ObjectHideFlags: 0
@@ -173734,6 +173713,8 @@ MonoBehaviour:
   normalNodesToEnableAfterEvent:
   - {fileID: 930259846}
   - {fileID: 1704833090}
+  spawnDirector: {fileID: 0}
+  relaxAfterHordeTime: 12
 --- !u!4 &450855803
 Transform:
   m_ObjectHideFlags: 0
@@ -173837,6 +173818,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &467639249
 Transform:
   m_ObjectHideFlags: 0
@@ -173891,6 +173878,7 @@ Transform:
   - {fileID: 1410428658}
   - {fileID: 1608251121}
   - {fileID: 1240655769}
+  - {fileID: 2092254342}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &560400445
@@ -173993,8 +173981,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 4.7856, y: -3.95785, z: 0}
-    m_Extent: {x: 9.498301, y: 11.908751, z: 0}
+    m_Center: {x: 5.08515, y: -3.958, z: 0}
+    m_Extent: {x: 9.79745, y: 11.9086, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -174012,7 +174000,12 @@ MonoBehaviour:
   - {x: 8.323578, y: -13.218781, z: 0}
   - {x: 9.831909, y: -15.367012, z: 0}
   - {x: 13.784683, y: -14.4618025, z: 0}
-  - {x: 3.3362389, y: 7.4510164, z: 0}
+  - {x: 7.249466, y: 0.0067005157, z: 0}
+  - {x: 7.262333, y: -0.016559124, z: 0}
+  - {x: 14.382957, y: -0.016559124, z: 0}
+  - {x: 12.261917, y: 4.2688007, z: 0}
+  - {x: 10.66032, y: 6.974205, z: 0}
+  - {x: 3.3795242, y: 7.4510164, z: 0}
   - {x: -4.2149506, y: 5.215583, z: 0}
 --- !u!4 &676536836
 Transform:
@@ -174069,6 +174062,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &683386861
 Transform:
   m_ObjectHideFlags: 0
@@ -174172,6 +174171,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &686972170
 Transform:
   m_ObjectHideFlags: 0
@@ -201858,7 +201863,7 @@ Transform:
   m_GameObject: {fileID: 796411299}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.95, y: -39.37, z: -0.17}
+  m_LocalPosition: {x: 11.95, y: -39.37, z: -0.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -201952,6 +201957,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &854435334
 Transform:
   m_ObjectHideFlags: 0
@@ -202022,6 +202033,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &930259843
 GameObject:
   m_ObjectHideFlags: 0
@@ -202125,6 +202142,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1020259260
 GameObject:
   m_ObjectHideFlags: 0
@@ -202180,6 +202203,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1194784407
 GameObject:
   m_ObjectHideFlags: 0
@@ -202220,6 +202249,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &1194784410
 Transform:
   m_ObjectHideFlags: 0
@@ -202338,6 +202373,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1240655768
 GameObject:
   m_ObjectHideFlags: 0
@@ -202737,9 +202778,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 316982173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 291.1, y: 174.7}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -125, y: -43}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1403614771
@@ -202904,7 +202945,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.56078434, g: 0.003921569, b: 0.003921569, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.25
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 000000008fdb33d37b42cb12
@@ -202923,8 +202964,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 30.87985, y: -45.6414, z: 0}
-    m_Extent: {x: 35.85415, y: 52.745197, z: 0}
+    m_Center: {x: 24.08815, y: -45.681747, z: 0}
+    m_Extent: {x: 42.64505, y: 52.70485, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -202935,9 +202976,13 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 0.5
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -0.26687622, y: -0.30402088, z: 0}
-  - {x: 0.44682312, y: -1.3110988, z: 0}
+  - {x: 0.29403687, y: -6.6877384, z: 0}
+  - {x: 2.3006973, y: -6.358631, z: 0}
   - {x: 3.637169, y: -6.176759, z: 0}
+  - {x: -6.557068, y: -7.768223, z: 0}
+  - {x: -5.786682, y: -9.036467, z: 0}
+  - {x: 4.4428024, y: -8.919111, z: 0}
+  - {x: 4.472641, y: -7.413287, z: 0}
   - {x: 6.0076447, y: -10.492811, z: 0}
   - {x: 8.283257, y: -13.592101, z: 0}
   - {x: 11.645531, y: -28.590069, z: 0}
@@ -202954,7 +202999,9 @@ MonoBehaviour:
   - {x: 44.41136, y: -30.413593, z: 0}
   - {x: 42.067917, y: -23.497555, z: 0}
   - {x: 36.50592, y: 6.5169735, z: 0}
-  - {x: -4.4746094, y: 6.6033077, z: 0}
+  - {x: -18.057266, y: 6.522458, z: 0}
+  - {x: -12.052193, y: -0.617239, z: 0}
+  - {x: -6.701027, y: -7.7234726, z: 0}
 --- !u!4 &1410428658
 Transform:
   m_ObjectHideFlags: 0
@@ -203459,6 +203506,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1565366745
 GameObject:
   m_ObjectHideFlags: 0
@@ -203996,6 +204049,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1709692031
 GameObject:
   m_ObjectHideFlags: 0
@@ -234583,6 +234642,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1765949756
 GameObject:
   m_ObjectHideFlags: 0
@@ -234889,6 +234954,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &1802001850
 Transform:
   m_ObjectHideFlags: 0
@@ -235045,6 +235116,14 @@ MonoBehaviour:
   - {x: 16.769344, y: -0.14773989, z: 0}
   - {x: -1.2319336, y: 15.725239, z: 0}
   - {x: -6.6460743, y: 15.788801, z: 0}
+  - {x: -6.3842735, y: 14.726612, z: 0}
+  - {x: -3.513278, y: 9.46106, z: 0}
+  - {x: -0.7026863, y: 4.846255, z: 0}
+  - {x: 1.3600216, y: 1.3498383, z: 0}
+  - {x: 2.8894901, y: -1.3028336, z: 0}
+  - {x: 4.61627, y: -3.702157, z: 0}
+  - {x: 6.4123154, y: -3.702156, z: 0}
+  - {x: 8.734472, y: -3.7384396, z: 0}
   - {x: 9.465179, y: -2.4058523, z: 0}
   - {x: 10.62956, y: -4.622937, z: 0}
   - {x: 11.566093, y: -7.377224, z: 0}
@@ -235117,8 +235196,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 9.5406, y: -15.935249, z: 0}
-    m_Extent: {x: 14.75, y: 24.26205, z: 0}
+    m_Center: {x: 9.5412, y: -15.93635, z: 0}
+    m_Extent: {x: 14.7492, y: 24.26235, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -235130,7 +235209,10 @@ MonoBehaviour:
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: -0.8548126, y: -0.5, z: 0}
-  - {x: -0.63106537, y: -1.5070779, z: 0}
+  - {x: -0.83491516, y: -1.5384398, z: 0}
+  - {x: -0.8595047, y: -4.3836985, z: 0}
+  - {x: -1.042633, y: -6.8193097, z: 0}
+  - {x: 2.3086243, y: -6.984125, z: 0}
   - {x: 2.7634125, y: -6.49449, z: 0}
   - {x: 5.6104813, y: -10.572245, z: 0}
   - {x: 7.676773, y: -13.713399, z: 0}
@@ -235259,6 +235341,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1916449677
 GameObject:
   m_ObjectHideFlags: 0
@@ -235347,6 +235435,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &1916449680
 Transform:
   m_ObjectHideFlags: 0
@@ -235569,6 +235663,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &2040903454
 GameObject:
   m_ObjectHideFlags: 0
@@ -235672,6 +235772,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &2072486547
 GameObject:
   m_ObjectHideFlags: 0
@@ -235916,6 +236022,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &2088664907
 Transform:
   m_ObjectHideFlags: 0
@@ -235931,6 +236043,101 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1830674460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2092254341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2092254342}
+  - component: {fileID: 2092254343}
+  m_Layer: 0
+  m_Name: Spot Light 2D (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2092254342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092254341}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -101.1, y: 6.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 517175169}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092254343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092254341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.56078434, g: 0.003921569, b: 0.003921569, a: 1}
+  m_Intensity: 0.25
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 000000008fdb33d37b42cb128b178afa
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 8.89885, y: 13.5609, z: 0}
+    m_Extent: {x: 15.90585, y: 27.6934, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -6.507312, y: -9.932793, z: 0}
+  - {x: -6.292865, y: -13.479347, z: 0.000001847744}
+  - {x: 9.7570715, y: -13.632938, z: 0.000001847744}
+  - {x: 17.206085, y: -13.632938, z: 0.000001847744}
+  - {x: 15.374996, y: -9.8256035, z: 0}
+  - {x: 15.309322, y: -3.67025, z: 0}
+  - {x: 23.236996, y: -3.2749481, z: -0.000000059604645}
+  - {x: 23.420689, y: 7.336458, z: -0.000000059604645}
+  - {x: 23.412464, y: 11.964024, z: -0.000000059604645}
+  - {x: 22.768547, y: 22.097664, z: 0.000001847744}
+  - {x: 24.305286, y: 22.823124, z: -0.000000059604645}
+  - {x: 20.184855, y: 29.874308, z: -0.000000059604645}
+  - {x: 16.93162, y: 33.94085, z: -0.000000059604645}
+  - {x: 6.5546894, y: 40.75515, z: 0.000001847744}
+  - {x: -5.737191, y: 33.190468, z: 0}
 --- !u!1 &2113396946
 GameObject:
   m_ObjectHideFlags: 0
@@ -235971,6 +236178,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &2113396949
 Transform:
   m_ObjectHideFlags: 0
@@ -236009,5 +236222,4 @@ SceneRoots:
   - {fileID: 517175169}
   - {fileID: 1935580515}
   - {fileID: 1657267316}
-  - {fileID: 371796025}
   - {fileID: 1512081284}
