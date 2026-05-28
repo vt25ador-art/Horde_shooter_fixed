@@ -191,6 +191,7 @@ MonoBehaviour:
   - {fileID: 2077853431380194384, guid: 4a6a3512ae5efa14892d01a9d4bcbe70, type: 3}
   - {fileID: 1296741087603402539, guid: deb21c7ba3760ef478b2ce7145ab3bfb, type: 3}
   - {fileID: 6427655844285765544, guid: c8b2b7fab39879d4dab29b26676ffc72, type: 3}
+  - {fileID: -2780393528177019354, guid: 03174117d4f348c479b2e5eb057cee2a, type: 3}
   useRandomCorpseRotation: 1
   randomRotationMin: -25
   randomRotationMax: 25
