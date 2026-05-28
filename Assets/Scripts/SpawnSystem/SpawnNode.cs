@@ -23,6 +23,13 @@ public class SpawnNode : MonoBehaviour
     [Header("Horde")]
     [SerializeField] private bool isHordeNode = false;
 
+
+    [Header("Clear Zombies When Player Enters")]
+    [SerializeField] private bool clearZombiesOnPlayerEnter = true;
+    [SerializeField] private float clearRadius = 8f;
+    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private bool disableSpawnAfterClear = true;
+
     private float timer;
     private bool active = true;
     private bool forcedActive;
@@ -162,10 +169,14 @@ public class SpawnNode : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player"))
             return;
 
-        DisableSpawnIfNormalNode(); 
+        if (clearZombiesOnPlayerEnter)
+            ClearZombiesInRadius();
+
+        if (disableSpawnAfterClear)
+            DisableSpawnIfNormalNode();
     }
 
     private void DisableSpawnIfNormalNode()
@@ -175,6 +186,30 @@ public class SpawnNode : MonoBehaviour
         spawnDisabled = true;
         active = false;
     }
+
+
+    private void ClearZombiesInRadius()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, clearRadius, enemyLayer);
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            if (hits[i] == null)
+                continue;
+
+            EnemyHealth enemyHealth = hits[i].GetComponent<EnemyHealth>();
+
+            if (enemyHealth != null)
+            {
+                Destroy(enemyHealth.gameObject);
+            }
+            else
+            {
+                Destroy(hits[i].gameObject);
+            }
+        }
+    }
+
 
     public void EnableSpawn()
     {
@@ -194,5 +229,8 @@ public class SpawnNode : MonoBehaviour
 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, maxDist);
+
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(transform.position, clearRadius);
     }
 }

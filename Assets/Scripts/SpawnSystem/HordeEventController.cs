@@ -24,6 +24,12 @@ public class HordeEventController : MonoBehaviour
     [SerializeField] private SpawnNode[] normalNodesToEnableAfterEvent;
 
 
+
+    [Header("Director")]
+    [SerializeField] private SpawnDirector spawnDirector;
+    [SerializeField] private float relaxAfterHordeTime = 12f;
+
+
     private bool eventRunning;
     private int currentKills;
     private Coroutine eventRoutine;
@@ -84,6 +90,9 @@ public class HordeEventController : MonoBehaviour
 
         if (gateToOpen != null)
             gateToOpen.OpenDoor();
+
+        if (spawnDirector != null)
+            spawnDirector.ForceRelax(relaxAfterHordeTime);
 
         eventRunning = false;
         eventRoutine = null;

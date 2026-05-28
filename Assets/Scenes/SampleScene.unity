@@ -156,6 +156,8 @@ MonoBehaviour:
   useMaxDurationEvenWithKillTarget: 1
   maxDurationWithKillTarget: 30
   normalNodesToEnableAfterEvent: []
+  spawnDirector: {fileID: 0}
+  relaxAfterHordeTime: 12
 --- !u!4 &2514939
 Transform:
   m_ObjectHideFlags: 0
@@ -226,6 +228,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &19732815
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +778,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!61 &110117390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24061,6 +24075,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &350470083
 GameObject:
   m_ObjectHideFlags: 0
@@ -24118,6 +24138,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!61 &350470086
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24662,6 +24688,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &386980928
 GameObject:
   m_ObjectHideFlags: 0
@@ -24765,6 +24797,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &391963496
 GameObject:
   m_ObjectHideFlags: 0
@@ -24927,6 +24965,12 @@ MonoBehaviour:
   burstMin: 2
   burstMax: 4
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &428714753
 GameObject:
   m_ObjectHideFlags: 0
@@ -24982,6 +25026,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!114 &463164489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25287,6 +25337,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -25546,6 +25602,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &535214722
 GameObject:
   m_ObjectHideFlags: 0
@@ -25649,6 +25711,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &545729391
 GameObject:
   m_ObjectHideFlags: 0
@@ -25803,6 +25871,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -25990,6 +26064,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &627902952
 GameObject:
   m_ObjectHideFlags: 0
@@ -26043,7 +26123,6 @@ Transform:
   - {fileID: 1932412009}
   - {fileID: 527620822}
   - {fileID: 2108457442}
-  - {fileID: 904652461}
   - {fileID: 1457009308}
   - {fileID: 305252720}
   - {fileID: 1655446216}
@@ -26988,6 +27067,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1001 &800218867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27692,6 +27777,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &898283458
 GameObject:
   m_ObjectHideFlags: 0
@@ -27768,109 +27859,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898283458}
   m_CullTransparentMesh: 1
---- !u!1 &904652460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 904652461}
-  - component: {fileID: 904652463}
-  - component: {fileID: 904652462}
-  m_Layer: 0
-  m_Name: WanderSpawner03 (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &904652461
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 904652460}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23, y: -14.72, z: -0.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 627902953}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &904652462
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 904652460}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 10, y: 10}
-  m_EdgeRadius: 0
---- !u!114 &904652463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 904652460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 249c2bcef199f74498c377f087432e3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefabs:
-  - {fileID: 8727671323915685619, guid: 34681049df75d4143a0d86e9a0d0af6e, type: 3}
-  - {fileID: 2469920286554820205, guid: 1526cb2c1c6c1744a997df3b311d0e85, type: 3}
-  requiredDoor: {fileID: 0}
-  activeFor: 8
-  disabledFor: 12
-  minDist: 15
-  maxDist: 35
-  requireNotVisible: 1
-  burstMin: 4
-  burstMax: 8
-  isHordeNode: 0
 --- !u!1 &911882710
 GameObject:
   m_ObjectHideFlags: 0
@@ -28593,6 +28581,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!61 &1035026447
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28957,7 +28951,7 @@ MonoBehaviour:
   useMaxDurationEvenWithKillTarget: 1
   maxDurationWithKillTarget: 60
   normalNodesToEnableAfterEvent:
-  - {fileID: 904652463}
+  - {fileID: 0}
   - {fileID: 1655446218}
   - {fileID: 1099501436}
   - {fileID: 2135757506}
@@ -28969,6 +28963,8 @@ MonoBehaviour:
   - {fileID: 305252722}
   - {fileID: 1303399119}
   - {fileID: 386980931}
+  spawnDirector: {fileID: 1287042082}
+  relaxAfterHordeTime: 12
 --- !u!4 &1059909121
 Transform:
   m_ObjectHideFlags: 0
@@ -29171,6 +29167,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1100901791
 GameObject:
   m_ObjectHideFlags: 0
@@ -29502,6 +29504,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1193219924
 GameObject:
   m_ObjectHideFlags: 0
@@ -29983,6 +29991,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1287042081
 GameObject:
   m_ObjectHideFlags: 0
@@ -30140,6 +30154,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1313144330
 GameObject:
   m_ObjectHideFlags: 0
@@ -30882,6 +30902,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1476664573
 GameObject:
   m_ObjectHideFlags: 0
@@ -31401,6 +31427,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1603722299
 GameObject:
   m_ObjectHideFlags: 0
@@ -31485,8 +31517,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 31.939102, y: -81.64685, z: 0}
-    m_Extent: {x: 185.2952, y: 85.89584, z: 0}
+    m_Center: {x: 31.939102, y: -81.00449, z: 0}
+    m_Extent: {x: 185.2952, y: 86.5382, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -31516,18 +31548,19 @@ MonoBehaviour:
   - {x: 215.8158, y: -117.814026, z: 0}
   - {x: 216.73544, y: -103.45218, z: 0}
   - {x: 206.00319, y: -98.18882, z: 0}
-  - {x: 200.84721, y: -93.97746, z: 0}
-  - {x: 197.9832, y: -90.66817, z: 0}
-  - {x: 194.43233, y: -89.07169, z: 0}
-  - {x: 180.99232, y: -84.0569, z: 0}
-  - {x: 173.83488, y: -81.46541, z: 0}
-  - {x: 72.68985, y: -31.153336, z: 0}
-  - {x: 66.24417, y: -26.209312, z: 0}
-  - {x: 59.924877, y: -20.990303, z: 0}
-  - {x: 56.71059, y: -17.47602, z: 0}
-  - {x: 44.277927, y: -10.319077, z: 0}
-  - {x: 39.860962, y: -4.524887, z: 0}
-  - {x: 36.918964, y: 3.7496643, z: 0}
+  - {x: 200.84721, y: -93.893845, z: 0}
+  - {x: 199.80568, y: -88.61198, z: 0}
+  - {x: 207.38705, y: -88.80477, z: 0}
+  - {x: 196.13991, y: -85.425156, z: 0}
+  - {x: 182.38123, y: -80.26956, z: 0}
+  - {x: 175.6587, y: -77.15018, z: 0}
+  - {x: 77.44789, y: -26.077232, z: 0}
+  - {x: 70.347, y: -21.957352, z: 0}
+  - {x: 64.20088, y: -17.048935, z: 0}
+  - {x: 59.74404, y: -13.265663, z: 0}
+  - {x: 49.985146, y: -5.0413895, z: 0}
+  - {x: 44.01928, y: -0.0035705566, z: 0}
+  - {x: 37.937767, y: 5.036873, z: 0}
   - {x: -1.2933006, y: 1.2366409, z: 0}
 --- !u!4 &1620052730
 Transform:
@@ -31647,6 +31680,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1645338977
 GameObject:
   m_ObjectHideFlags: 0
@@ -31702,6 +31741,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1655446215
 GameObject:
   m_ObjectHideFlags: 0
@@ -31800,11 +31845,17 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 35
+  maxDist: 30
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1662183563
 GameObject:
   m_ObjectHideFlags: 0
@@ -31992,6 +32043,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1690725988
 GameObject:
   m_ObjectHideFlags: 0
@@ -422994,6 +423051,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1743712492
 GameObject:
   m_ObjectHideFlags: 0
@@ -423080,6 +423143,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!114 &1803492358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423217,6 +423286,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1826554172
 GameObject:
   m_ObjectHideFlags: 0
@@ -423272,6 +423347,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1863844321
 GameObject:
   m_ObjectHideFlags: 0
@@ -423375,6 +423456,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1869329266
 GameObject:
   m_ObjectHideFlags: 0
@@ -423514,6 +423601,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1873596314
 GameObject:
   m_ObjectHideFlags: 0
@@ -515080,6 +515173,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1935294415
 GameObject:
   m_ObjectHideFlags: 0
@@ -515984,6 +516083,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &1995448066
 GameObject:
   m_ObjectHideFlags: 0
@@ -604783,6 +604888,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &2067451481
 GameObject:
   m_ObjectHideFlags: 0
@@ -604915,6 +605026,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!61 &2076864555
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -605016,6 +605133,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 1
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &2093251389
 GameObject:
   m_ObjectHideFlags: 0
@@ -605119,6 +605242,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &2108457441
 GameObject:
   m_ObjectHideFlags: 0
@@ -605222,6 +605351,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!1 &2130238830
 GameObject:
   m_ObjectHideFlags: 0
@@ -605261,6 +605396,12 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 1
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!4 &2130238832
 Transform:
   m_ObjectHideFlags: 0
@@ -605379,6 +605520,12 @@ MonoBehaviour:
   burstMin: 4
   burstMax: 8
   isHordeNode: 0
+  clearZombiesOnPlayerEnter: 1
+  clearRadius: 8
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  disableSpawnAfterClear: 1
 --- !u!213 &2138598813
 Sprite:
   m_ObjectHideFlags: 0

@@ -105,4 +105,13 @@ public class SpawnDirector : MonoBehaviour
             (shuffled[i], shuffled[j]) = (shuffled[j], shuffled[i]);
         }
     }
+
+    public void ForceRelax(float customRelaxTime = -1f)
+    {
+        mode = Mode.Relax;
+        modeTimer = customRelaxTime > 0f ? customRelaxTime : relaxTime;
+        tick = tickInterval;
+
+        Debug.Log("SpawnDirector forced into RELAX mode");
+    }
 }
