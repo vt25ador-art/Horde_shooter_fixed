@@ -250449,8 +250449,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 8.4151, y: -25.116798, z: 0}
-    m_Extent: {x: 20.357, y: 27.569, z: 0}
+    m_Center: {x: 7.3907504, y: -25.116798, z: 0}
+    m_Extent: {x: 21.38135, y: 27.569, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -250467,8 +250467,8 @@ MonoBehaviour:
   - {x: 18.504997, y: -24.10693, z: 0.000001847744}
   - {x: 9.153648, y: -2.8295212, z: 0}
   - {x: 7.992607, y: 1.9523239, z: 0}
-  - {x: -11.443748, y: -4.0371246, z: 0}
-  - {x: 0.5423813, y: -52.18648, z: 0.000001847744}
+  - {x: -13.49221, y: -4.4611664, z: 0}
+  - {x: -0.21698761, y: -52.18648, z: 0.000001847744}
 --- !u!1 &1369259795
 GameObject:
   m_ObjectHideFlags: 0
@@ -250785,6 +250785,63 @@ RectTransform:
   m_AnchoredPosition: {x: -125, y: -43}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1386994761
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1252222191515269955, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 128.32487
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -91.56488
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478448821878185368, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2aa6329186c1e8d45a4bb29d44d6e24a, type: 3}
 --- !u!1 &1403614771
 GameObject:
   m_ObjectHideFlags: 0
@@ -298641,7 +298698,7 @@ MonoBehaviour:
   canOnlyUseOnce: 1
   hordeEvent: {fileID: 450855802}
   generatorSound: {fileID: 0}
-  lightObject: {fileID: 0}
+  lightObject: {fileID: 1770247158}
 --- !u!114 &1765949758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298739,7 +298796,7 @@ GameObject:
   - component: {fileID: 1770247160}
   - component: {fileID: 1770247159}
   m_Layer: 0
-  m_Name: Spot Light 2D (1)
+  m_Name: Terminal_light02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -298762,7 +298819,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.507
   m_Color: {r: 0, g: 0.1254902, b: 0.20784315, a: 1}
-  m_Intensity: 0.4
+  m_Intensity: 0.8
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 000000008fdb33d37b42cb12
@@ -300584,3 +300641,4 @@ SceneRoots:
   - {fileID: 2013017530}
   - {fileID: 1853001143}
   - {fileID: 144396333}
+  - {fileID: 1386994761}
