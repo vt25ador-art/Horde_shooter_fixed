@@ -163820,6 +163820,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 93, y: -5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 31
+      m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 9
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 117, y: -5, z: 0}
     second:
       serializedVersion: 2
@@ -164870,6 +164880,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 93, y: -4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 31
+      m_TileSpriteIndex: 30
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 9
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 94, y: -4, z: 0}
     second:
       serializedVersion: 2
@@ -165735,6 +165755,16 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 36
       m_TileSpriteIndex: 36
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 9
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 93, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 31
+      m_TileSpriteIndex: 30
       m_TileMatrixIndex: 0
       m_TileColorIndex: 9
       m_TileObjectToInstantiateIndex: 65535
@@ -171834,8 +171864,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: 9b3a965812b8a4a409b9ae010c94c0b1, type: 2}
   - m_RefCount: 30
     m_Data: {fileID: 11400000, guid: b8e0eb94a23f9d9489102f1a529e0473, type: 2}
   - m_RefCount: 30
@@ -171993,8 +172023,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 3
+    m_Data: {fileID: -329774518, guid: a00e272643a04e9458312f955850b7f2, type: 3}
   - m_RefCount: 30
     m_Data: {fileID: -5586501257146125045, guid: 185f5fd9011bb6f429dc99450b8fce2a, type: 3}
   - m_RefCount: 30
@@ -172094,7 +172124,7 @@ Tilemap:
   - m_RefCount: 4
     m_Data: {fileID: -1137244048, guid: 3d76d81109ac0cd488e69c964e0b913d, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 17067
+  - m_RefCount: 17070
     m_Data:
       e00: 1
       e01: 0
@@ -172167,7 +172197,7 @@ Tilemap:
     m_Data: {r: -2.2852622e-28, g: -2.2852622e-28, b: -2.2852622e-28, a: -2.2852622e-28}
   - m_RefCount: 0
     m_Data: {r: -1.3944072e-27, g: -1.3944072e-27, b: -1.3944072e-27, a: -1.3944072e-27}
-  - m_RefCount: 17131
+  - m_RefCount: 17134
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: -6.527272e-26, g: -6.527272e-26, b: -6.527272e-26, a: -6.527272e-26}
@@ -174166,10 +174196,10 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 10
-  maxDist: 30
+  maxDist: 10
   requireNotVisible: 1
-  burstMin: 4
-  burstMax: 8
+  burstMin: 2
+  burstMax: 4
   isHordeNode: 0
   clearZombiesOnPlayerEnter: 1
   clearRadius: 8
@@ -174186,7 +174216,7 @@ Transform:
   m_GameObject: {fileID: 686972167}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 55.5, y: 23.21025, z: 0.19891095}
+  m_LocalPosition: {x: 61.35, y: 23.21025, z: 0.19891095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -203430,7 +203460,7 @@ Transform:
   m_GameObject: {fileID: 1536848890}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.49, y: 1.9, z: 0.19891095}
+  m_LocalPosition: {x: 61.54, y: 1.9, z: 0.19891095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -203501,10 +203531,10 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 10
-  maxDist: 30
+  maxDist: 10
   requireNotVisible: 1
-  burstMin: 4
-  burstMax: 8
+  burstMin: 2
+  burstMax: 4
   isHordeNode: 0
   clearZombiesOnPlayerEnter: 1
   clearRadius: 8
@@ -234949,7 +234979,7 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 15
-  maxDist: 30
+  maxDist: 20
   requireNotVisible: 1
   burstMin: 4
   burstMax: 8
@@ -234969,7 +234999,7 @@ Transform:
   m_GameObject: {fileID: 1802001847}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63.08, y: 11.13, z: 0.19891095}
+  m_LocalPosition: {x: 71.68, y: 11.13, z: 0.19891095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -235430,10 +235460,10 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 10
-  maxDist: 30
+  maxDist: 10
   requireNotVisible: 1
-  burstMin: 4
-  burstMax: 8
+  burstMin: 2
+  burstMax: 4
   isHordeNode: 0
   clearZombiesOnPlayerEnter: 1
   clearRadius: 8
@@ -235450,7 +235480,7 @@ Transform:
   m_GameObject: {fileID: 1916449677}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 57.46, y: 30.71, z: 0.19891095}
+  m_LocalPosition: {x: 61.35, y: 23.45, z: 0.19891095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -236017,10 +236047,10 @@ MonoBehaviour:
   activeFor: 8
   disabledFor: 12
   minDist: 10
-  maxDist: 30
+  maxDist: 10
   requireNotVisible: 1
-  burstMin: 4
-  burstMax: 8
+  burstMin: 2
+  burstMax: 4
   isHordeNode: 0
   clearZombiesOnPlayerEnter: 1
   clearRadius: 8
@@ -236037,7 +236067,7 @@ Transform:
   m_GameObject: {fileID: 2088664904}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 57.37, y: 11.042946, z: 0.19891095}
+  m_LocalPosition: {x: 61.24, y: 11.042946, z: 0.19891095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
