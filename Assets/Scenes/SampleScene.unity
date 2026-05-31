@@ -24345,6 +24345,8 @@ MonoBehaviour:
   _currentHealth: 100
   _maxiumHealth: 100
   godMode: 0
+  maxDownsBeforeDeath: 3
+  downCount: 0
   downTime: 20
   OnDowned:
     m_PersistentCalls:
@@ -27319,6 +27321,7 @@ MonoBehaviour:
   hordeEvent: {fileID: 0}
   generatorSound: {fileID: 0}
   lightObject: {fileID: 716875895}
+  radioFinaleEvent: {fileID: 0}
 --- !u!213 &806531610
 Sprite:
   m_ObjectHideFlags: 0
@@ -27974,6 +27977,7 @@ GameObject:
   - component: {fileID: 935556627}
   - component: {fileID: 935556628}
   - component: {fileID: 935556630}
+  - component: {fileID: 935556631}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -28254,6 +28258,8 @@ MonoBehaviour:
   _currentHealth: 100
   _maxiumHealth: 100
   godMode: 0
+  maxDownsBeforeDeath: 3
+  downCount: 0
   downTime: 40
   OnDowned:
     m_PersistentCalls:
@@ -28302,7 +28308,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 299818978}
         m_TargetAssemblyTypeName: DeathScreenController, Assembly-CSharp
-        m_MethodName: ShowDeathScreen
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -28412,6 +28418,22 @@ MonoBehaviour:
   healPanel: {fileID: 758819957}
   healText: {fileID: 1100901793}
   firstAidCountText: {fileID: 716378356}
+--- !u!114 &935556631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935556617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547238e04e90e7e41b8ddef101641ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 935556625}
+  menuSceneName: Main Menu
+  delayBeforeLoad: 3
+  deathScreen: {fileID: 299818976}
 --- !u!1 &939264541
 GameObject:
   m_ObjectHideFlags: 0
@@ -31317,6 +31339,7 @@ MonoBehaviour:
   hordeEvent: {fileID: 0}
   generatorSound: {fileID: 0}
   lightObject: {fileID: 1998456495}
+  radioFinaleEvent: {fileID: 0}
 --- !u!1 &1561778331
 GameObject:
   m_ObjectHideFlags: 0

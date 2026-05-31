@@ -126,6 +126,8 @@ public class EnemyHealth : MonoBehaviour
 
         if (_destroyOnDeath)
             Destroy(gameObject, destroyDelay);
+
+        GameStats.AddKill();
     }
 
     private void ApplyCorpseVisual()

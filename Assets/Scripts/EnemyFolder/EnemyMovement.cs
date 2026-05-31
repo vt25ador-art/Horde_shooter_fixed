@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.WSA;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyMovement : MonoBehaviour

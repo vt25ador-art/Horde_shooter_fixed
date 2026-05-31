@@ -17,7 +17,8 @@ public class Mainmenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(gameSceneName);
+        GameStats.ResetStats();
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void OpenControls()

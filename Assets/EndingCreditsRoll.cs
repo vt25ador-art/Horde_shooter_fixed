@@ -80,22 +80,58 @@ public class EndingCreditsRoll : MonoBehaviour
         if (creditsText != null)
         {
             creditsText.text =
-                "THE SURVIVORS ESCAPED\n\n" +
-                "The radio signal reached the boat.\n\n" +
-                "The horde was held back.\n\n" +
-                "The survivors made it out alive.\n\n" +
-                "Campaign Complete\n\n" +
-                "Created by Adam Örn\n\n" +
-                "Tack till:\n" +
-                "Sabine\n" +
-                "Youtube\n" +
-                "Vanessa\n" +
-                "Blå kuber\n\n" +
-                
-                
-                "THANKS FOR PLAYING\n\n" +
+            "THE SURVIVORS ESCAPED\n\n" +
 
-                "THE SURVIVORS ARE SAFE FOR NOW!";
+            "The radio signal reached the rescue boat.\n\n" +
+            "The generator screamed.\n" +
+            "The horde answered.\n" +
+            "The survivors regretted everything.\n\n" +
+
+            "But somehow...\n\n" +
+            "they made it out alive.\n\n" +
+
+            "Campaign Complete\n\n" +
+
+            "Statistics:\n" +
+            "Bullets Fired: Not Enough\n" +
+            "Reloads Panicked: Yes\n\n" +
+            "Common Sense Used: 0\n\n" +
+            "Blue Cubes Encountered: Classified\n\n" +
+
+            "Created by Adam Örn\n\n" +
+
+            "Thanks to:\n" +
+            "Sabine\n" +
+            "Stich\n" +
+            "Youtube\n" +
+            "Vanessa\n" +
+            "Blå kuber\n" +
+            "Unity Profiler\n" +
+            "The broken reload sound\n" +
+            "Every zombie who spawned too close\n" +
+            "THE BACKROOMS?\n" +
+            "The bot, despite everything\n" +
+            "THE SOUND FILE THAT LAGGED THE EDITOR\n\n" +
+
+
+            "Speciellt tack till:\n" +
+            "Min kusin för sitt tålamod\n\n" +
+
+            "Final Report:\n" +
+            "The valley is silent again.\n" +
+            "The rescue boat left the shore.\n" +
+            "The survivors are safe.\n\n" +
+
+                "For now.\n\n" +
+
+
+                "Zombies Killed: " + GameStats.TotalKills + "\n\n" +
+
+
+
+
+
+                "THANKS FOR PLAYING";
 
         }
 

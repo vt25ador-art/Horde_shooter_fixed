@@ -17,6 +17,12 @@ public class HealthController : MonoBehaviour
     [Header("Debug")]
     [SerializeField] private bool godMode;
 
+    [Header("Down Limit")]
+    [SerializeField] private int maxDownsBeforeDeath = 3;
+    [SerializeField] private int downCount;
+
+    public int DownCount => downCount;
+
     public bool GodMode => godMode;
 
     public void SetGodMode(bool state)
@@ -95,6 +101,16 @@ public class HealthController : MonoBehaviour
         if (isDowned || isDead)
             return;
 
+        downCount++;
+
+        Debug.Log(gameObject.name + " down count: " + downCount + "/" + maxDownsBeforeDeath);
+
+        if (downCount >= maxDownsBeforeDeath)
+        {
+            Die();
+            return;
+        }
+
         isDowned = true;
         downTimer = downTime;
 
@@ -110,9 +126,12 @@ public class HealthController : MonoBehaviour
 
         isDead = true;
         isDowned = false;
+        downTimer = 0f;
+        _currentHealth = 0f;
 
         Debug.Log(gameObject.name + " died");
 
+        OnHealthChanged.Invoke();
         OnDied.Invoke();
     }
 
