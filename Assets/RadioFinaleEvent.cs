@@ -25,6 +25,10 @@ public class RadioFinaleEvent : MonoBehaviour
     [SerializeField] private TMP_Text finaleText;
     [SerializeField] private TMP_Text timerText;
 
+    [Header("Escape Trigger")]
+    [SerializeField] private RescueEscapeTrigger rescueEscapeTrigger;
+    [SerializeField] private bool requireEscapeTrigger = true;
+
     private bool finaleRunning;
     private bool finaleCompleted;
     private float timer;
@@ -122,7 +126,17 @@ public class RadioFinaleEvent : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        ShowEndingScreen();
+        if (requireEscapeTrigger && rescueEscapeTrigger != null)
+        {
+            if (finaleText != null)
+                finaleText.text = "GET TO THE RESCUE VEHICLE!";
+
+            rescueEscapeTrigger.EnableEscape();
+        }
+        else
+        {
+            ShowEndingScreen();
+        }
     }
 
     private void ShowEndingScreen()

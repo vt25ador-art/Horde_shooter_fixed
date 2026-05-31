@@ -27,6 +27,8 @@ public class GeneratorInteractable : MonoBehaviour
     [SerializeField] private AudioSource generatorSound;
     [SerializeField] private GameObject lightObject;
 
+    [SerializeField] private RadioFinaleEvent radioFinaleEvent;
+
     private bool hasBeenUsed;
 
     private void Awake()
@@ -96,6 +98,11 @@ public class GeneratorInteractable : MonoBehaviour
 
         if (lightObject != null)
             lightObject.SetActive(true);
+
+        if (radioFinaleEvent != null)
+        {
+            radioFinaleEvent.StartFinale();
+        }
 
         if (hordeEvent != null)
             hordeEvent.StartHordeEvent();

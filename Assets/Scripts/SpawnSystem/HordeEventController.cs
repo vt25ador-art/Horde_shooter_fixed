@@ -23,6 +23,9 @@ public class HordeEventController : MonoBehaviour
     [Header("After Event")]
     [SerializeField] private SpawnNode[] normalNodesToEnableAfterEvent;
 
+    [Header("Music")]
+    [SerializeField] private HordeMusicController hordeMusic;
+
 
 
     [Header("Director")]
@@ -40,6 +43,9 @@ public class HordeEventController : MonoBehaviour
 
     public bool StartHordeEvent()
     {
+        if (hordeMusic != null)
+            hordeMusic.StartHordeMusic();
+
         if (eventRunning)
             return false;
 
@@ -93,6 +99,9 @@ public class HordeEventController : MonoBehaviour
 
         if (spawnDirector != null)
             spawnDirector.ForceRelax(relaxAfterHordeTime);
+
+        if (hordeMusic != null)
+            hordeMusic.StopHordeMusic();
 
         eventRunning = false;
         eventRoutine = null;
