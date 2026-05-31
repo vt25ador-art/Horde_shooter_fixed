@@ -24169,10 +24169,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fc31319410628439bc04583cf9caa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teleportBotKey: 116
+  teleportDistance: 18
+  teleportBehindPlayerDistance: 1.5
+  onlyTeleportWhenFarAway: 1
+  autoTeleportIfVeryFar: 1
+  autoTeleportDistance: 35
   player: {fileID: 935556620}
   followSpeed: 4
-  followDistance: 3
-  stopDistance: 4
+  followDistance: 4.2
+  stopDistance: 5
   detectRange: 8
   enemyLayer:
     serializedVersion: 2
@@ -24184,6 +24190,9 @@ MonoBehaviour:
     m_Bits: 264
   wallcheckDistance: 0.8
   avoidStrenght: 1.2
+  callBotKey: 99
+  regroupDuration: 6
+  regroupStopDistance: 1.2
   botRevivePlayer: {fileID: 353292396}
 --- !u!114 &353292395
 MonoBehaviour:
@@ -24197,6 +24206,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33517464c9bb53d4bb9f5806213ff1fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomWeaponSwitching: 1
+  minSwitchTime: 8
+  maxSwitchTime: 20
+  includePistol: 1
+  switchOnlyWhenNotReloading: 1
   bulletPrefab: {fileID: 495709127057375365, guid: 4d40bebb9293bd643986b590735cf532, type: 3}
   gunOffset: {fileID: 1603722300}
   weapon: 0
@@ -26708,6 +26722,7 @@ GameObject:
   - component: {fileID: 792390737}
   - component: {fileID: 792390736}
   - component: {fileID: 792390735}
+  - component: {fileID: 792390739}
   m_Layer: 0
   m_Name: AmmoPile (1)
   m_TagString: Untagged
@@ -26845,6 +26860,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 729758858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &792390739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792390734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f8cc7bc2d51ad4f86476db8d1e82a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 440
 --- !u!1 &797164797
 GameObject:
   m_ObjectHideFlags: 0
@@ -27869,6 +27897,7 @@ GameObject:
   - component: {fileID: 935556627}
   - component: {fileID: 935556628}
   - component: {fileID: 935556630}
+  - component: {fileID: 935556631}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -28074,6 +28103,14 @@ MonoBehaviour:
   _poolMaxSize: 256
   _blockSwitchWhileReloading: 1
   _scrollDeadzone: 0.01
+  audioSource: {fileID: 935556631}
+  pistolShootSound: {fileID: 0}
+  rifleShootSound: {fileID: 8300000, guid: f8c57d1a54be9a14baa5b5c9dbea1201, type: 3}
+  shotgunShootSound: {fileID: 0}
+  pistolEquipSound: {fileID: 0}
+  rifleEquipSound: {fileID: 0}
+  shotgunEquipSound: {fileID: 0}
+  reloadSound: {fileID: 0}
 --- !u!61 &935556624
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28292,6 +28329,103 @@ MonoBehaviour:
   healPanel: {fileID: 758819957}
   healText: {fileID: 1100901793}
   firstAidCountText: {fileID: 716378356}
+--- !u!82 &935556631
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935556617}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &939264541
 GameObject:
   m_ObjectHideFlags: 0
@@ -29428,6 +29562,7 @@ GameObject:
   - component: {fileID: 1193219928}
   - component: {fileID: 1193219927}
   - component: {fileID: 1193219926}
+  - component: {fileID: 1193219930}
   m_Layer: 0
   m_Name: AmmoPile (2)
   m_TagString: Untagged
@@ -29592,6 +29727,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1193219930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193219924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f8cc7bc2d51ad4f86476db8d1e82a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 440
 --- !u!1 &1218567131
 GameObject:
   m_ObjectHideFlags: 0
@@ -30801,6 +30949,7 @@ GameObject:
   - component: {fileID: 1477545002}
   - component: {fileID: 1477545003}
   - component: {fileID: 1477545004}
+  - component: {fileID: 1477545005}
   m_Layer: 0
   m_Name: AmmoPile
   m_TagString: Untagged
@@ -30965,6 +31114,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1477545005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477544999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f8cc7bc2d51ad4f86476db8d1e82a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 440
 --- !u!1 &1501648076
 GameObject:
   m_ObjectHideFlags: 0

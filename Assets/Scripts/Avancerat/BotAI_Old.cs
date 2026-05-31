@@ -1,20 +1,11 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BotShoot))]
-public class BotAI : MonoBehaviour
+public class BotAI_Old : MonoBehaviour
 {
-    enum BotState { Follow, Combat, Regroup, Revive}
-
-    [Header("Teleport Failsafe")]
-    [SerializeField] private KeyCode teleportBotKey = KeyCode.T;
-    [SerializeField] private float teleportDistance = 18f;
-    [SerializeField] private float teleportBehindPlayerDistance = 1.5f;
-    [SerializeField] private bool onlyTeleportWhenFarAway = true;
-
-
-    [SerializeField] private bool autoTeleportIfVeryFar = true;
-    [SerializeField] private float autoTeleportDistance = 35f;
+    enum BotState { Follow, Combat, Regroup, Revive }
 
     [Header("Target")]
     [SerializeField] private Transform player;
@@ -37,13 +28,6 @@ public class BotAI : MonoBehaviour
     [SerializeField] private float wallcheckDistance = 0.8f;
     [SerializeField] private float avoidStrenght = 1.2f;
 
-    [Header("Command")]
-    [SerializeField] private KeyCode callBotKey = KeyCode.C;
-    [SerializeField] private float regroupDuration = 6f;
-    [SerializeField] private float regroupStopDistance = 1.2f;
-
-    private BotState state = BotState.Follow;
-    private float regroupTimer;
 
     [Header("Revive")]
     [SerializeField] private BotRevivePlayer botRevivePlayer;
@@ -64,27 +48,6 @@ public class BotAI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(teleportBotKey))
-        {
-            TryTeleportToPlayer();
-        }
-
-        if (Input.GetKeyDown(callBotKey))
-        {
-            StartRegroup();
-        }
-
-        if (state == BotState.Regroup)
-        {
-            regroupTimer -= Time.deltaTime;
-
-            if (regroupTimer <= 0f)
-                state = BotState.Follow;
-
-            currentTarget = null;
-            return;
-        }
-
         currentTarget = FindClosestEnemy();
     }
 
@@ -96,38 +59,17 @@ public class BotAI : MonoBehaviour
             return;
         }
 
-        if (autoTeleportIfVeryFar && Vector2.Distance(transform.position, player.position) > autoTeleportDistance)
-        {
-            TeleportToPlayer();
-            return;
-        }
-
+        // PRIORITERA REVIVE FÃ–RST
         if (botRevivePlayer != null && botRevivePlayer.ShouldRevivePlayer)
         {
-            state = BotState.Revive;
             ReviveBehaviour();
             return;
         }
 
-        if (state == BotState.Regroup)
-        {
-            RegroupBehaviour();
-            return;
-        }
-
-        if (shoot != null && !shoot.enabled)
-            shoot.enabled = true;
-
         if (currentTarget)
-        {
-            state = BotState.Combat;
             AttackBehaviour();
-        }
         else
-        {
-            state = BotState.Follow;
             FollowBehaviour();
-        }
     }
 
 
@@ -168,78 +110,6 @@ public class BotAI : MonoBehaviour
         RotateTowards(toPlayer);
     }
 
-    void StartRegroup()
-    {
-        state = BotState.Regroup;
-        regroupTimer = regroupDuration;
-        currentTarget = null;
-
-        if (shoot != null)
-            shoot.enabled = false;
-
-        Debug.Log("Bot called to regroup");
-    }
-
-    void RegroupBehaviour()
-    {
-        Vector2 toPlayer = (Vector2)player.position - rb.position;
-        float dist = toPlayer.magnitude;
-
-        if (dist > regroupStopDistance)
-        {
-            Vector2 desiredVelocity = toPlayer.normalized * followSpeed;
-            MoveWithAvoidance(desiredVelocity);
-        }
-        else
-        {
-            rb.linearVelocity = Vector2.zero;
-        }
-
-        RotateTowards(toPlayer);
-    }
-
-
-    void TryTeleportToPlayer()
-    {
-        if (player == null)
-            return;
-
-        float distance = Vector2.Distance(transform.position, player.position);
-
-        if (onlyTeleportWhenFarAway && distance < teleportDistance)
-        {
-            Debug.Log("Bot is not far enough to teleport. Distance: " + distance.ToString("0.0"));
-            return;
-        }
-
-        TeleportToPlayer();
-    }
-
-    void TeleportToPlayer()
-    {
-        Vector2 playerPos = player.position;
-
-        Vector2 behindDirection = -player.up;
-
-        if (behindDirection.sqrMagnitude < 0.01f)
-            behindDirection = Vector2.down;
-
-        Vector2 targetPos = playerPos + behindDirection.normalized * teleportBehindPlayerDistance;
-
-        rb.linearVelocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-
-        rb.position = targetPos;
-        transform.position = targetPos;
-
-        state = BotState.Follow;
-        currentTarget = null;
-
-        if (shoot != null)
-            shoot.enabled = true;
-
-        Debug.Log("Bot teleported to player");
-    }
 
 
     void ReviveBehaviour()
@@ -292,7 +162,7 @@ public class BotAI : MonoBehaviour
 
         RaycastHit2D frontHit = Physics2D.Raycast(rb.position, dir, wallcheckDistance, wallLayer);
 
-        // Bara undvik om det faktiskt finns en vägg framför botten
+        // Bara undvik om det faktiskt finns en vÃ¤gg framfÃ¶r botten
         if (frontHit.collider != null)
         {
             Vector2 left = new Vector2(-dir.y, dir.x);
@@ -311,10 +181,10 @@ public class BotAI : MonoBehaviour
 
         rb.linearVelocity = move;
 
-}
+    }
 
 
-void RotateTowards(Vector2 dir)
+    void RotateTowards(Vector2 dir)
     {
         if (dir.sqrMagnitude < 0.001f) return;
 

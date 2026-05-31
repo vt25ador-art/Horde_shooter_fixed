@@ -56,6 +56,30 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private bool _blockSwitchWhileReloading = true;
     [SerializeField] private float _scrollDeadzone = 0.01f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+
+    [SerializeField] private AudioClip pistolShootSound;
+    [SerializeField] private AudioClip rifleShootSound;
+    [SerializeField] private AudioClip shotgunShootSound;
+
+    [SerializeField] private AudioClip pistolEquipSound;
+    [SerializeField] private AudioClip rifleEquipSound;
+    [SerializeField] private AudioClip shotgunEquipSound;
+
+    [Header("Audio Cooldowns")]
+    [SerializeField] private float pistolSoundCooldown = 0.08f;
+    [SerializeField] private float rifleSoundCooldown = 0.09f;
+    [SerializeField] private float shotgunSoundCooldown = 0.25f;
+
+    [SerializeField] private float shootSoundVolume = 0.8f;
+    [SerializeField] private float equipSoundVolume = 0.7f;
+    [SerializeField] private float reloadSoundVolume = 0.7f;
+
+    private float _nextShootSoundTime;
+
+    [SerializeField] private AudioClip reloadSound;
+
     private ObjectPool<Bullet> _pool;
 
     private Transform _spawnT;
@@ -97,6 +121,9 @@ public class PlayerShoot : MonoBehaviour
 
         if (_bulletPrefab == null)
             Debug.LogError("PlayerShoot: Bullet prefab is not assigned.");
+
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
 
         _pool = new ObjectPool<Bullet>(
             createFunc: CreateBullet,
@@ -228,6 +255,24 @@ public class PlayerShoot : MonoBehaviour
         ClampAmmoToCurrentSettings();
 
         _lastWeapon = _weapon;
+        PlayEquipSound();
+    }
+
+    private void PlayEquipSound()
+    {
+        if (audioSource == null)
+            return;
+
+        AudioClip clip = _weapon switch
+        {
+            WeaponMode.Pistol => pistolEquipSound,
+            WeaponMode.Rifle => rifleEquipSound,
+            WeaponMode.Shotgun => shotgunEquipSound,
+            _ => null
+        };
+
+        if (clip != null)
+            audioSource.PlayOneShot(clip, equipSoundVolume);
     }
 
     private void ClampAmmoToCurrentSettings()
@@ -245,6 +290,8 @@ public class PlayerShoot : MonoBehaviour
 
     private void ShootOnce(WeaponSettings w)
     {
+        PlayShootSound();
+
         if (_pool == null)
         {
             Debug.LogError("PlayerShoot: Bullet pool not initialized.");
@@ -282,6 +329,42 @@ public class PlayerShoot : MonoBehaviour
         SaveAmmoToState();
     }
 
+    private void PlayShootSound()
+    {
+        if (audioSource == null)
+            return;
+
+        AudioClip clip = null;
+        float cooldown = 0.1f;
+
+        switch (_weapon)
+        {
+            case WeaponMode.Pistol:
+                clip = pistolShootSound;
+                cooldown = pistolSoundCooldown;
+                break;
+
+            case WeaponMode.Rifle:
+                clip = rifleShootSound;
+                cooldown = rifleSoundCooldown;
+                break;
+
+            case WeaponMode.Shotgun:
+                clip = shotgunShootSound;
+                cooldown = shotgunSoundCooldown;
+                break;
+        }
+
+        if (clip == null)
+            return;
+
+        if (Time.time < _nextShootSoundTime)
+            return;
+
+        audioSource.PlayOneShot(clip, shootSoundVolume);
+        _nextShootSoundTime = Time.time + cooldown;
+    }
+
     private void StartReload(bool manual)
     {
         var w = Current;
@@ -301,8 +384,19 @@ public class PlayerShoot : MonoBehaviour
         // If no reserve ammo and mag empty -> can't reload
         if (_reserveAmmo <= 0 && _ammoInMag == 0) return;
 
+        PlayReloadSound();
+
         _reloadRoutine = StartCoroutine(ReloadCoroutine(w));
     }
+
+    private void PlayReloadSound()
+    {
+        if (audioSource == null || reloadSound == null)
+            return;
+
+        audioSource.PlayOneShot(reloadSound, reloadSoundVolume);
+    }
+
 
     private IEnumerator ReloadCoroutine(WeaponSettings w)
     {

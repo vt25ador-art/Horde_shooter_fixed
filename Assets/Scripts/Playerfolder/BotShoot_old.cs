@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Pool;
 
-public class BotShoot : MonoBehaviour
+public class BotShoot_old : MonoBehaviour
 {
     public enum WeaponMode { Pistol, Rifle, Shotgun }
 
@@ -23,16 +23,6 @@ public class BotShoot : MonoBehaviour
         public int pellets;
         public float spreadDegrees;
     }
-
-
-    [Header("Random Weapon Switch")]
-    [SerializeField] private bool randomWeaponSwitching = true;
-    [SerializeField] private float minSwitchTime = 8f;
-    [SerializeField] private float maxSwitchTime = 20f;
-    [SerializeField] private bool includePistol = true;
-    [SerializeField] private bool switchOnlyWhenNotReloading = true;
-
-    private float randomSwitchTimer;
 
     [Header("References")]
     [SerializeField] private GameObject bulletPrefab;
@@ -84,12 +74,6 @@ public class BotShoot : MonoBehaviour
         var w = Current;
         ammoInMag = w.magazineSize;
         reserveAmmo = w.reserveAmmo;
-        ResetRandomSwitchTimer();
-    }
-
-    private void Update()
-    {
-        HandleRandomWeaponSwitch();
     }
 
     public void BotFireAt(Vector2 dir)
@@ -194,133 +178,5 @@ public class BotShoot : MonoBehaviour
     {
         if (pool == null || b == null) return;
         pool.Release(b);
-    }
-
-
-    public WeaponMode CurrentWeapon => weapon;
-    public int AmmoInMag => ammoInMag;
-    public int ReserveAmmo => reserveAmmo;
-    public bool IsReloading => isReloading;
-
-    public bool NeedsAmmo()
-    {
-        WeaponSettings w = Current;
-
-        if (w.infiniteAmmo)
-            return false;
-
-        int totalAmmo = ammoInMag + reserveAmmo;
-
-        return totalAmmo <= w.magazineSize;
-    }
-
-    public bool IsOutOfAmmo()
-    {
-        WeaponSettings w = Current;
-
-        if (w.infiniteAmmo)
-            return false;
-
-        return ammoInMag <= 0 && reserveAmmo <= 0;
-    }
-
-    public bool OnlyHasPistol()
-    {
-        return weapon == WeaponMode.Pistol;
-    }
-
-    public void AddReserveAmmo(int amount)
-    {
-        if (amount <= 0)
-            return;
-
-        WeaponSettings w = Current;
-
-        if (w.infiniteAmmo)
-            return;
-
-        reserveAmmo += amount;
-
-        Debug.Log("Bot picked up ammo. Reserve: " + reserveAmmo);
-
-        if (ammoInMag <= 0 && !isReloading)
-            StartReload();
-    }
-
-    public void EquipWeapon(WeaponMode newWeapon)
-    {
-        if (weapon == newWeapon)
-            return;
-
-        if (reloadRoutine != null)
-        {
-            StopCoroutine(reloadRoutine);
-            reloadRoutine = null;
-        }
-
-        isReloading = false;
-        weapon = newWeapon;
-
-        WeaponSettings w = Current;
-
-        ammoInMag = w.magazineSize;
-        reserveAmmo = w.reserveAmmo;
-        nextShotTime = 0f;
-
-        Debug.Log("Bot equipped weapon: " + weapon);
-    }
-
-    public bool IsBetterWeaponAvailable(WeaponMode newWeapon)
-    {
-        if (weapon == WeaponMode.Pistol && newWeapon != WeaponMode.Pistol)
-            return true;
-
-        if (weapon == WeaponMode.Shotgun && newWeapon == WeaponMode.Rifle)
-            return true;
-
-        if (weapon == WeaponMode.Rifle)
-            return false;
-
-        return false;
-    }
-
-    private void HandleRandomWeaponSwitch()
-    {
-        if (!randomWeaponSwitching)
-            return;
-
-        if (switchOnlyWhenNotReloading && isReloading)
-            return;
-
-        randomSwitchTimer -= Time.deltaTime;
-
-        if (randomSwitchTimer > 0f)
-            return;
-
-        EquipRandomWeapon();
-        ResetRandomSwitchTimer();
-    }
-
-    private void ResetRandomSwitchTimer()
-    {
-        randomSwitchTimer = Random.Range(minSwitchTime, maxSwitchTime);
-    }
-
-    private void EquipRandomWeapon()
-    {
-        WeaponMode newWeapon = weapon;
-
-        int tries = 0;
-
-        while (newWeapon == weapon && tries < 10)
-        {
-            int minIndex = includePistol ? 0 : 1;
-            int randomIndex = Random.Range(minIndex, 3);
-
-            newWeapon = (WeaponMode)randomIndex;
-            tries++;
-        }
-
-        EquipWeapon(newWeapon);
     }
 }
