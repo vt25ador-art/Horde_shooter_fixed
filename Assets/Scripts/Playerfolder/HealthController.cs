@@ -14,6 +14,17 @@ public class HealthController : MonoBehaviour
     public float MaxHealth => _maxiumHealth;
     public float DownTimeRemaining => downTimer;
 
+    [Header("Debug")]
+    [SerializeField] private bool godMode;
+
+    public bool GodMode => godMode;
+
+    public void SetGodMode(bool state)
+    {
+        godMode = state;
+        Debug.Log(gameObject.name + " GodMode: " + godMode);
+    }
+
 
     [SerializeField] private float downTime = 20f;
     private float downTimer;
@@ -59,6 +70,9 @@ public class HealthController : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
+        if (godMode)
+            return;
+
         if (isDead)
             return;
 

@@ -38,6 +38,10 @@ public class EnemyHealth : MonoBehaviour
     private Rigidbody2D _rb2d;
     private Collider2D _col2d;
 
+    [Header("VFX Optimization")]
+    [SerializeField] private float hitVfxCooldown = 0.08f;
+    private float _nextHitVfxTime;
+
     public bool IsDead => _isDead;
 
     public float ReimainingHealthPercentage
@@ -183,6 +187,11 @@ public class EnemyHealth : MonoBehaviour
         if (HitVFX == null)
             return;
 
+        if (Time.time < _nextHitVfxTime)
+            return;
+
+        _nextHitVfxTime = Time.time + hitVfxCooldown;
+
         GameObject fx = Instantiate(HitVFX, transform.position, Quaternion.identity);
 
         ParticleSystem ps = fx.GetComponent<ParticleSystem>();
@@ -205,4 +214,13 @@ public class EnemyHealth : MonoBehaviour
 
         Destroy(fx, 2f);
     }
+
+    public void ForceKill()
+    {
+        if (IsDead)
+            return;
+
+        TakeDamage(999999f);
+    }
+
 }

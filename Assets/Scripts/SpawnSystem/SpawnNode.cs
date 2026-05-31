@@ -39,6 +39,8 @@ public class SpawnNode : MonoBehaviour
     private float minDistSqr;
     private float maxDistSqr;
 
+    private readonly Collider2D[] clearHits = new Collider2D[64];
+
     //public bool IsActive => forcedActive || active;
 
     public bool isActive
@@ -172,6 +174,9 @@ public class SpawnNode : MonoBehaviour
         if (!other.CompareTag("Player"))
             return;
 
+        if (isHordeNode)
+            return;
+
         if (clearZombiesOnPlayerEnter)
             ClearZombiesInRadius();
 
@@ -190,23 +195,32 @@ public class SpawnNode : MonoBehaviour
 
     private void ClearZombiesInRadius()
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, clearRadius, enemyLayer);
+        int hitCount = Physics2D.OverlapCircleNonAlloc(
+            transform.position,
+            clearRadius,
+            clearHits,
+            enemyLayer
+        );
 
-        for (int i = 0; i < hits.Length; i++)
+        for (int i = 0; i < hitCount; i++)
         {
-            if (hits[i] == null)
+            Collider2D hit = clearHits[i];
+
+            if (hit == null)
                 continue;
 
-            EnemyHealth enemyHealth = hits[i].GetComponent<EnemyHealth>();
+            EnemyHealth enemyHealth = hit.GetComponent<EnemyHealth>();
 
             if (enemyHealth != null)
             {
-                Destroy(enemyHealth.gameObject);
+                enemyHealth.ForceKill();
             }
             else
             {
-                Destroy(hits[i].gameObject);
+                Destroy(hit.gameObject);
             }
+
+            clearHits[i] = null;
         }
     }
 

@@ -3716,6 +3716,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &212832077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212832078}
+  - component: {fileID: 212832079}
+  m_Layer: 0
+  m_Name: AdminDebugConsole
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &212832078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212832077}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 579452887}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &212832079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212832077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440f927bfdc96d74c8fd219fcade0c15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleKey: 4
+  consoleOpen: 0
+  spawnDirector: {fileID: 0}
 --- !u!1 &226451467
 GameObject:
   m_ObjectHideFlags: 0
@@ -25690,6 +25737,38 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   disableSpawnAfterClear: 1
+--- !u!1 &579452886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579452887}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &579452887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579452886}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -44.93578, y: -38.00082, z: 0.044117425}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 212832078}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -28067,7 +28146,7 @@ MonoBehaviour:
     bulletSpeed: 16
     timeBetweenShots: 0.27
     spawnOffset: 0.2
-    bulletLifetime: 3
+    bulletLifetime: 2
     magazineSize: 12
     reserveAmmo: 60
     reloadTime: 1.2
@@ -28079,7 +28158,7 @@ MonoBehaviour:
     bulletSpeed: 18
     timeBetweenShots: 0.2
     spawnOffset: 0.2
-    bulletLifetime: 3
+    bulletLifetime: 2
     magazineSize: 40
     reserveAmmo: 440
     reloadTime: 1.6
@@ -28105,11 +28184,17 @@ MonoBehaviour:
   _scrollDeadzone: 0.01
   audioSource: {fileID: 935556631}
   pistolShootSound: {fileID: 0}
-  rifleShootSound: {fileID: 8300000, guid: f8c57d1a54be9a14baa5b5c9dbea1201, type: 3}
+  rifleShootSound: {fileID: 0}
   shotgunShootSound: {fileID: 0}
   pistolEquipSound: {fileID: 0}
   rifleEquipSound: {fileID: 0}
   shotgunEquipSound: {fileID: 0}
+  pistolSoundCooldown: 0.08
+  rifleSoundCooldown: 0.09
+  shotgunSoundCooldown: 0.25
+  shootSoundVolume: 0.8
+  equipSoundVolume: 0.7
+  reloadSoundVolume: 0.7
   reloadSound: {fileID: 0}
 --- !u!61 &935556624
 BoxCollider2D:
@@ -605902,3 +605987,4 @@ SceneRoots:
   - {fileID: 1887234414}
   - {fileID: 1998456497}
   - {fileID: 716875897}
+  - {fileID: 579452887}
