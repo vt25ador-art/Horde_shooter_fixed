@@ -49,9 +49,15 @@ public class BotAI : MonoBehaviour
     [SerializeField] private BotRevivePlayer botRevivePlayer;
 
 
+    [Header("Optimization")]
+    [SerializeField] private float targetScanInterval = 0.2f;
+
+    private float nextTargetScanTime;
+
     private Rigidbody2D rb;
     private BotShoot shoot;
     private Transform currentTarget;
+
 
     void Awake()
     {
@@ -85,7 +91,11 @@ public class BotAI : MonoBehaviour
             return;
         }
 
-        currentTarget = FindClosestEnemy();
+        if (Time.time >= nextTargetScanTime)
+        {
+            nextTargetScanTime = Time.time + targetScanInterval;
+            currentTarget = FindClosestEnemy();
+        }
     }
 
     void FixedUpdate()
