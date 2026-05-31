@@ -29,6 +29,10 @@ public class EndingCreditsRoll : MonoBehaviour
     [Header("Next Scene Optional")]
     [SerializeField] private string mainMenuSceneName = "";
 
+    [Header("Auto Start")]
+    [SerializeField] private bool playOnStart = true;
+    [SerializeField] private float startDelay = 0.5f;
+
     private bool playing;
 
     private void Start()
@@ -38,6 +42,15 @@ public class EndingCreditsRoll : MonoBehaviour
 
         if (canvasGroup != null)
             canvasGroup.alpha = 0f;
+
+        if (playOnStart)
+            StartCoroutine(PlayAfterDelay());
+    }
+
+    private IEnumerator PlayAfterDelay()
+    {
+        yield return new WaitForSeconds(startDelay);
+        PlayEnding();
     }
 
     private void Update()
