@@ -367,15 +367,21 @@ public class PlayerShoot : MonoBehaviour
         {
             float angle = 0f;
 
-            if (_weapon == WeaponMode.Shotgun && w.spreadDegrees > 0f)
+            // Alla vapen kan ha spread nu
+            if (w.spreadDegrees > 0f)
             {
-                angle = UnityEngine.Random.Range(-w.spreadDegrees * 0.5f, w.spreadDegrees * 0.5f);
+                angle = UnityEngine.Random.Range(
+                    -w.spreadDegrees * 0.5f,
+                     w.spreadDegrees * 0.5f
+                );
             }
 
             Quaternion rot = _spawnT.rotation * Quaternion.Euler(0f, 0f, angle);
 
             Bullet bullet = _pool.Get();
-            if (bullet == null) return;
+
+            if (bullet == null)
+                return;
 
             bullet.transform.SetPositionAndRotation(baseSpawnPos, rot);
 
@@ -383,8 +389,7 @@ public class PlayerShoot : MonoBehaviour
             bullet.Fire(vel, w.bulletLifetime, _shooterCol);
         }
 
-        // Consume ammo: 1 per trigger pull (även shotgun)
-        // Consume ammo: 1 per trigger pull, även pistol med infinite reserve
+        // Consume ammo: 1 per trigger pull
         _ammoInMag = Mathf.Max(0, _ammoInMag - 1);
 
         SaveAmmoToState();

@@ -27934,6 +27934,7 @@ MonoBehaviour:
   checkInterval: 0.25
   destroyDelayBetweenCorpses: 0.08
   minCorpsesToKeep: 10
+  useMenuCorpseLimit: 1
   corpsesRemovedPerCleanup: 3
   debugLogs: 0
 --- !u!1 &911882710
@@ -28242,14 +28243,14 @@ MonoBehaviour:
     damage: 25
     magazineSize: 8
     reserveAmmo: 56
-    reloadTime: 4.92
+    reloadTime: 3
     infiniteAmmo: 0
     autoReloadOnEmpty: 1
     pellets: 10
     spreadDegrees: 15
   _uzi:
     bulletSpeed: 25
-    timeBetweenShots: 0.06
+    timeBetweenShots: 0.2
     spawnOffset: 0.5
     bulletLifetime: 1.5
     damage: 20
@@ -645195,7 +645196,7 @@ MonoBehaviour:
   hordeTheme: {fileID: 8300000, guid: 2d17e3d4542b7e14f9b605319fbbd72c, type: 3}
   fadeInTime: 1.5
   fadeOutTime: 3
-  targetVolume: 0.6
+  targetVolume: 0.5
 --- !u!1 &2093251389
 GameObject:
   m_ObjectHideFlags: 0
