@@ -179053,8 +179053,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teleportBotKey: 116
-  teleportDistance: 18
-  teleportBehindPlayerDistance: 1.5
+  teleportDistance: 5
+  teleportBehindPlayerDistance: 2
   onlyTeleportWhenFarAway: 1
   autoTeleportIfVeryFar: 1
   autoTeleportDistance: 35
@@ -236625,6 +236625,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+--- !u!1001 &1690172359
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.667824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -20.19045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12273614
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363461638226763495, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979907169313349201, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
+      propertyPath: m_Name
+      value: Spitter (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16b103ac7072f7447bd9c0af4c117663, type: 3}
 --- !u!1 &1704833087
 GameObject:
   m_ObjectHideFlags: 0
@@ -281788,7 +281845,7 @@ MonoBehaviour:
   godMode: 0
   maxDownsBeforeDeath: 3
   downCount: 0
-  downTime: 40
+  downTime: 30
   OnDowned:
     m_PersistentCalls:
       m_Calls: []
@@ -281940,7 +281997,7 @@ MonoBehaviour:
     spawnOffset: 0.2
     bulletLifetime: 2
     magazineSize: 40
-    reserveAmmo: 440
+    reserveAmmo: 360
     reloadTime: 1.6
     infiniteAmmo: 0
     autoReloadOnEmpty: 1
@@ -283305,3 +283362,4 @@ SceneRoots:
   - {fileID: 1853001143}
   - {fileID: 144396333}
   - {fileID: 1885107322}
+  - {fileID: 1690172359}

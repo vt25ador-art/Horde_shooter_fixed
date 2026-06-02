@@ -32,7 +32,7 @@ public class HealthController : MonoBehaviour
     }
 
 
-    [SerializeField] private float downTime = 20f;
+    [SerializeField] private float downTime = 30f;
     private float downTimer;
 
     private bool isDead;

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Pool;
 
-public class PlayerShoot : MonoBehaviour
+public class PlayerShoot_old : MonoBehaviour
 {
     public enum WeaponMode { Pistol, Rifle, Shotgun }
 
@@ -76,11 +76,6 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private float equipSoundVolume = 0.7f;
     [SerializeField] private float reloadSoundVolume = 0.7f;
 
-    [Header("Unlocked Weapons")]
-    [SerializeField] private WeaponMode startingWeapon = WeaponMode.Pistol;
-
-    private bool[] _weaponUnlocked;
-
     private float _nextShootSoundTime;
 
     [SerializeField] private AudioClip reloadSound;
@@ -143,7 +138,6 @@ public class PlayerShoot : MonoBehaviour
         // Build weapon order + init ammo states
         _weaponOrder = (WeaponMode[])Enum.GetValues(typeof(WeaponMode));
         _ammoByWeapon = new AmmoState[_weaponOrder.Length];
-        _weaponUnlocked = new bool[_weaponOrder.Length];
 
         for (int i = 0; i < _weaponOrder.Length; i++)
         {
@@ -155,18 +149,9 @@ public class PlayerShoot : MonoBehaviour
             };
         }
 
-        // Börja bara med startingWeapon upplåst
-        for (int i = 0; i < _weaponUnlocked.Length; i++)
-            _weaponUnlocked[i] = false;
+        _currentWeaponIndex = Array.IndexOf(_weaponOrder, _weapon);
+        if (_currentWeaponIndex < 0) _currentWeaponIndex = 0;
 
-        int startIndex = Array.IndexOf(_weaponOrder, startingWeapon);
-        if (startIndex < 0)
-            startIndex = 0;
-
-        _weaponUnlocked[startIndex] = true;
-
-        _weapon = _weaponOrder[startIndex];
-        _currentWeaponIndex = startIndex;
         _lastWeapon = _weapon;
 
         // Load ammo for starting weapon
@@ -228,36 +213,16 @@ public class PlayerShoot : MonoBehaviour
 
     private void SwitchWeapon(int direction)
     {
-        if (_weaponOrder == null || _weaponOrder.Length == 0)
-            return;
+        if (_weaponOrder == null || _weaponOrder.Length == 0) return;
 
-        if (_weaponUnlocked == null || _weaponUnlocked.Length != _weaponOrder.Length)
-            return;
-
+        // Save current weapon ammo
         SaveAmmoToState();
 
-        int startIndex = _currentWeaponIndex;
-        int index = _currentWeaponIndex;
+        _currentWeaponIndex += direction;
+        if (_currentWeaponIndex < 0) _currentWeaponIndex = _weaponOrder.Length - 1;
+        if (_currentWeaponIndex >= _weaponOrder.Length) _currentWeaponIndex = 0;
 
-        for (int i = 0; i < _weaponOrder.Length; i++)
-        {
-            index += direction;
-
-            if (index < 0)
-                index = _weaponOrder.Length - 1;
-
-            if (index >= _weaponOrder.Length)
-                index = 0;
-
-            if (_weaponUnlocked[index])
-            {
-                _currentWeaponIndex = index;
-                ApplyWeapon(_weaponOrder[_currentWeaponIndex], resetAmmo: false);
-                return;
-            }
-        }
-
-        _currentWeaponIndex = startIndex;
+        ApplyWeapon(_weaponOrder[_currentWeaponIndex], resetAmmo: false);
     }
 
     public void ApplyWeapon(WeaponMode mode, bool resetAmmo)
@@ -357,7 +322,7 @@ public class PlayerShoot : MonoBehaviour
             bullet.Fire(vel, w.bulletLifetime, _shooterCol);
         }
 
-        // Consume ammo: 1 per trigger pull (även shotgun)
+        // Consume ammo: 1 per trigger pull (Ã¤ven shotgun)
         if (!w.infiniteAmmo)
             _ammoInMag = Mathf.Max(0, _ammoInMag - 1);
 
@@ -531,7 +496,7 @@ public class PlayerShoot : MonoBehaviour
 
     public void AddAmmo(int amount)
     {
-       var w = Current;
+        var w = Current;
         if (w.infiniteAmmo) return;
 
         int maxreserve = w.reserveAmmo;
@@ -590,50 +555,6 @@ public class PlayerShoot : MonoBehaviour
 
         LoadAmmoFromState();
         ClampAmmoToCurrentSettings();
-    }
-
-    public void UnlockWeapon(WeaponMode weaponToUnlock, bool equipNow = true, bool resetAmmo = true)
-    {
-        if (_weaponOrder == null || _weaponOrder.Length == 0)
-            return;
-
-        if (_weaponUnlocked == null || _weaponUnlocked.Length != _weaponOrder.Length)
-            _weaponUnlocked = new bool[_weaponOrder.Length];
-
-        int index = Array.IndexOf(_weaponOrder, weaponToUnlock);
-
-        if (index < 0)
-            return;
-
-        _weaponUnlocked[index] = true;
-
-        if (resetAmmo)
-        {
-            WeaponSettings ws = GetSettings(weaponToUnlock);
-            _ammoByWeapon[index] = new AmmoState
-            {
-                mag = Mathf.Max(0, ws.magazineSize),
-                reserve = Mathf.Max(0, ws.reserveAmmo)
-            };
-        }
-
-        if (equipNow)
-            ApplyWeapon(weaponToUnlock, resetAmmo: false);
-
-        Debug.Log("Unlocked weapon: " + weaponToUnlock);
-    }
-
-    public bool HasWeapon(WeaponMode weaponToCheck)
-    {
-        if (_weaponOrder == null || _weaponUnlocked == null)
-            return false;
-
-        int index = Array.IndexOf(_weaponOrder, weaponToCheck);
-
-        if (index < 0)
-            return false;
-
-        return _weaponUnlocked[index];
     }
 #endif
 }
