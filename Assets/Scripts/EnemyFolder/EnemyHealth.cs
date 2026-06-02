@@ -4,6 +4,12 @@ using UnityEngine.VFX;
 
 public class EnemyHealth : MonoBehaviour
 {
+    private static readonly List<EnemyHealth> corpses = new List<EnemyHealth>();
+
+    [Header("Corpse Limit")]
+    [SerializeField] private bool useCorpseLimit = true;
+    [SerializeField] private int maxCorpses = 30;
+
     [Header("Health")]
     [SerializeField] private float _maxHealth = 50f;
 
@@ -115,7 +121,7 @@ public class EnemyHealth : MonoBehaviour
         // Om special infected håller fast player, släpp den
         //JockeyEnemy2D jockey = GetComponent<JockeyEnemy2D>();
         //if (jockey != null)
-            //jockey.ReleaseVictim();
+        //jockey.ReleaseVictim();
 
         ApplyCorpseVisual();
 
@@ -124,10 +130,16 @@ public class EnemyHealth : MonoBehaviour
         if (KillScore.Instance != null)
             KillScore.Instance.AddKill();
 
-        if (_destroyOnDeath)
-            Destroy(gameObject, destroyDelay);
-
         GameStats.AddKill();
+
+        if (_destroyOnDeath)
+        {
+            Destroy(gameObject, destroyDelay);
+        }
+        else
+        {
+            CorpseOptimizer.RegisterCorpse(this);
+        }
     }
 
     private void ApplyCorpseVisual()
@@ -149,6 +161,30 @@ public class EnemyHealth : MonoBehaviour
         if (changeSortingOnDeath)
             spriteRenderer.sortingOrder = corpseOrderInLayer;
     }
+
+
+    private void RegisterCorpse()
+    {
+        if (!useCorpseLimit)
+            return;
+
+        corpses.Add(this);
+
+        while (corpses.Count > maxCorpses)
+        {
+            EnemyHealth oldestCorpse = corpses[0];
+            corpses.RemoveAt(0);
+
+            if (oldestCorpse != null)
+                Destroy(oldestCorpse.gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        CorpseOptimizer.UnregisterCorpse(this);
+    }
+
 
     private Sprite GetCorpseSprite()
     {
@@ -224,5 +260,4 @@ public class EnemyHealth : MonoBehaviour
 
         TakeDamage(999999f);
     }
-
 }

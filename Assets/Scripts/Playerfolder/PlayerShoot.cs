@@ -183,30 +183,48 @@ public class PlayerShoot : MonoBehaviour
 
     private void Update()
     {
-        // 1) Weapon switch FIRST (must be before any early returns)
+        // 1) Weapon switch FIRST
         HandleScrollWeaponSwitch();
 
         // 2) Reload input
         if (Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
             StartReload(manual: true);
 
-        // 3) Fire input (mouse)
+        // 3) Fire input
         bool isMousePressed = Mouse.current != null && Mouse.current.leftButton.isPressed;
-        if (isMousePressed && !_prevMousePressed) _singleShot = true;
+
+        if (isMousePressed && !_prevMousePressed)
+            _singleShot = true;
+
         _prevMousePressed = isMousePressed;
 
-        bool firePressed = isMousePressed;
-
-        if (!firePressed && !_singleShot) return;
-        if (Time.time < _nextShotTime) return;
-        if (_isReloading) return;
-
         var w = Current;
+
+        bool firePressed;
+
+        // Pistol och Shotgun = semi-auto
+        // Uzi och Rifle = automatic
+        if (_weapon == WeaponMode.Pistol || _weapon == WeaponMode.Shotgun)
+            firePressed = _singleShot;
+        else
+            firePressed = isMousePressed;
+
+        if (!firePressed)
+            return;
+
+        if (Time.time < _nextShotTime)
+            return;
+
+        if (_isReloading)
+            return;
 
         // No ammo?
         if (_ammoInMag <= 0)
         {
-            if (w.autoReloadOnEmpty) StartReload(manual: false);
+            if (w.autoReloadOnEmpty)
+                StartReload(manual: false);
+
+            _singleShot = false;
             return;
         }
 

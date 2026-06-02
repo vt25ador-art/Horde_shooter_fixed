@@ -237,9 +237,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f8b8e156a5713408a1a1ab868f71ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useCorpseLimit: 1
+  maxCorpses: 80
   _maxHealth: 50
   _destroyOnDeath: 1
-  destroyDelay: 5
+  destroyDelay: 30
   spriteRenderer: {fileID: 0}
   deadSprite: {fileID: 2077853431380194384, guid: 4a6a3512ae5efa14892d01a9d4bcbe70, type: 3}
   randomDeadSprites:
@@ -253,3 +255,4 @@ MonoBehaviour:
   changeSortingOnDeath: 1
   corpseOrderInLayer: 0
   HitVFX: {fileID: 7972977234735750764, guid: d4efc0e6da5342b4da240face6838057, type: 3}
+  hitVfxCooldown: 0.08
