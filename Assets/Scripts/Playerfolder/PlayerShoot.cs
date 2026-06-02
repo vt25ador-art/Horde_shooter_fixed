@@ -6,7 +6,7 @@ using UnityEngine.Pool;
 
 public class PlayerShoot : MonoBehaviour
 {
-    public enum WeaponMode { Pistol, Rifle, Shotgun }
+    public enum WeaponMode { Pistol, Rifle, Shotgun, Uzi }
 
     [Serializable]
     public struct WeaponSettings
@@ -16,6 +16,9 @@ public class PlayerShoot : MonoBehaviour
         public float timeBetweenShots;
         public float spawnOffset;
         public float bulletLifetime;
+
+        [Header("Damage")]
+        public float damage;
 
         [Header("Ammo / Reload")]
         public int magazineSize;
@@ -47,6 +50,7 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private WeaponSettings _pistol;
     [SerializeField] private WeaponSettings _rifle;
     [SerializeField] private WeaponSettings _shotgun;
+    [SerializeField] private WeaponSettings _uzi;
 
     [Header("Pool")]
     [SerializeField] private int _poolDefaultCapacity = 32;
@@ -62,15 +66,18 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private AudioClip pistolShootSound;
     [SerializeField] private AudioClip rifleShootSound;
     [SerializeField] private AudioClip shotgunShootSound;
+    [SerializeField] private AudioClip uziShootSound;
 
     [SerializeField] private AudioClip pistolEquipSound;
     [SerializeField] private AudioClip rifleEquipSound;
     [SerializeField] private AudioClip shotgunEquipSound;
+    [SerializeField] private AudioClip uziEquipSound;
 
     [Header("Audio Cooldowns")]
     [SerializeField] private float pistolSoundCooldown = 0.08f;
     [SerializeField] private float rifleSoundCooldown = 0.09f;
     [SerializeField] private float shotgunSoundCooldown = 0.25f;
+    [SerializeField] private float uziSoundCooldown = 0.06f;
 
     [SerializeField] private float shootSoundVolume = 0.8f;
     [SerializeField] private float equipSoundVolume = 0.7f;
@@ -303,6 +310,7 @@ public class PlayerShoot : MonoBehaviour
             WeaponMode.Pistol => pistolEquipSound,
             WeaponMode.Rifle => rifleEquipSound,
             WeaponMode.Shotgun => shotgunEquipSound,
+            WeaponMode.Uzi => uziEquipSound,
             _ => null
         };
 
@@ -358,8 +366,8 @@ public class PlayerShoot : MonoBehaviour
         }
 
         // Consume ammo: 1 per trigger pull (även shotgun)
-        if (!w.infiniteAmmo)
-            _ammoInMag = Mathf.Max(0, _ammoInMag - 1);
+        // Consume ammo: 1 per trigger pull, även pistol med infinite reserve
+        _ammoInMag = Mathf.Max(0, _ammoInMag - 1);
 
         SaveAmmoToState();
     }
@@ -388,6 +396,11 @@ public class PlayerShoot : MonoBehaviour
                 clip = shotgunShootSound;
                 cooldown = shotgunSoundCooldown;
                 break;
+
+            case WeaponMode.Uzi:
+                clip = uziShootSound;
+                cooldown = uziSoundCooldown;
+                break;
         }
 
         if (clip == null)
@@ -403,21 +416,17 @@ public class PlayerShoot : MonoBehaviour
     private void StartReload(bool manual)
     {
         var w = Current;
-        if (_isReloading) return;
 
-        // Infinite ammo: bara fyll mag direkt (eller ignorera)
-        if (w.infiniteAmmo)
-        {
-            _ammoInMag = Mathf.Max(0, w.magazineSize);
-            SaveAmmoToState();
+        if (_isReloading)
             return;
-        }
 
         // If magazine already full, ignore manual reload
-        if (manual && _ammoInMag >= w.magazineSize) return;
+        if (manual && _ammoInMag >= w.magazineSize)
+            return;
 
-        // If no reserve ammo and mag empty -> can't reload
-        if (_reserveAmmo <= 0 && _ammoInMag == 0) return;
+        // If no reserve ammo and weapon does NOT have infinite reserve, cannot reload
+        if (!w.infiniteAmmo && _reserveAmmo <= 0 && _ammoInMag == 0)
+            return;
 
         PlayReloadSound();
 
@@ -440,11 +449,19 @@ public class PlayerShoot : MonoBehaviour
         yield return new WaitForSeconds(w.reloadTime);
 
         int needed = w.magazineSize - _ammoInMag;
+
         if (needed > 0)
         {
-            int taken = Mathf.Min(needed, _reserveAmmo);
-            _ammoInMag += taken;
-            _reserveAmmo -= taken;
+            if (w.infiniteAmmo)
+            {
+                _ammoInMag = w.magazineSize;
+            }
+            else
+            {
+                int taken = Mathf.Min(needed, _reserveAmmo);
+                _ammoInMag += taken;
+                _reserveAmmo -= taken;
+            }
         }
 
         SaveAmmoToState();
@@ -484,6 +501,7 @@ public class PlayerShoot : MonoBehaviour
         WeaponMode.Pistol => _pistol,
         WeaponMode.Rifle => _rifle,
         WeaponMode.Shotgun => _shotgun,
+        WeaponMode.Uzi => _uzi,
         _ => _rifle
     };
 
