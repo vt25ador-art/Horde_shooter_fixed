@@ -371,8 +371,8 @@ MonoBehaviour:
   creditsTextRect: {fileID: 710141390}
   creditsText: {fileID: 710141391}
   startY: -200
-  endY: 2750
-  scrollDuration: 30
+  endY: 3200
+  scrollDuration: 42
   fadeInTime: 1
   fadeOutTime: 1
   allowTestKey: 1

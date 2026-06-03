@@ -98,6 +98,8 @@ public class EndingCreditsRoll : MonoBehaviour
             "Common Sense Used: 0\n\n" +
             "Blue Cubes Encountered: Classified\n\n" +
 
+            "Art by Vanessa och GPT\n\n" +
+            "Music by Sabine, Stich och Adam Örn\n\n" +
             "Created by Adam Örn\n\n" +
 
             "Thanks to:\n" +
@@ -120,7 +122,9 @@ public class EndingCreditsRoll : MonoBehaviour
             "Final Report:\n" +
             "The valley is silent again.\n" +
             "The rescue boat left the shore.\n" +
-            "The survivors are safe.\n\n" +
+            "The spread of the infection is still ongoing.\n" +
+
+                "The survivors are safe.\n\n" +
 
                 "For now.\n\n" +
 

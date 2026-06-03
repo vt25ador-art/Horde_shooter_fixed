@@ -24858,7 +24858,7 @@ Transform:
   m_GameObject: {fileID: 399098965}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 187.05, y: 9.83, z: -0.45}
+  m_LocalPosition: {x: 187.85, y: 9.83, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24976,7 +24976,7 @@ Transform:
   m_GameObject: {fileID: 428714753}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 143.3, y: 14.19, z: -0.45}
+  m_LocalPosition: {x: 143.3, y: 11.61, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26209,7 +26209,6 @@ Transform:
   - {fileID: 1932412009}
   - {fileID: 527620822}
   - {fileID: 2108457442}
-  - {fileID: 1655446216}
   - {fileID: 1303399117}
   - {fileID: 386980929}
   - {fileID: 1099501434}
@@ -29268,7 +29267,7 @@ MonoBehaviour:
   maxDurationWithKillTarget: 50
   normalNodesToEnableAfterEvent:
   - {fileID: 0}
-  - {fileID: 1655446218}
+  - {fileID: 0}
   - {fileID: 1099501436}
   - {fileID: 2135757506}
   - {fileID: 1737887969}
@@ -31596,115 +31595,6 @@ MonoBehaviour:
   burstMin: 1
   burstMax: 2
   isHordeNode: 1
-  clearZombiesOnPlayerEnter: 1
-  clearRadius: 8
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  disableSpawnAfterClear: 1
---- !u!1 &1655446215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1655446216}
-  - component: {fileID: 1655446218}
-  - component: {fileID: 1655446217}
-  m_Layer: 0
-  m_Name: WanderSpawner03 (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1655446216
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655446215}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.09, y: 8.5, z: -0.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 627902953}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1655446217
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655446215}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 10, y: 10}
-  m_EdgeRadius: 0
---- !u!114 &1655446218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655446215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 249c2bcef199f74498c377f087432e3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefabs:
-  - {fileID: 8727671323915685619, guid: 34681049df75d4143a0d86e9a0d0af6e, type: 3}
-  - {fileID: 2469920286554820205, guid: 1526cb2c1c6c1744a997df3b311d0e85, type: 3}
-  requiredDoor: {fileID: 0}
-  activeFor: 8
-  disabledFor: 12
-  minDist: 15
-  maxDist: 30
-  requireNotVisible: 1
-  burstMin: 4
-  burstMax: 8
-  isHordeNode: 0
   clearZombiesOnPlayerEnter: 1
   clearRadius: 8
   enemyLayer:
@@ -422969,7 +422859,7 @@ Transform:
   m_GameObject: {fileID: 1755734413}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 124.61, y: 48.15, z: -0.45}
+  m_LocalPosition: {x: 124.61, y: 38.3, z: -0.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -423199,7 +423089,7 @@ MonoBehaviour:
   minDist: 15
   maxDist: 30
   requireNotVisible: 1
-  burstMin: 1
+  burstMin: 2
   burstMax: 2
   isHordeNode: 0
   clearZombiesOnPlayerEnter: 1

@@ -234335,6 +234335,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &831509307
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.753353
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -40.480698
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9817436
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.1902093
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981286523861841704, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -21.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032468743616642805, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
+      propertyPath: m_Name
+      value: Shotgun
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f79af4b48fcb1a4bbd312094a15f68a, type: 3}
 --- !u!1 &854435331
 GameObject:
   m_ObjectHideFlags: 0
@@ -281491,6 +281548,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1801348653
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.316122
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -38.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9817436
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.1902093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854297864077651724, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -21.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5290477644439855108, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
+      propertyPath: m_Name
+      value: Ak47_Sprite_0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09ab470d15415d5428390af44fd5f5a3, type: 3}
 --- !u!1 &1830674459
 GameObject:
   m_ObjectHideFlags: 0
@@ -282243,57 +282357,57 @@ MonoBehaviour:
   _GunOffset: {fileID: 1383820246}
   _weapon: 0
   _pistol:
-    bulletSpeed: 16
-    timeBetweenShots: 0.27
-    spawnOffset: 0.2
-    bulletLifetime: 2
-    damage: 0
-    magazineSize: 12
-    reserveAmmo: 60
-    reloadTime: 1.2
+    bulletSpeed: 22
+    timeBetweenShots: 0.175
+    spawnOffset: 0.5
+    bulletLifetime: 1.8
+    damage: 36
+    magazineSize: 15
+    reserveAmmo: 0
+    reloadTime: 1.5
     infiniteAmmo: 1
     autoReloadOnEmpty: 1
     pellets: 1
-    spreadDegrees: 0
+    spreadDegrees: 1.5
   _rifle:
-    bulletSpeed: 18
-    timeBetweenShots: 0.2
-    spawnOffset: 0.2
-    bulletLifetime: 2
-    damage: 0
+    bulletSpeed: 28
+    timeBetweenShots: 0.13
+    spawnOffset: 0.5
+    bulletLifetime: 1.9
+    damage: 58
     magazineSize: 40
     reserveAmmo: 360
-    reloadTime: 1.6
+    reloadTime: 2.3
     infiniteAmmo: 0
     autoReloadOnEmpty: 1
     pellets: 1
     spreadDegrees: 2
   _shotgun:
-    bulletSpeed: 14
-    timeBetweenShots: 0.75
-    spawnOffset: 0.2
-    bulletLifetime: 1.4
-    damage: 0
+    bulletSpeed: 22
+    timeBetweenShots: 0.5
+    spawnOffset: 0.5
+    bulletLifetime: 0.9
+    damage: 25
     magazineSize: 8
-    reserveAmmo: 60
+    reserveAmmo: 56
+    reloadTime: 2.5
+    infiniteAmmo: 0
+    autoReloadOnEmpty: 1
+    pellets: 10
+    spreadDegrees: 15
+  _uzi:
+    bulletSpeed: 25
+    timeBetweenShots: 0.2
+    spawnOffset: 0.5
+    bulletLifetime: 1.5
+    damage: 20
+    magazineSize: 50
+    reserveAmmo: 650
     reloadTime: 2.2
     infiniteAmmo: 0
     autoReloadOnEmpty: 1
-    pellets: 8
-    spreadDegrees: 18
-  _uzi:
-    bulletSpeed: 0
-    timeBetweenShots: 0
-    spawnOffset: 0
-    bulletLifetime: 0
-    damage: 0
-    magazineSize: 0
-    reserveAmmo: 0
-    reloadTime: 0
-    infiniteAmmo: 0
-    autoReloadOnEmpty: 0
-    pellets: 0
-    spreadDegrees: 0
+    pellets: 1
+    spreadDegrees: 1.5
   _poolDefaultCapacity: 32
   _poolMaxSize: 256
   _blockSwitchWhileReloading: 1
@@ -283648,3 +283762,5 @@ SceneRoots:
   - {fileID: 1885107322}
   - {fileID: 1690172359}
   - {fileID: 1056834983}
+  - {fileID: 1801348653}
+  - {fileID: 831509307}
