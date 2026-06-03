@@ -24,7 +24,7 @@ public class Mainmenu : MonoBehaviour
         if (corpseLimitSlider != null)
         {
             corpseLimitSlider.minValue = 0;
-            corpseLimitSlider.maxValue = 100;
+            corpseLimitSlider.maxValue = 200;
             corpseLimitSlider.wholeNumbers = true;
             corpseLimitSlider.value = GameSettings.CorpseLimit;
 

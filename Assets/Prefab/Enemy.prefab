@@ -186,7 +186,7 @@ MonoBehaviour:
   maxCorpses: 30
   _maxHealth: 50
   _destroyOnDeath: 1
-  destroyDelay: 100
+  destroyDelay: 150
   spriteRenderer: {fileID: 0}
   deadSprite: {fileID: 2077853431380194384, guid: 4a6a3512ae5efa14892d01a9d4bcbe70, type: 3}
   randomDeadSprites:
