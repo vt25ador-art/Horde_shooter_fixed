@@ -82,9 +82,6 @@ public class EndingCreditsRoll : MonoBehaviour
             creditsText.text =
             "THE SURVIVORS ESCAPED\n\n" +
 
-            "The radio signal reached the rescue boat.\n\n" +
-            "The generator screamed.\n" +
-            "The horde answered.\n" +
             "The survivors regretted everything.\n\n" +
 
             "But somehow...\n\n" +

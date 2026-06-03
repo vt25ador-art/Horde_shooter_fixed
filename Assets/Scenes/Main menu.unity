@@ -2308,34 +2308,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CONTROLS
-
-
-    WASD - Move
-
-    Mouse - Aim
-
-    Scroll Wheel - Switch
-    Weapons
-
-    Left Mouse - Shoot
-
-    R - Reload
-
-    E - Interact
-
-    C - Call
-    Bot
-
-    T - Teleport Bot
-
-    Hold T - If Stuck
-
-    Esc - Pause (Not working)
-
-
-    Survive.
-    Reach the rescue.'
+  m_text: "CONTROLS\n\nWASD - Move\nMouse - Aim\nScroll Wheel - Switch Weapons\nLeft
+    Mouse - Shoot\nRIght Mouse - First Aid Kit \nR - Reload\nE - Interact\nC - Call
+    Bot\nT - Teleport Bot\nHold T - If Stuck\nEsc - Pause (Not working)\n\nSurvive.
+    Reach the rescue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
