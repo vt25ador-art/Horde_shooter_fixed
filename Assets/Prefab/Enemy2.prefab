@@ -153,7 +153,7 @@ MonoBehaviour:
   Wall:
     serializedVersion: 2
     m_Bits: 2320
-  _speed: 5
+  _speed: 6.2
   _rotationSpeed: 540
   _boostStartDistance: 7
   _stopDistance: 0.9
@@ -241,7 +241,7 @@ MonoBehaviour:
   maxCorpses: 30
   _maxHealth: 50
   _destroyOnDeath: 1
-  destroyDelay: 30
+  destroyDelay: 100
   spriteRenderer: {fileID: 0}
   deadSprite: {fileID: 2077853431380194384, guid: 4a6a3512ae5efa14892d01a9d4bcbe70, type: 3}
   randomDeadSprites:

@@ -2329,11 +2329,13 @@ MonoBehaviour:
 
     T - Teleport Bot
 
+    Hold T - If Stuck
+
     Esc - Pause (Not working)
 
 
-    Survive. Reach
-    the rescue.'
+    Survive.
+    Reach the rescue.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

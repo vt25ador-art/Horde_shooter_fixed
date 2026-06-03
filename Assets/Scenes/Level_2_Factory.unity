@@ -282094,6 +282094,7 @@ GameObject:
   - component: {fileID: 1885107311}
   - component: {fileID: 1885107310}
   - component: {fileID: 1885107309}
+  - component: {fileID: 1885107323}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -282573,6 +282574,26 @@ Transform:
   - {fileID: 469446611}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1885107323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885107308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccb296f017e804749a94e234a7ff7370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportKey: 116
+  holdTimeRequired: 1
+  bot: {fileID: 379543536}
+  botTag: Bot
+  teleportOffsetDistance: 1.5
+  zeroVelocityOnTeleport: 1
+  debugLogs: 1
+  fixedZPosition: -0.65
 --- !u!1 &1886752126
 GameObject:
   m_ObjectHideFlags: 0
