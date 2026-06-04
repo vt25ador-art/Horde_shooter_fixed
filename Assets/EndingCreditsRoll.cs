@@ -98,6 +98,7 @@ public class EndingCreditsRoll : MonoBehaviour
             "Art by Vanessa och GPT\n\n" +
             "Music by Sabine, Stich och Adam Örn\n\n" +
             "Created by Adam Örn\n\n" +
+            "MainScreen inspiration from a childhood game\n\n" +
 
             "Thanks to:\n" +
             "Sabine\n" +
@@ -127,9 +128,6 @@ public class EndingCreditsRoll : MonoBehaviour
 
 
                 "Zombies Killed: " + GameStats.TotalKills + "\n\n" +
-
-
-
 
 
                 "THANKS FOR PLAYING";
