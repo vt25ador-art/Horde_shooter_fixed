@@ -582,6 +582,57 @@ public class PlayerShoot : MonoBehaviour
         _reserveAmmo = Mathf.Min(_reserveAmmo + amount, maxreserve);
     }
 
+
+    public void UnlockWeapon(WeaponMode weaponToUnlock, bool equipNow = true, bool resetAmmo = true)
+    {
+        if (_weaponOrder == null || _weaponOrder.Length == 0)
+            return;
+
+        if (_weaponUnlocked == null || _weaponUnlocked.Length != _weaponOrder.Length)
+            _weaponUnlocked = new bool[_weaponOrder.Length];
+
+        int index = System.Array.IndexOf(_weaponOrder, weaponToUnlock);
+
+        if (index < 0)
+        {
+            Debug.LogWarning("Weapon not found in weapon order: " + weaponToUnlock);
+            return;
+        }
+
+        _weaponUnlocked[index] = true;
+
+        if (resetAmmo)
+        {
+            WeaponSettings ws = GetSettings(weaponToUnlock);
+
+            _ammoByWeapon[index] = new AmmoState
+            {
+                mag = Mathf.Max(0, ws.magazineSize),
+                reserve = Mathf.Max(0, ws.reserveAmmo)
+            };
+        }
+
+        if (equipNow)
+            ApplyWeapon(weaponToUnlock, resetAmmo: false);
+
+        Debug.Log("Unlocked weapon: " + weaponToUnlock);
+    }
+
+
+    public bool HasWeapon(WeaponMode weaponToCheck)
+    {
+        if (_weaponOrder == null || _weaponUnlocked == null)
+            return false;
+
+        int index = Array.IndexOf(_weaponOrder, weaponToCheck);
+
+        if (index < 0)
+            return false;
+
+        return _weaponUnlocked[index];
+    }
+
+
 #if UNITY_EDITOR
     private void OnValidate()
     {
@@ -633,48 +684,5 @@ public class PlayerShoot : MonoBehaviour
         ClampAmmoToCurrentSettings();
     }
 
-    public void UnlockWeapon(WeaponMode weaponToUnlock, bool equipNow = true, bool resetAmmo = true)
-    {
-        if (_weaponOrder == null || _weaponOrder.Length == 0)
-            return;
-
-        if (_weaponUnlocked == null || _weaponUnlocked.Length != _weaponOrder.Length)
-            _weaponUnlocked = new bool[_weaponOrder.Length];
-
-        int index = Array.IndexOf(_weaponOrder, weaponToUnlock);
-
-        if (index < 0)
-            return;
-
-        _weaponUnlocked[index] = true;
-
-        if (resetAmmo)
-        {
-            WeaponSettings ws = GetSettings(weaponToUnlock);
-            _ammoByWeapon[index] = new AmmoState
-            {
-                mag = Mathf.Max(0, ws.magazineSize),
-                reserve = Mathf.Max(0, ws.reserveAmmo)
-            };
-        }
-
-        if (equipNow)
-            ApplyWeapon(weaponToUnlock, resetAmmo: false);
-
-        Debug.Log("Unlocked weapon: " + weaponToUnlock);
-    }
-
-    public bool HasWeapon(WeaponMode weaponToCheck)
-    {
-        if (_weaponOrder == null || _weaponUnlocked == null)
-            return false;
-
-        int index = Array.IndexOf(_weaponOrder, weaponToCheck);
-
-        if (index < 0)
-            return false;
-
-        return _weaponUnlocked[index];
-    }
 #endif
 }

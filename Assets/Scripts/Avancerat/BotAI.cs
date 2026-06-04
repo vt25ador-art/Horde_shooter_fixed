@@ -11,6 +11,7 @@ public class BotAI : MonoBehaviour
     [SerializeField] private float teleportDistance = 18f;
     [SerializeField] private float teleportBehindPlayerDistance = 1.5f;
     [SerializeField] private bool onlyTeleportWhenFarAway = true;
+    [SerializeField] private float fixedZPosition = -0.72f;
 
 
     [SerializeField] private bool autoTeleportIfVeryFar = true;
@@ -234,13 +235,22 @@ public class BotAI : MonoBehaviour
         if (behindDirection.sqrMagnitude < 0.01f)
             behindDirection = Vector2.down;
 
-        Vector2 targetPos = playerPos + behindDirection.normalized * teleportBehindPlayerDistance;
+        Vector2 targetPos2D = playerPos + behindDirection.normalized * teleportBehindPlayerDistance;
+
+        Vector3 targetPos3D = new Vector3(
+            targetPos2D.x,
+            targetPos2D.y,
+            fixedZPosition
+        );
 
         rb.linearVelocity = Vector2.zero;
         rb.angularVelocity = 0f;
 
-        rb.position = targetPos;
-        transform.position = targetPos;
+        // Rigidbody2D använder bara X/Y
+        rb.position = targetPos2D;
+
+        // Transform sätter korrekt Z
+        transform.position = targetPos3D;
 
         state = BotState.Follow;
         currentTarget = null;
@@ -248,7 +258,7 @@ public class BotAI : MonoBehaviour
         if (shoot != null)
             shoot.enabled = true;
 
-        Debug.Log("Bot teleported to player");
+        Debug.Log("Bot teleported to player at Z: " + fixedZPosition);
     }
 
 
